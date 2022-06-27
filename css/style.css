@@ -3,14 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
-html,body{
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&family=Volkhov:wght@400;700&display=swap');
+
+html{
     font-family: 'Volkhov', serif;
 }
-/**************** INDEX **************** /
-/**************** ABOUT **************** /
-/**************** SERVICES **************** /
-/**************** BLOG **************** /
-/**************** LANDING PAGE **************** /
-/**************** ELEMENTS **************** /
-/**************** 404 PAGE **************** /
-/**************** CONTACT**************** /
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+
+
+
+
