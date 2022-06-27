@@ -1,0 +1,204 @@
+* {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&family=Volkhov:wght@400;700&display=swap');
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* -----SERVICES----- */
+/* ---------------------- HEADER ---------------------- */
+header.main__header__services {
+    background-color: transparent;
+    padding         : 0px;
+    transition      : all 0.4s ease 0s;
+    height          : 90px;
+    display         : grid;
+    align-items     : center;
+}
+
+.fix__top__services {
+    position: fixed;
+    top     : 0;
+    left    : 0;
+    right   : 0;
+    z-index : 13;
+}
+
+.container.services__ {
+    width  : 100%;
+    padding: 0 15px;
+}
+
+.main__header__services .services__ .navbar {
+    justify-content: space-between;
+}
+
+h1.title__services {
+ 
+    clear      : both;
+    font-size  : 2em;
+    color      : black;
+    font-family: 'Volkhov', serif;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.navbar .navbar-brand {
+    font-size: 32px;
+    color    : #fb811e;
+    padding  : 0;
+    position : relative;
+}
+
+.navbar .navbar-brand i {
+    font-size: 20px;
+    position : absolute;
+    top      : -12px;
+    left     : 55px;
+}
+
+.fa {
+    display: inline-block;
+}
+
+.navbar {
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+    flex-wrap      : wrap;
+    position       : relative;
+    padding        : 0;
+}
+
+.navbar .search__right {
+    margin: 0 10px 0 10px;
+}
+/* ---------------------- LOGO ---------------------- */
+.search__right input{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.search__right input[type=search] {
+    background: #fff url(https://wp.w3layouts.com/farmstead/wp-content/themes/farmstead/assets/images/search.png) no-repeat 10px center;
+    border    : solid 1px #fff;
+    padding   : 0 10px;
+    width     : 35px;
+    height    : 35px;
+    transition: all .5s;
+    cursor    : pointer;
+    border-radius: 10em;
+}
+.mr-3{
+    margin-right: 1rem !important;
+}
+/* ---------------------- TOGGLE LIGHT AND DARK ---------------------- */
+.theme_switch_wrapper{
+    display: flex;
+    align-items: center;
+}
+.theme_switch{
+    display: inline-block;
+    position: relative;
+    margin: 0;
+}
+.theme_switch input{
+    display: none;
+}
+.mode-container{
+    width: 24px;
+    height: 24px;
+    padding: 0px 0;
+    margin-left: 10px;
+    color: #fff;
+}
+.mode-container i.gg-sun{
+    display: none;
+}
+.mode-container i{
+    font-size: 15px;
+}
+/* ---------------------- MENU ---------------------- */
+ul#menu{
+    margin: 0;
+    color: #fff;
+    z-index: 9;
+    font-size: 29px;
+}
+ul#menu>li{
+    float: left;
+    list-style-type: none;
+    position: relative;
+    width: 100%;
+}
+nav ul li{
+    text-align: center;
+    display: block;
+    list-style-type: none;
+}
+ul#menu input{
+    display: none;
+}
+ul#menu label{
+    position: relative;
+    display: block;
+    transition: all 0.3s;
+    cursor: pointer;
+    text-align: center;
+    margin: 0; 
+}
+ul#menu label span{
+    line-height: 1em;
+}
+ul#menu input:checked~ul.submenu{
+    max-width: 400px;
+    transition: all 0.5s ease-in;
+}
+ul.submenu{
+    max-height: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style-type: none;
+    background: #fff;
+    transition: all 0.5s ease-out;
+    position: absolute;
+    min-width: 8em;
+    right: 0;
+    box-shadow: 0 20px 62px rgb(4 20 69 /10%);
+}
+li>ul{
+    margin-bottom: 0;
+    margin-left: 1.5em;
+}
+/* ---------------------- BANNER ---------------------- */
+.inner_banner{
+    background-image: url(https://wp.w3layouts.com/farmstead/wp-content/themes/farmstead/assets/images/inner-banner.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+}
+.w31-breadcrumb{
+    display: block;
+    margin: 0 auto;
+    z-index: 9;
+}
+.inner_banner .w31-breadcrumb .container h4{
+    font-size: 1.5rem;
+    font-family: 'Volkhov', serif;
+    color: black;
+    font-weight: 700;
+}
+ul.breadcrumbs-custom-path{
+    line-height: 1.5;
+    color: #707070;
+    position: relative;
+    display: inline;
+}
