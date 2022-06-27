@@ -202,3 +202,116 @@ ul.breadcrumbs-custom-path{
     position: relative;
     display: inline;
 }
+/* ---------------------- ServicesPage SERVICES ---------------------- */
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.card-body{
+    padding: 50px 35px;
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
+    box-shadow: 0 1rem 3rem rgb(0 0 0 / 5%);
+transition: all .8s;
+}
+.card-body:hover{
+    box-shadow: 0 1rem 3rem rgb(0 0 0 / 20%);
+
+}
+.Services__Page .card-body i{
+    font-size: 45px;
+    color: #fb811e;   
+}
+.Services__Page .card-body h4 a.title__head{
+margin-top: 25px;
+display: block;
+color: #060606;
+font-weight: 600;
+line-height: 1.2;
+margin-bottom: 15px;
+font-size: 22px;
+letter-spacing: 0;
+}
+.Services__Page .card-body p.card-text{
+    margin-bottom: 1.5em;
+    font-size: 17px;
+    line-height: 27px;
+    color: #707070;
+}
+/* ---------------------- ServicesFeature ---------------------- */
+.Feature .container .Feature__Row img{
+    width: 100%;
+    border-radius: 40px;
+}
+.Feature .container .Feature__Row h5{
+    font-size: 22px;
+    color: #fb811e
+}
+.Feature .container .Feature__Row h3{
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 600;
+    color: #060606;
+    font-family: 'Volkhov', serif;
+}
+.Feature .container .Feature__Row p{
+    font-size: 17px;
+    line-height: 27px;
+    color: #707070;
+}
+.Feature .container .Feature__row__mini .fa-solid{
+font-size: 30px;
+color: #fb811e;
+display: inline-block;
+margin-top: 5px;
+}
+.Feature .container .Feature__row__mini h4{
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-family: 'Volkhov', serif;
+   
+}
+.Feature .container .Feature__row__mini .detail{
+    padding-left: 10px;
+}
+/* ---------------------- ServicesNumber ---------------------- */
+.Number{
+    text-align: center;
+}
+.Number .container .Row__Number .counter i.fa-solid{
+    color: #009f4d;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 32px;
+    border-radius: 50%;
+    background: rgb(0 159 77 / 4%);
+}
+.Number .container .Row__Number .counter .timer{
+    font-size: 3em;
+    font-weight: 600;
+    color: #060606;
+}
+.Number .container .Row__Number .counter p{
+    text-transform: uppercase;
+    font-size: 17px;
+    color: #060606;
+}
+/* ---------------------- ServicesTheme ---------------------- */
+section.Theme{
+    background-image: url(https://wp.w3layouts.com/farmstead/wp-content/themes/farmstead/assets/images/bg2.jpg);
+    width: 100%;
+    min-height: 40vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Theme .container .Text__Theme h5{
+    font-size: 22px;
+    color: #fff;
+    font-size: 22px;
+}
