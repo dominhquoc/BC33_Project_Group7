@@ -28,7 +28,14 @@ header.main__header__services {
     right   : 0;
     z-index : 13;
 }
-
+.nav_fixed_top{
+    padding: 0px;
+    border-bottom: none;
+    z-index: 9 !important;
+    background-color: #fff;
+    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 5%);
+    height: 70px;
+}
 .container.services__ {
     width  : 100%;
     padding: 0 15px;
@@ -53,6 +60,10 @@ h1.title__services {
     color    : #fb811e;
     padding  : 0;
     position : relative;
+    transition: all 0.5s;
+}
+.navbar .navbar-brand:hover{
+    color: #060606;
 }
 
 .navbar .navbar-brand i {
@@ -201,6 +212,20 @@ ul.breadcrumbs-custom-path{
     color: #707070;
     position: relative;
     display: inline;
+    padding-left: 0;
+    font-size: 15px;
+    text-transform: capitalize;
+    vertical-align: middle;
+}
+ul.breadcrumbs-custom-path a{
+    display: inline-block;
+    font-weight: bold;
+    background: transparent;
+    color: #707070;
+    text-decoration: none;
+}
+ul.breadcrumbs-custom-path a:hover{
+    color: #fb811e;
 }
 /* ---------------------- ServicesPage SERVICES ---------------------- */
 .row{
@@ -283,7 +308,7 @@ margin-top: 5px;
 .Number{
     text-align: center;
 }
-.Number .container .Row__Number .counter i.fa-solid{
+.Number .container .Row__Number .counter_container i.fa-solid{
     color: #009f4d;
     width: 80px;
     height: 80px;
@@ -292,12 +317,12 @@ margin-top: 5px;
     border-radius: 50%;
     background: rgb(0 159 77 / 4%);
 }
-.Number .container .Row__Number .counter .timer{
+.Number .container .Row__Number .counter_container .timer{
     font-size: 3em;
     font-weight: 600;
     color: #060606;
 }
-.Number .container .Row__Number .counter p{
+.Number .container .Row__Number .counter_container p{
     text-transform: uppercase;
     font-size: 17px;
     color: #060606;
@@ -309,9 +334,100 @@ section.Theme{
     min-height: 40vh;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+    z-index: 1;
+ 
+}
+section.Theme::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(8 8 8 / 44%);
+    z-index: -1;
+
 }
 .Theme .container .Text__Theme h5{
     font-size: 22px;
     color: #fff;
     font-size: 22px;
+    margin-bottom: 10px;
 }
+.Theme .container .Text__Theme h3{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 50px;
+    color: #fff;
+}
+.Theme .container .Text__Theme .btn{
+    font-size: 16px;
+    padding: 12px 30px;
+    background-color: #fb811e;
+    border-radius: 50px;
+    font-size: 24px;
+font-weight: 600;
+color: #fff;
+text-transform: uppercase;
+border: none;
+transition: all .7s;
+}
+.Theme .container .Text__Theme .btn:hover{
+    background-color: #009f4d;
+}
+footer .container .row .col-4 h3{
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #060606;
+}
+footer .container .row .col-4 p{
+    font-size: 17px;
+    line-height: 24px;
+    color: #707070;
+}
+footer .container .row .col-4 form input{
+    background: #f4f4f4;
+    padding: 12px 20px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    width: 80%;
+    color: #707070;
+    border: 1px solid #eee;
+    border-radius: 30px 0px 0px 30px;
+line-height: 1.5;
+}
+footer .container .row .col-4 form button{
+    background: #009f4d;
+    font-size: 16px;
+    padding: 12px 20px;
+    width: 20%;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 0px 30px 30px 0;
+}
+footer .container .row .col-4 ul li{
+    display: inline-block;
+    margin-right: 5px;
+    list-style-type: none;
+}
+footer .container .row .col-4 ul li a{
+    color: #009f4d;
+    width: 35px;
+    height: 35px;
+    background: rgb(10 191 83 / 8%);
+    display: inline-block;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
+    transition: all 0.5s;
+}
+footer .container .row .col-4 ul li a:hover{
+    color: #fb811e;
+    background: rgb(255 201 69 / 19%);
+    box-shadow: 0px 4px 7px 0px rgb(10 10 10 / 24%);
+}
+

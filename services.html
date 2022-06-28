@@ -25,7 +25,7 @@
 
 <body>
     <!---------------------- HEADER ---------------------->
-    <header class="main__header__services fix__top__services">
+    <header class="main__header__services fix__top__services nav_fixed_top">
         <div class="container">
             <!---------------------- LOGO ---------------------->
             <nav class="navbar navbar-expand-lg stroke">
@@ -241,30 +241,31 @@
         <div class="container">
             <div class="Row__Number row justify-content-center">
                 <div class="col-3">
-                    <div class="counter">
+                    <div class="counter_container">
                         <i class="fa-solid fa-bullhorn"></i>
-                        <div class="timer mt-3">1,286</div>
+                        <div class="timer mt-3" data-target="1286">0</div>
                         <p>Our Farms</p>
                     </div>
                 </div>
                 <div class="col-3">
-                    <div class="counter">
+                    <div class="counter_container">
                         <i class="fa-solid fa-basket-shopping"></i>
-                        <div class="timer mt-3">1,286</div>
+                        <div class="timer mt-3"
+                        data-target="1376">0</div>
                         <p>Our Farms</p>
                     </div>
                 </div>
                 <div class="col-3">
-                    <div class="counter">
+                    <div class="counter_container">
                         <i class="fa-solid fa-face-smile"></i>
-                        <div class="timer mt-3">1,286</div>
+                        <div class="timer mt-3" data-target="1300">0</div>
                         <p>Our Farms</p>
                     </div>
                 </div>
                 <div class="col-3">
-                    <div class="counter">
+                    <div class="counter_container">
                         <i class="fa-solid fa-trophy"></i>
-                        <div class="timer mt-3">1,286</div>
+                        <div class="timer mt-3" data-target="1130">0</div>
                         <p>Our Farms</p>
                     </div>
                 </div>
@@ -272,18 +273,68 @@
         </div>
     </section>
     <!---------------------- End ServicesNumber ---------------------->
-<!---------------------- ServicesTheme ---------------------->
-<section class="Theme">
-    <div class="container">
-        <div class="Text__Theme">
-            <h5>Agriculture Theme</h5>
-            <h3>You can request for call back, we will call !</h3>
-            <a class="btn btn-style mt-4" href="#">Request for call back</a>
-        </div>
-    </div>
-</section>
-<!---------------------- END ServicesTheme ---------------------->
+    <!---------------------- ServicesTheme ---------------------->
+    <section class="Theme">
+        <div class="container py-5">
+            <div class="row py-5"></div>
+            <div class="Text__Theme col-7">
+                <h5>Agriculture Theme</h5>
+                <h3>You can request for call back, we will call !</h3>
+                <a class="btn btn-style mt-4" href="#">Request for call back</a>
+            </div>
 
+        </div>
+    </section>
+    <!---------------------- END ServicesTheme ---------------------->
+    <!---------------------- ServicesFooter ---------------------->
+    <footer class="footer my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <h3>FIND US</h3>
+                    <p>Address: 10001 Alleghany st, 5th Avenue, 235 Terry, London.</p>
+                    <p>Phone: +12 23456790</p>
+                    <p>Email: info@example.com</p>
+                    <p>Fax: + 11 367 21890</p>
+                </div>
+                <div class="col-4">
+                    <div class="navbar">
+                    <h1 class="title__services">
+                        <a class="navbar-brand d-flex align-items-center" href="index.html">
+                            Farmstead <i class="fa-solid fa-leaf"></i>
+                        </a>
+                    </h1>
+                </div>
+                    <p class="mt-3 mb-5">Duis imperdiet sapien tortor, vitae congue diam auctor vitae. Aliquam eget turpis ornare, euismod
+                        ligul aeget, enenatis dui.</p>
+                    <p>© 2022 Farmstead. All Rights Reserved | WordPress Theme by W3Layouts.</p>
+                </div>
+                <div class="col-4">
+                    <h3>NEWSLETTER</h3>
+                    <p>Subscribe to our mailing list and get updates to your email inbox.</p>
+                    <form action class="d-flex mt-3" method="post">
+                        <input type="email" placeholder="Email Address" required>
+                        <button>
+                            <span class="fa-solid fa-paper-plane"></span>
+                        </button>
+                    </form>
+                    <ul class="mt-4 pt-2">
+                        <li>
+                            <a href="#"><span class="fa-brands fa-facebook-f"></span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="fa-brands fa-linkedin-in"></span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="fa-brands fa-twitter"></span></a>
+                        </li>
+                        <li><a href="#"><span class="fa-brands fa-google-plus-g"></span></a></li>
+                        <li><a href="#"><span class="fa-brands fa-github"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 
