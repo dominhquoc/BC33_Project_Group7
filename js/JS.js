@@ -4,7 +4,7 @@ let started = false;
 
 
 window.onscroll = function () {
-    if(window.scrollY >= section.offsetTop-700){
+    if(window.scrollY >= section.offsetTop-800){
         if(!started){
             counter_container.forEach((timer) => startCount(timer))
         }
@@ -25,3 +25,4 @@ if(el.textContent==goal){
 }
     }, 2000 / goal)
 }
+
