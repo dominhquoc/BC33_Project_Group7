@@ -3,9 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
-html,body{
-    font-family: 'Volkhov', serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&family=Volkhov:wght@400;700&display=swap');
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
 }
+<<<<<<< HEAD
 /* INDEX */
 .sidebar{
     width: 100px;
@@ -409,3 +413,7 @@ nav{
 /**************** ELEMENTS **************** /
 /**************** 404 PAGE **************** /
 /**************** CONTACT**************** /
+=======
+
+/* -----SERVICES----- */
+>>>>>>> 3d8f1daa992252c9c7b42f67264e169497683b4c
