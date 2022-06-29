@@ -1,0 +1,180 @@
+* {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&family=Volkhov:wght@400;700&display=swap');
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* -----BLOG----- */
+/* ---------------------- HEADER ---------------------- */
+header.header {
+    position        : absolute;
+    width           : 100%;
+    z-index         : 2;
+    background-color: transparent;
+    height          : 90px;
+    top             : 0;
+    left            : 0;
+}
+header .navbar .container a{
+text-decoration: none;
+color: #fb811e;
+font-family: 'Volkhov', serif;
+position: relative;
+}
+header .navbar .container a i{
+    font-size: 25px;
+    position: absolute;
+    left: 70px;
+    top: -7px;
+}
+
+section.content {
+    z-index: 1;
+}
+.content .container .text_Carousel h1{
+    font-weight: 600;
+    font-family: 'Volkhov', serif;
+    font-size: 30px;
+}
+.content .container .text_Carousel a{
+    text-decoration: none;
+    color: #707070;
+font-size: 21px;
+font-weight: bold;
+display: inline-block;
+}
+
+/* ---------------------- CAROUSEL ---------------------- */
+section.carousel {
+    background-image   : url(https://wp.w3layouts.com/farmstead/wp-content/themes/farmstead/assets/images/inner-banner.png);
+    width              : 100%;
+    height             : 400px;
+    background-size    : cover;
+    z-index            : 0;
+    background-repeat  : no-repeat;
+    background-position: bottom;
+
+}
+/* ---------------------- Layout---------------------- */
+section.layout{
+    margin-top: 100px;
+}
+section.layout a.blog__text{
+    display: block;
+text-decoration: none;
+font-weight: 600;
+font-size: 29px;
+color: black;
+}
+section.layout a.btn{
+    text-decoration: none;
+    padding: 14px 40px;
+    border-radius: 35px;
+    background-color: #fb811e;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px;
+}
+section.layout a.btn:hover{
+    background-color: #009f4d;
+}
+section.layout .card{
+    border: none;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+}
+.pag ul {
+    display: flex;
+    padding-left: 0;
+  
+}
+.pag ul li{
+    list-style-type: none;
+ margin-left: 10px;
+    
+}
+.pag ul li a.page-i1{
+    background-color: #009f4d;
+}
+.pag ul li a.page-link{
+border: none;
+color: black;
+font-size: 20px;
+font-weight:600;
+width: 55px;
+height: 55px;
+background-color: #fff;
+border-radius: 35px;
+text-align: center;
+line-height: 45px;
+box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+display: block;
+}
+
+.pag ul li a.page-link:hover{
+    background-color: #009f4d;
+}
+
+/* ---------------------- ServicesFooter---------------------- */
+footer .container .row .col-4 h3{
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #060606;
+}
+footer .container .row .col-4 p{
+    font-size: 17px;
+    line-height: 24px;
+    color: #707070;
+}
+footer .container .row .col-4 form input{
+    background: #f4f4f4;
+    padding: 12px 20px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    width: 80%;
+    color: #707070;
+    border: 1px solid #eee;
+    border-radius: 30px 0px 0px 30px;
+line-height: 1.5;
+}
+footer .container .row .col-4 form button{
+    background: #009f4d;
+    font-size: 16px;
+    padding: 12px 20px;
+    width: 20%;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 0px 30px 30px 0;
+}
+footer .container .row .col-4 ul li{
+    display: inline-block;
+    margin-right: 5px;
+    list-style-type: none;
+}
+footer .container .row .col-4 ul li a{
+    color: #009f4d;
+    width: 35px;
+    height: 35px;
+    background: rgb(10 191 83 / 8%);
+    display: inline-block;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
+    transition: all 0.5s;
+}
+footer .container .row .col-4 ul li a:hover{
+    color: #fb811e;
+    background: rgb(255 201 69 / 19%);
+    box-shadow: 0px 4px 7px 0px rgb(10 10 10 / 24%);
+}
