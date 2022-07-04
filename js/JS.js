@@ -26,3 +26,8 @@ if(el.textContent==goal){
     }, 2000 / goal)
 }
 
+//Light-Dark
+
+
+
+

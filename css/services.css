@@ -387,6 +387,7 @@ transition: all .7s;
 .Theme .container .Text__Theme .btn:hover{
     background-color: #009f4d;
 }
+/* ---------------------- ServicesFooter---------------------- */
 footer .container .row .col-4 h3{
     font-size: 20px;
     line-height: 25px;
