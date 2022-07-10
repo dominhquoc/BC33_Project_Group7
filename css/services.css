@@ -12,192 +12,147 @@ body {
 
 /* -----SERVICES----- */
 /* ---------------------- HEADER ---------------------- */
-header.main__header__services {
-    background-color: transparent;
-    padding         : 0px;
-    transition      : all 0.4s ease 0s;
-    height          : 90px;
-    display         : grid;
-    align-items     : center;
+/* header */
+/* header */
+header {
+    display           : grid;
+    grid-template-rows: 100px;
+    background-color  : transparent;
+    position          : absolute;
+    width             : 100%;
+    z-index           : 99;
+    position          : fixed;
 }
 
-.fix__top__services {
-    position: fixed;
-    top     : 0;
-    left    : 0;
-    right   : 0;
-    z-index : 13;
-}
-.nav_fixed_top{
-    padding: 0px;
-    border-bottom: none;
-    z-index: 9 !important;
-    background-color: #fff;
-    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 5%);
-    height: 70px;
-}
-.container.services__ {
-    width  : 100%;
-    padding: 0 15px;
+.container__header {
+    width : 1280px;
+    margin: 0 auto;
 }
 
-.main__header__services .services__ .navbar {
-    justify-content: space-between;
+
+.col__left__header {
+    display: flex;
 }
 
-h1.title__services {
- 
-    clear      : both;
-    font-size  : 2em;
-    color      : black;
-    font-family: 'Volkhov', serif;
-    font-weight: 400;
-    line-height: 28px;
+.col__left__header a {
+    text-decoration: none;
+    position       : relative;
+    color          : #fb811e;
+    transition     : all 0.5s;
 }
 
-.navbar .navbar-brand {
-    font-size: 32px;
-    color    : #fb811e;
-    padding  : 0;
-    position : relative;
-    transition: all 0.5s;
-}
-.navbar .navbar-brand:hover{
-    color: #060606;
+.col__left__header a:hover {
+    color: black;
 }
 
-.navbar .navbar-brand i {
-    font-size: 20px;
+.col__left__header i {
     position : absolute;
-    top      : -12px;
+    font-size: 20px;
     left     : 55px;
+    top      : -2px;
 }
 
-.fa {
-    display: inline-block;
-}
-
-.navbar {
+.row__header {
     display        : flex;
     justify-content: space-between;
     align-items    : center;
-    flex-wrap      : wrap;
-    position       : relative;
-    padding        : 0;
-}
+    padding        : 25px 0;
 
-.navbar .search__right {
-    margin: 0 10px 0 10px;
 }
-/* ---------------------- LOGO ---------------------- */
-.search__right input{
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1rem;
-    line-height: 1.5;
+/*search*/
+#demo-2{
+    margin: 0 25px;
+    
 }
-
-.search__right input[type=search] {
-    background: #fff url(https://wp.w3layouts.com/farmstead/wp-content/themes/farmstead/assets/images/search.png) no-repeat 10px center;
-    border    : solid 1px #fff;
-    padding   : 0 10px;
-    width     : 35px;
-    height    : 35px;
-    transition: all .5s;
-    cursor    : pointer;
+input[type=search]{
+    background: #fff url(https://wp.w3layouts.com/farmstead/wp-content/themes/farmstead/assets/images/search.png) no-repeat 16px center;
+    border: 1px solid #eee;
+    padding: 0 16px;
+    width: 50px;
+    height: 50px;
     border-radius: 10em;
-}
-.mr-3{
-    margin-right: 1rem !important;
-}
-/* ---------------------- TOGGLE LIGHT AND DARK ---------------------- */
-.theme_switch_wrapper{
-    display: flex;
-    align-items: center;
-}
-.theme_switch{
-    display: inline-block;
-    position: relative;
-    margin: 0;
-}
-.theme_switch input{
-    display: none;
-}
-.mode-container{
-    width: 24px;
-    height: 24px;
-    padding: 0px 0;
-    margin-left: 10px;
-    color: #fff;
-}
-.mode-container i.gg-sun{
-    display: none;
-}
-.mode-container i{
-    font-size: 15px;
-}
-/* ---------------------- MENU ---------------------- */
-ul#menu{
-    margin: 0;
-    color: #fff;
-    z-index: 9;
-    font-size: 29px;
-}
-ul#menu>li{
-    float: left;
-    list-style-type: none;
-    position: relative;
-    width: 100%;
-}
-nav ul li{
-    text-align: center;
-    display: block;
-    list-style-type: none;
-}
-ul#menu input{
-    display: none;
-}
-ul#menu label{
-    position: relative;
-    display: block;
-    transition: all 0.3s;
+    transition: all .5s;
     cursor: pointer;
-    text-align: center;
-    margin: 0; 
+    
 }
-ul#menu label span{
-    line-height: 1em;
+#demo-2 input[type=search]:focus{
+    width: 250px;
+    padding-left: 40px;
+    color: #000;
+    background-color: #fff;
+    cursor: auto;
+    padding-right: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.205);
+    outline: none;
 }
-ul#menu input:checked~ul.submenu{
-    max-width: 400px;
-    transition: all 0.5s ease-in;
+
+/* nav-bar */
+.header {
+    transition-property       : background-color, color;
+    transition-duration       : 0.5s;
+    transition-timing-function: ease-in-out;
 }
-ul.submenu{
-    max-height: 0;
-    padding: 0;
-    overflow: hidden;
-    list-style-type: none;
-    background: #fff;
-    transition: all 0.5s ease-out;
-    position: absolute;
-    min-width: 8em;
-    right: 0;
-    box-shadow: 0 20px 62px rgb(4 20 69 /10%);
+
+.navbar-dark {
+    background-color: white;
+    color           :black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.050);
 }
-ul#primary-menu{
-    max-height: 0;
-    padding: 0;
-  
-    list-style-type: none;
-    background: #fff;
-    transition: all 0.5s ease-out;
-    position: absolute;
-    min-width: 8em;
-    right: 0;
-    box-shadow: 0 20px 62px rgb(4 20 69 /10%); 
+
+/* ---------------------- Nav Light-Dark --------------------- */
+.bi {
+    font-size: 35px;
+    color    : black;
+    cursor   : pointer;
 }
-li>ul{
-    margin-bottom: 0;
-    margin-left: 1.5em;
+
+/* bar */
+nav {
+    font-family: "raleway", sans-serif;
+    text-align : center;
+}
+
+#menuToggle {
+    cursor          : pointer;
+    border          : none;
+    background-color: transparent;
+    color           : #ffffff;
+    margin          : 5px 0px;
+}
+
+.menuLine {
+    font-size: 40px;
+    color    : black;
+}
+
+.ul__menu {
+    overflow      : hidden;
+    display       : flex;
+    flex-direction: column;
+    padding-left  : 0px;
+    margin-bottom : 0px;
+    background-color: #f4f4f4;
+
+}
+
+.li__menu {
+    float  : right;
+    display: block;
+    width  : 100%;
+    margin : 5px 0px;
+}
+
+.li__menu a {
+    text-decoration: none;
+    color          : black;
+}
+
+.li__menu a:hover {
+    color: #fb811e;
+}
+
+.col__right__header {
+    display: flex;
 }
 /* ---------------------- BANNER ---------------------- */
 .inner_banner{
@@ -422,6 +377,9 @@ footer .container .row .col-4 form button{
     outline: none;
     color: #fff;
     border-radius: 0px 30px 30px 0;
+}
+footer .container .row .col-4 ul {
+    padding-left: 0;
 }
 footer .container .row .col-4 ul li{
     display: inline-block;

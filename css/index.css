@@ -48,105 +48,153 @@ h1,h2,h3{
 .sidebar .sidebar_icon a:hover{
     color: #e6e6e6;
 }
-.header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    transition: all 0.4s ease 0s;
-    height: 90px;
+/* header */
+header {
+    display           : grid;
+    grid-template-rows: 100px;
+    background-color  : transparent;
+    position          : absolute;
+    width             : 100%;
+    z-index           : 99;
+    position          : fixed;
 }
-/* .header{
-    padding: 0px;
-    border-bottom: none;
-    z-index: 99 !important;
-    background-color: #fff;
-    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 5%);
-} */
-/* .header .container{
-    transform: translateX(-50px);
-    background: var(--bg-color);
-    border: 1px solid var(--border-color);
-    box-shadow: rgb(12 12 12 / 6%) 0px 1px 20px 0px;
-  }
-  .header .container::before{
-    content: '';
-    width: 14px;
-    height: 14px;
-    background: var(--bg-color);
-    border: 1px solid var(--border-color);
-    display: block;
-    border-right: none;
-    border-bottom: none;
-    transform: translateX(-50%) rotateZ(45deg);
-    position: absolute;
-    top: -7px;
-    left: 49%;
-    z-index: 1001;
-  } */
-.header .container{
-    width: 1280px;
+
+.container__header {
+    width : 1280px;
     margin: 0 auto;
-    padding-top: 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 15px;
-    padding-right: 15px;
 }
-.header .logo a{
-    font-size: 32px;
-    color: #fb811e;
-    position: relative;
-    text-decoration: none;
-    position: relative;
-    transition: .5s;
-}.header .logo i{
-    font-size: 20px;
-    position: absolute;
-    top: -5px;
-    left: 55px;
-}
-.header .logo a:hover{
-    color: #060606;
-}
-nav{
+
+
+.col__left__header {
     display: flex;
 }
-#home{
-    color: #fb811e;
-}
-.nav a{
+
+.col__left__header a {
     text-decoration: none;
-    margin: 0 15px;
-    font-weight: 600;
-    color: #060606;  
-    transition: .5s; 
+    position       : relative;
+    color          : #fb811e;
+    transition     : all 0.5s;
 }
-.nav .search i{
-    color: #060606;
-    font-size: 18px;
-    padding: 7px 7px;
-    background-color: #fff;
-    border-radius: 100%;
-}
-.nav .moon i{
-    color: #fff;
-    font-size: 25px;
-}
-.nav .moon i:hover{
-    color: #fb811e;
-}
-.nav a:hover{
-    color: #fb811e;
-}
-.header .nav-toggler{
-    background-color: transparent;
-    border: none;
+
+.col__left__header a:hover {
     color: black;
-    font-size: 35px;
-    display: none;
 }
+
+.col__left__header i {
+    position : absolute;
+    font-size: 20px;
+    left     : 70px;
+    top      : -4px;
+}
+
+.row__header {
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+    padding        : 25px 0;
+
+}
+/*search*/
+#demo-2{
+    margin: 0 25px;
+    
+}
+input[type=search]{
+    background: #fff url(https://wp.w3layouts.com/farmstead/wp-content/themes/farmstead/assets/images/search.png) no-repeat 16px center;
+    border: 1px solid #eee;
+    padding: 0 16px;
+    width: 50px;
+    height: 50px;
+    border-radius: 10em;
+    transition: all .5s;
+    cursor: pointer;
+    
+}
+#demo-2 input[type=search]:focus{
+    width: 250px;
+    padding-left: 40px;
+    color: #000;
+    background-color: #fff;
+    cursor: auto;
+    padding-right: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.205);
+    outline: none;
+}
+
+/* nav-bar */
+.header {
+    transition-property       : background-color, color;
+    transition-duration       : 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+.navbar-dark {
+    background-color: white;
+    color           : #ffffff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.050);
+}
+
+/* ---------------------- Nav Light-Dark --------------------- */
+.bi {
+    font-size: 35px;
+    color    : black;
+    cursor   : pointer;
+}
+
+/* bar */
+nav {
+    font-family: "raleway", sans-serif;
+    text-align : center;
+}
+
+#menuToggle {
+    cursor          : pointer;
+    border          : none;
+    background-color: transparent;
+    color           : #ffffff;
+    margin          : 5px 0px;
+}
+
+.menuLine {
+    font-size: 40px;
+    color    : black;
+
+}
+
+.ul__menu {
+    overflow      : hidden;
+    display       : flex;
+    flex-direction: column;
+    padding-left  : 0px;
+    margin-bottom : 0px;
+
+
+}
+
+.li__menu {
+    float  : right;
+    display: block;
+    width  : 100%;
+    margin : 5px 0px;
+}
+
+.li__menu a {
+    text-decoration: none;
+    color          : black;
+}
+
+.li__menu a:hover {
+    color: #fb811e;
+}
+
+.col__right__header {
+    display: flex;
+}
+
+
+
+
+
 .carousel .main{
     max-width: 100%;
     padding-bottom: 100px;
