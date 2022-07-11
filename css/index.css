@@ -56,34 +56,6 @@ h1,h2,h3{
     transition: all 0.4s ease 0s;
     height: 90px;
 }
-/* .header{
-    padding: 0px;
-    border-bottom: none;
-    z-index: 99 !important;
-    background-color: #fff;
-    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 5%);
-} */
-/* .header .container{
-    transform: translateX(-50px);
-    background: var(--bg-color);
-    border: 1px solid var(--border-color);
-    box-shadow: rgb(12 12 12 / 6%) 0px 1px 20px 0px;
-  }
-  .header .container::before{
-    content: '';
-    width: 14px;
-    height: 14px;
-    background: var(--bg-color);
-    border: 1px solid var(--border-color);
-    display: block;
-    border-right: none;
-    border-bottom: none;
-    transform: translateX(-50%) rotateZ(45deg);
-    position: absolute;
-    top: -7px;
-    left: 49%;
-    z-index: 1001;
-  } */
 .header .container{
     width: 1280px;
     margin: 0 auto;
