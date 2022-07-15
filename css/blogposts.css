@@ -592,11 +592,11 @@ footer .container .row .find__footer ul li a:hover {
     }
 
     input[type=search] {
-        background   : #fff url(https://wp.w3layouts.com/farmstead/wp-content/themes/farmstead/assets/images/search.png) no-repeat 6px center;
+        background   : #fff url(https://wp.w3layouts.com/farmstead/wp-content/themes/farmstead/assets/images/search.png) no-repeat 9px center;
         border       : 1px solid #eee;
-        padding      : 0 12px;
-        width        : 30px;
-        height       : 30px;
+        padding      : 16px 16px;
+        width        : 38px;
+        height       : 38px;
         border-radius: 10em;
 
     }
@@ -616,12 +616,12 @@ footer .container .row .find__footer ul li a:hover {
 
     #demo-2 {
         margin    : 0 5px;
-        margin-top: 7px;
+        margin-top: 4px;
     }
 
     #demo-2 input[type=search]:focus {
         width: 90px;
-
+        padding-left    : 30px;
     }
 
     .ul__menu {
