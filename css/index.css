@@ -48,77 +48,149 @@ h1,h2,h3{
 .sidebar .sidebar_icon a:hover{
     color: #e6e6e6;
 }
-.header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    transition: all 0.4s ease 0s;
-    height: 90px;
+/* header */
+header {
+    display           : grid;
+    grid-template-rows: 100px;
+    background-color  : transparent;
+    position          : absolute;
+    width             : 100%;
+    z-index           : 99;
+    position          : fixed;
 }
 .header .container{
     width: 1280px;
-    margin: 0 auto;
-    padding-top: 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 15px;
-    padding-right: 15px;
 }
-.header .logo a{
-    font-size: 32px;
-    color: #fb811e;
-    position: relative;
-    text-decoration: none;
-    position: relative;
-    transition: .5s;
-}.header .logo i{
-    font-size: 20px;
-    position: absolute;
-    top: -5px;
-    left: 55px;
-}
-.header .logo a:hover{
-    color: #060606;
-}
-nav{
+.col__left__header {
     display: flex;
 }
-#home{
-    color: #fb811e;
-}
-.nav a{
+
+.col__left__header a {
     text-decoration: none;
-    margin: 0 15px;
-    font-weight: 600;
-    color: #060606;  
-    transition: .5s; 
+    position       : relative;
+    color          : #fb811e;
+    transition     : all 0.5s;
 }
-.nav .search i{
-    color: #060606;
-    font-size: 18px;
-    padding: 7px 7px;
-    background-color: #fff;
-    border-radius: 100%;
-}
-.nav .moon i{
-    color: #fff;
-    font-size: 25px;
-}
-.nav .moon i:hover{
-    color: #fb811e;
-}
-.nav a:hover{
-    color: #fb811e;
-}
-.header .nav-toggler{
-    background-color: transparent;
-    border: none;
+
+.col__left__header a:hover {
     color: black;
-    font-size: 35px;
-    display: none;
 }
+
+.col__left__header i {
+    position : absolute;
+    font-size: 20px;
+    left     : 70px;
+    top      : -4px;
+}
+
+.row__header {
+    display        : flex;
+    justify-content: space-around;
+    align-items    : center;
+    padding        : 25px 0;
+
+}
+/*search*/
+#demo-2{
+    margin: 0 25px;
+    
+}
+input[type=search]{
+    background: #fff url(https://wp.w3layouts.com/farmstead/wp-content/themes/farmstead/assets/images/search.png) no-repeat 16px center;
+    border: 1px solid #eee;
+    padding: 0 16px;
+    width: 50px;
+    height: 50px;
+    border-radius: 10em;
+    transition: all .5s;
+    cursor: pointer;
+    
+}
+#demo-2 input[type=search]:focus{
+    width: 250px;
+    padding-left: 40px;
+    color: #000;
+    background-color: #fff;
+    cursor: auto;
+    padding-right: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.205);
+    outline: none;
+}
+
+/* nav-bar */
+.header {
+    transition-property       : background-color, color;
+    transition-duration       : 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+.navbar-dark {
+    background-color: white;
+    color           : #ffffff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.050);
+}
+
+/* ---------------------- Nav Light-Dark --------------------- */
+.bi {
+    font-size: 35px;
+    color    : black;
+    cursor   : pointer;
+}
+
+/* bar */
+nav {
+    font-family: "raleway", sans-serif;
+    text-align : center;
+}
+
+#menuToggle {
+    cursor          : pointer;
+    border          : none;
+    background-color: transparent;
+    color           : #ffffff;
+    margin          : 5px 0px;
+}
+
+.menuLine {
+    font-size: 40px;
+    color    : black;
+
+}
+
+.ul__menu {
+    overflow      : hidden;
+    display       : flex;
+    flex-direction: column;
+    padding-left  : 0px;
+    margin-bottom : 0px;
+
+
+}
+
+.li__menu {
+    float  : right;
+    display: block;
+    width  : 100%;
+    margin : 5px 0px;
+}
+
+.li__menu a {
+    text-decoration: none;
+    color          : black;
+}
+
+.li__menu a:hover {
+    color: #fb811e;
+}
+
+.col__right__header {
+    display: flex;
+}
+
+
+
+
+
 .carousel .main{
     max-width: 100%;
     padding-bottom: 100px;
@@ -685,22 +757,6 @@ nav{
     margin: 0 auto;
     padding-top: 60px;
 }
-.footer .logo a{
-    font-size: 32px;
-    color: #fb811e;
-    position: relative;
-    text-decoration: none;
-    position: relative;
-    transition: .5s;
-}.footer .logo i{
-    font-size: 20px;
-    position: absolute;
-    top: -5px;
-    left: 55px;
-}
-.footer .logo a:hover{
-    color: #060606;
-}
 .footer .main .row{
     display: flex;
     justify-content: center;
@@ -725,6 +781,14 @@ nav{
     line-height: 27px;
     color: #707070;
     margin: 24px 0;
+}
+.footer .main .row .col .item2 #w3:hover{
+    color: #fb811e;
+}
+.footer .main .row .col .item2 #w3{
+    color: #009f4d;
+    text-decoration: none;
+    transition: all .5s;
 }
 .footer .main .row .col .item3{
     margin-left: 40px;
@@ -803,7 +867,7 @@ nav{
     display: block;
     position: fixed;
     right: 15px;
-    bottom: 15px;
+    bottom: 50px;
     color: #fff;
     transition: all .8s;
     visibility: hidden;
@@ -828,47 +892,11 @@ nav{
         z-index: 300;
         right: 28%;
     }
-    .header .container .nav-toggler{
-        display: block;
-        text-align: left;
-        margin-left: -300px;
-        font-size: 25px;
-        color: #000;
+    .col__left__header a{
+        margin-left: -200px;
     }
-    .header .container .nav-toggler .search{
-        color: #000;
-        font-size: 20px;
-        padding: 6px 7px;
-        background-color: #fff;
-        border-radius: 30px;
-    }
-    .header .container .nav-toggler .moon{
-        color: #000;
-    }
-    .header .container{
-        margin: 0 auto;
-        padding-top: 30px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-left: 15px;
-        padding-right: 15px;
-        margin: 0;
-    }
-    .header .logo a {
-        font-size: 28px;
-        font-family: 'Volkhov';
-        color: #fb811e;
-        position: relative;
-        text-decoration: none;
-        transition: .5s;
-    }
-    .header .nav{
-        display: none;
-    }
-
-    .nav .search{
-        display: block;
+    .col__right__header {
+        margin-right: 140px;
     }
     .carousel .row .col1{
         width: 35%;
@@ -935,7 +963,10 @@ nav{
     }
     .service .container{
         width: 992px;
-        padding-left: 40px;
+        padding-left: 20px;
+    }
+    .service .container .main{
+        width: 100%;
     }
     .service .container .title{
         padding: 0 15px;
@@ -994,11 +1025,13 @@ nav{
     }
     .quality .main{
         width: 992px;
-        padding-bottom: 40px;
+        padding-bottom: 20px;
         padding-left: 20px;
+        padding-right: 10px;
     }
     .quality .main .row{
         justify-content: center;
+        width: 100%;
     }
     .quality .main .row .col2{
         width: 45%;
@@ -1031,10 +1064,12 @@ nav{
         width: 992px;
         position: relative;
         padding-left: 40px;
+        padding-right: 20px;
         padding-bottom: 40px;
     }
     .gallary .main .row{
         padding-right: 40px;
+        width: 100%;
     }
     .review{
         background-image: none;
@@ -1131,48 +1166,11 @@ nav{
         z-index: 300;
         right: 28%;
     }
-    .header .container .nav-toggler{
-        display: block;
-        text-align: left;
-        margin-left: 100px;
-        font-size: 25px;
-        color: #000;
-        margin-right: 10px;
+    .col__left__header a{
+        margin-left: -200px;
     }
-    .header .container .nav-toggler .search{
-        color: #000;
-        font-size: 20px;
-        padding: 6px 7px;
-        background-color: #fff;
-        border-radius: 30px;
-    }
-    .header .container .nav-toggler .moon{
-        color: #000;
-    }
-    .header .container{
-        margin: 0 auto;
-        padding-top: 30px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-left: 15px;
-        padding-right: 15px;
-        margin: 0;
-    }
-    .header .logo a {
-        font-size: 28px;
-        font-family: 'Volkhov';
-        color: #fb811e;
-        position: relative;
-        text-decoration: none;
-        transition: .5s;
-    }
-    .header .nav{
-        display: none;
-    }
-
-    .nav .search{
-        display: block;
+    .col__right__header {
+        margin-right: 140px;
     }
     .carousel .row .col1{
         width: 35%;
@@ -1299,10 +1297,11 @@ nav{
     .quality .main{
         width: 992px;
         padding-bottom: 40px;
-        padding-left: 20px;
+        padding-left: 10px;
     }
     .quality .main .row{
         justify-content: center;
+        width: 100%;
     }
     .quality .main .row .col2{
         width: 45%;
@@ -1334,11 +1333,13 @@ nav{
     .gallary .main{
         width: 992px;
         position: relative;
-        padding-left: 40px;
+        padding-left: 30px;
+        padding-right: 10px;
         padding-bottom: 40px;
     }
     .gallary .main .row{
         padding-right: 40px;
+        width: 100%;
     }
     .review{
         background-image: none;
@@ -1434,51 +1435,14 @@ nav{
         z-index: 300;
         right: 28%;
     }
-    .header .container .nav-toggler{
-        display: block;
-        text-align: left;
-        margin-left: 100px;
-        font-size: 25px;
-        color: #000;
-        margin-right: 15px;
+    .row__header{
+        justify-content: space-around;
     }
-    .header .container .nav-toggler .search{
-        color: #000;
-        font-size: 20px;
-        padding: 6px 7px;
-        background-color: #fff;
-        border-radius: 30px;
+    .col__left__header a{
+        margin-left: -80px;
     }
-    .header .container .nav-toggler .moon{
-        color: #000;
-    }
-    .header .container{
-        margin: 0 auto;
-        padding-top: 30px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-left: 15px;
-        padding-right: 15px;
-        margin: 0;
-    }
-    .header .logo {
-        padding-left: 15px;
-    }
-    .header .logo a {
-        font-size: 28px;
-        font-family: 'Volkhov';
-        color: #fb811e;
-        position: relative;
-        text-decoration: none;
-        transition: .5s;
-    }
-    .header .nav{
-        display: none;
-    }
-
-    .nav .search{
-        display: block;
+    .col__right__header {
+        padding-right: 160px
     }
     .carousel .row{
         display: block;
@@ -1528,13 +1492,19 @@ nav{
         background: rgb(0 0 0 / 17%);
         z-index: -1;
         top: 0;
-    }   
+    }  
+    .grow{
+        padding: 0 0px;
+    } 
     .grow .main{
         width: 768px;
-        padding: 0 30px;
         margin: 0;
     }
     .grow .main .row .col1{
+        width: 90%;
+    padding-left: 30px;
+    }
+    .grow .main .row .col1 .title{
         width: 100%;
     }
     .grow .main .row .col1 .title span{
@@ -1555,6 +1525,9 @@ nav{
     .service .container .main .row .col3{
         padding-left: 28%;
     }
+    .grow .row .main .col2 .main{
+        width: 100%;
+    }
     .grow .main .row .col2{
         width: 90%;
         padding: 30px 0;
@@ -1567,6 +1540,10 @@ nav{
     }
     .service .container{
         width: 768px;
+        margin-left: -20px;
+    }
+    .service .container .main {
+        width: 100%;
     }
     .service .container .title{
         padding: 0 15px;
@@ -1619,6 +1596,9 @@ nav{
         width: 768px;
         padding-bottom: 40px;
     }
+    .quality .main .row{
+        width: 95%;
+    }
     .quality .main .row .col1{
         width: 100%;
         padding: 0 40px;
@@ -1638,11 +1618,9 @@ nav{
     }
     .quality .main .row .col2{
         width: 100%;
-        margin-left: 40px;
-        padding: 0 30px;
     }
     .quality .main .row .col2 img{
-        width: 680px;
+        width: 630px;
     }
     .quality .main .row .col2 .text{
         text-align: right;
@@ -1667,10 +1645,9 @@ nav{
     .gallary .main{
         width: 768px;
         position: relative;
-        /* padding-top: 100px;
-        padding-left: 30px;
-        padding-right: 30px; */
         padding-bottom: 40px;
+        padding-left: 30px;
+        padding-right: 40px;
     }
     .gallary .main .row{
         grid-template-columns: repeat(2,1fr);
@@ -1707,7 +1684,7 @@ nav{
     .review .main .row .col .carousel-inner .carousel-item .carousel-caption{
         height: 500px;
         bottom: 0;
-        width: 700px;
+        width: 650px;
         z-index: 10;
         align-items: center;
         left: 40px;
@@ -1735,6 +1712,8 @@ nav{
     }
     .footer .main{
         width: 768px;
+        padding-left: 0;
+        padding-right: 20px;
     }
     .footer .main .row{
         display: block;
@@ -1745,6 +1724,9 @@ nav{
     .footer .main .row .col .item3{
         margin: 0;
     }
+    .col__left__header a {
+        margin-left: 0px;
+    }
     .backtotop{
         right: 30%;
         width: 40px;
@@ -1754,7 +1736,6 @@ nav{
 
 /* phone (xoay dọc) */
 @media screen and (max-width: 576px){
-    
     body{
         padding-right: 0;
     }
@@ -1762,45 +1743,11 @@ nav{
         left: 300px;
         z-index: 300;
     }
-    .header .container .nav-toggler{
-        display: block;
-        text-align: left;
-        margin-left: 100px;
-        font-size: 25px;
-        color: #000;
-    }
-    .header .container .nav-toggler .search{
-        color: #000;
-        font-size: 20px;
-        padding: 6px 7px;
-        background-color: #fff;
-        border-radius: 30px;
-    }
-    .header .container .nav-toggler .moon{
-        color: #000;
-    }
-    .header .container{
-        margin: 0 auto;
-        padding-top: 30px;
-        display: flex;
+    .row__header{
         justify-content: left;
-        align-items: center;
-        padding-left: 15px;
-        padding-right: 15px;
     }
-    .header .logo a {
-        font-size: 28px;
-        font-family: 'Volkhov';
-        color: #000;
-        position: relative;
-        text-decoration: none;
-        transition: .5s;
-    }
-    .header .nav{
-        display: none;
-    }
-    .nav .search{
-        display: block;
+    .col__left__header a{
+        padding-left: 20px;
     }
     .carousel .row{
         display: block;
@@ -1922,6 +1869,7 @@ nav{
         display: block;
         padding-bottom: 20px;
         padding-top: 20px;
+        padding-left: 20px;
     }
     .service .main .col{
         width: 100%;
@@ -1996,6 +1944,7 @@ nav{
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: none;
         padding: 0;
+        padding-left: 20px;
     }
     .gallary .main .row .col_title{
         width: 100%;

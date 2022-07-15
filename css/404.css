@@ -1,0 +1,278 @@
+* {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Volkhov', serif;
+}
+
+/* header */
+header {
+    display           : grid;
+    grid-template-rows: 100px;
+    background-color  : transparent;
+    position          : absolute;
+    width             : 100%;
+    z-index           : 99;
+    position          : fixed;
+}
+
+.container__header {
+    width : 1280px;
+    margin: 0 auto;
+}
+
+
+.col__left__header {
+    display: flex;
+}
+
+.col__left__header a {
+    text-decoration: none;
+    position       : relative;
+    color          : #fb811e;
+    transition     : all 0.5s;
+}
+
+.col__left__header a:hover {
+    color: black;
+}
+
+.col__left__header i {
+    position : absolute;
+    font-size: 20px;
+    left     : 70px;
+    top      : -4px;
+}
+
+.row__header {
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+    padding        : 25px 0;
+
+}
+/*search*/
+#demo-2{
+    margin: 0 25px;
+    
+}
+input[type=search]{
+    background: #fff url(https://wp.w3layouts.com/farmstead/wp-content/themes/farmstead/assets/images/search.png) no-repeat 16px center;
+    border: 1px solid #eee;
+    padding: 0 16px;
+    width: 50px;
+    height: 50px;
+    border-radius: 10em;
+    transition: all .5s;
+    cursor: pointer;
+    
+}
+#demo-2 input[type=search]:focus{
+    width: 250px;
+    padding-left: 40px;
+    color: #000;
+    background-color: #fff;
+    cursor: auto;
+    padding-right: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.205);
+    outline: none;
+}
+
+/* nav-bar */
+.header {
+    transition-property       : background-color, color;
+    transition-duration       : 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+.navbar-dark {
+    background-color: white;
+    color           :white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.050);
+}
+
+/* ---------------------- Nav Light-Dark --------------------- */
+.bi {
+    font-size: 35px;
+    color    : black;
+    cursor   : pointer;
+}
+
+/* bar */
+nav {
+    font-family: "raleway", sans-serif;
+    text-align : center;
+}
+
+#menuToggle {
+    cursor          : pointer;
+    border          : none;
+    background-color: transparent;
+    color           : #ffffff;
+    margin          : 5px 0px;
+}
+
+.menuLine {
+    font-size: 40px;
+    color    : black;
+
+}
+
+.ul__menu {
+    overflow      : hidden;
+    display       : flex;
+    flex-direction: column;
+    padding-left  : 0px;
+    margin-bottom : 0px;
+
+
+}
+
+.li__menu {
+    float  : right;
+    display: block;
+    width  : 100%;
+    margin : 5px 0px;
+}
+
+.li__menu a {
+    text-decoration: none;
+    color          : black;
+}
+
+.li__menu a:hover {
+    color: #fb811e;
+}
+
+.col__right__header {
+    display: flex;
+}
+/* .carousel */
+section.carousel{
+    background-image: url(../img/error2.jpg);
+    width: 100%;
+    height: 1280px;
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text__carousel{
+    padding-top: 250px;
+}
+.text__carousel h1{
+    font-size: 250px;
+    font-weight: 600;
+    color: #009F4D;
+}
+.text__carousel .p__carousel{
+font-size: 32px;
+}
+.form__carousel{
+    position: relative;
+display: flex;
+width: 50%;
+}
+.text__carousel input{
+    width: 600px;
+    height: 70px;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #F4F4F4;
+    border-color: #F4F4F4;
+    border: none;
+outline: none;
+  
+}
+.carousel .form__carousel button{
+    position: absolute;
+    border: none;
+    background:none;
+padding: 20px 18px;
+    font-size: 22px;
+
+ right: 8%;
+  color: #009F4D;
+}
+.back__carousel__click{
+    padding-top: 100px;
+}
+.back__carousel{
+    text-decoration: none;
+ color: black;
+ font-size: 22px;
+ font-weight: bold;
+ transition: all .5s;
+}
+.back__carousel:hover{
+    color: green;
+}
+
+/* ---------------------- ServicesFooter---------------------- */
+footer .container .row .col-4 h3{
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #060606;
+}
+footer .container .row .col-4 p{
+    font-size: 17px;
+    line-height: 24px;
+    color: #707070;
+}
+footer .container .row .col-4 form input{
+    background: #f4f4f4;
+    padding: 12px 20px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    width: 80%;
+    color: #707070;
+    border: 1px solid #eee;
+    border-radius: 30px 0px 0px 30px;
+line-height: 1.5;
+}
+footer .container .row .col-4 form button{
+    background: #009f4d;
+    font-size: 16px;
+    padding: 12px 20px;
+    width: 20%;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 0px 30px 30px 0;
+}
+footer .container .row .col-4 ul{
+    display: flex;
+flex-direction: row;
+
+padding-left: 0;
+}
+footer .container .row .col-4 ul li{
+    display: inline-block;
+    margin-right: 5px;
+    list-style-type: none;
+}
+footer .container .row .col-4 ul li a{
+    color: #009f4d;
+    width: 35px;
+    height: 35px;
+    background: rgb(10 191 83 / 8%);
+    display: inline-block;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
+    transition: all 0.5s;
+}
+footer .container .row .col-4 ul li a:hover{
+    color: #fb811e;
+    background: rgb(255 201 69 / 19%);
+    box-shadow: 0px 4px 7px 0px rgb(10 10 10 / 24%);
+}
