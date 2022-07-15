@@ -71,12 +71,6 @@ header {
     position          : fixed;
 }
 
-.container__header {
-    width : 1280px;
-    margin: 0 auto;
-}
-
-
 .col__left__header {
     display: flex;
 }
@@ -109,7 +103,7 @@ header {
 
 /*search*/
 #demo-2 {
-    margin: 0 25px;
+    margin: 0 18px;
 
 }
 
@@ -160,6 +154,7 @@ input[type=search] {
 nav {
     font-family: "raleway", sans-serif;
     text-align : center;
+    position: relative;
 }
 
 #menuToggle {
@@ -167,7 +162,7 @@ nav {
     border          : none;
     background-color: transparent;
     color           : #ffffff;
-    margin          : 5px 0px;
+    margin          : 5px 19px;
 }
 
 .menuLine {
@@ -177,20 +172,28 @@ nav {
 }
 
 .ul__menu {
-    overflow      : hidden;
-    display       : flex;
-    flex-direction: column;
-    padding-left  : 0px;
-    margin-bottom : 0px;
-
-
+    overflow        : hidden;
+    display         : flex;
+    flex-direction  : column;
+    padding-left    : 0px;
+    margin-bottom   : 0px;
+    background-color: rgb(250, 250, 250);
+    position        : absolute;
+    margin-top      : 8px;
+    border-radius   : 10px;
+    font-weight     : 600;
+    font-size       : 18px;
+    box-shadow      : 0 20px 62px rgb(4 20 69 / 10%);
+    right           : 26%;
+    top             : 55px;
+    width           : 280px;
 }
 
 .li__menu {
     float  : right;
     display: block;
     width  : 100%;
-    margin : 5px 0px;
+    margin : 8px 0px;
 }
 
 .li__menu a {

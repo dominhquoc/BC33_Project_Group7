@@ -58,7 +58,7 @@ header {
 
 /*search*/
 #demo-2{
-    margin: 0 25px;
+    margin: 0 18px;
     
 }
 input[type=search]{
@@ -107,6 +107,7 @@ input[type=search]{
 nav {
     font-family: "raleway", sans-serif;
     text-align : center;
+    position: relative;
 }
 
 #menuToggle {
@@ -114,7 +115,7 @@ nav {
     border          : none;
     background-color: transparent;
     color           : #ffffff;
-    margin          : 5px 0px;
+    margin          : 5px 19px;
 }
 
 .menuLine {
@@ -124,20 +125,28 @@ nav {
 }
 
 .ul__menu {
-    overflow      : hidden;
-    display       : flex;
-    flex-direction: column;
-    padding-left  : 0px;
-    margin-bottom : 0px;
-
-
+    overflow        : hidden;
+    display         : flex;
+    flex-direction  : column;
+    padding-left    : 0px;
+    margin-bottom   : 0px;
+    background-color: rgb(250, 250, 250);
+    position        : absolute;
+    margin-top      : 8px;
+    border-radius   : 10px;
+    font-weight     : 600;
+    font-size       : 18px;
+    box-shadow      : 0 20px 62px rgb(4 20 69 / 10%);
+    right           : 26%;
+    top             : 55px;
+    width           : 280px;
 }
 
 .li__menu {
     float  : right;
     display: block;
     width  : 100%;
-    margin : 5px 0px;
+    margin : 8px 0px;
 }
 
 .li__menu a {
@@ -157,6 +166,7 @@ nav {
 
 .row__carousel {
     display: flex;
+    
 }
 
 .text {
@@ -166,27 +176,27 @@ nav {
     margin-top : -5em;
 }
 
-.row__carousel .col-5 .h1__carousel {
+.row__carousel .farm__carousel .h1__carousel {
     font-size  : 160px;
     font-weight: 600;
     color      : #F4F4F4;
     padding    : 350px 0 0 140px;
 }
 
-.row__carousel .col-5 .h2__carousel {
+.row__carousel .farm__carousel .h2__carousel {
     font-size     : 70px;
     font-weight   : bold;
     padding-bottom: 25px;
 }
 
-.row__carousel .col-5 .p__carousel {
+.row__carousel .farm__carousel .p__carousel {
     font-size     : 26px;
     color         : #70707D;
     font-weight   : 200;
     padding-bottom: 50px;
 }
 
-.row__carousel .col-5 button {
+.row__carousel .farm__carousel button {
     padding         : 20px 35px;
     border-radius   : 50px;
     background-color: #FB811E;
@@ -198,17 +208,17 @@ nav {
     transition      : all .5s;
 }
 
-.row__carousel .col-5 button:hover {
+.row__carousel .farm__carousel button:hover {
     color           : #ffffff;
     background-color: #019F4D;
     border-color    : #019F4D;
 }
 
-.col-7 .carousel-inner {
+.caro__carousel.carousel-inner {
     border-radius: 0 0 0 30px;
 }
 
-.row__carousel .col-7 .carousel-inner .carousel-item img {
+.row__carousel .caro__carousel .carousel-inner .carousel-item img {
     background-repeat  : no-repeat;
     background-position: 100%;
     background-size    : cover;
@@ -316,4 +326,251 @@ section.what{
     font-size: 18px;
     font-weight: 100;
     color: #70707D;
+}
+
+@media screen and (max-width: 770px) {
+    .col__left__header i {
+        position : absolute;
+        left     : 48px;
+        top      : -2px;
+        font-size: 18px;
+    }
+
+    #demo-2 {
+        margin: 0 8px;
+    }
+
+    .Feature .container .Feature__Row h5 {
+        font-size: 18px;
+
+    }
+
+    .Feature .container .Feature__Row h3 {
+        font-size: 20px;
+
+
+    }
+
+    .Feature .container .Feature__Row p {
+        font-size: 14px;
+
+    }
+
+    .Feature .container .Feature__row__mini .fa-solid {
+        font-size: 24px;
+
+    }
+
+
+    .Feature .container .Feature__row__mini h4 {
+        font-size: 20px;
+
+    }
+
+    .why__feature {
+        margin-top: 0 !important;
+    }
+}
+
+@media screen and (max-width: 602px) {
+
+    .col__left__header i {
+        position : absolute;
+        left     : 44px;
+        top      : -2px;
+        font-size: 16px;
+    }
+
+    #demo-2 {
+        margin: 0 8px;
+    }
+
+    .Theme .container .Text__Theme .btn {
+        padding  : 12px 12px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 416px) {
+    .col__left__header a {
+        font-size: 20px;
+    }
+
+    .col__left__header i {
+        position : absolute;
+        left     : 29px;
+        top      : -3px;
+        font-size: 12px;
+    }
+
+    .inner_banner .w31-breadcrumb .container h4 {
+        font-size: 0.8rem;
+    }
+
+    ul.breadcrumbs-custom-path {
+
+        font-size: 11px;
+    }
+
+    input[type=search] {
+        background   : #fff url(https://wp.w3layouts.com/farmstead/wp-content/themes/farmstead/assets/images/search.png) no-repeat 6px center;
+        border       : 1px solid #eee;
+        padding      : 0 12px;
+        width        : 30px;
+        height       : 30px;
+        border-radius: 10em;
+
+    }
+
+    #menuToggle {
+        margin: 10px 6px;
+    }
+
+    .menuLine {
+        font-size: 30px;
+    }
+
+    .bi {
+        font-size : 30px;
+        margin-top: 3px;
+    }
+
+    #demo-2 {
+        margin    : 0 5px;
+        margin-top: 7px;
+    }
+
+    #demo-2 input[type=search]:focus {
+        width: 90px;
+
+    }
+
+    .ul__menu {
+        font-size: 18px;
+        width    : 180px;
+    }
+
+    .Feature .container .Feature__row__mini .fa-solid {
+        font-size: 20px;
+    }
+
+    .Feature .container .Feature__row__mini h4 {
+        font-size: 18px;
+    }
+
+    .Feature .container .Feature__Row h3 {
+        font-size: 28px;
+    }
+
+    .Theme .container .Text__Theme h3 {
+        font-size: 22px;
+    }
+
+    .Theme .container .Text__Theme .btn {
+
+        padding: 10px 6px;
+
+        font-size: 14px;
+
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+
+    .col__left__header a {
+        font-size: 20px;
+    }
+
+    .col__left__header i {
+        position : absolute;
+        left     : 28px;
+        top      : -3px;
+        font-size: 12px;
+    }
+
+    .inner_banner .w31-breadcrumb .container h4 {
+        font-size: 0.8rem;
+    }
+
+    ul.breadcrumbs-custom-path {
+
+        font-size: 11px;
+    }
+
+    input[type=search] {
+        background   : #fff url(https://wp.w3layouts.com/farmstead/wp-content/themes/farmstead/assets/images/search.png) no-repeat 6px center;
+        border       : 1px solid #eee;
+        padding      : 0 12px;
+        width        : 30px;
+        height       : 30px;
+        border-radius: 10em;
+
+    }
+
+    #menuToggle {
+        margin: 10px 6px;
+    }
+
+    .menuLine {
+        font-size: 30px;
+    }
+
+    .bi {
+        font-size : 30px;
+        margin-top: 3px;
+    }
+
+    #demo-2 {
+        margin    : 0 5px;
+        margin-top: 7px;
+    }
+
+    #demo-2 input[type=search]:focus {
+        width: 90px;
+
+    }
+
+    .ul__menu {
+        font-size: 18px;
+        width    : 180px;
+    }
+
+    .Feature .container .Feature__row__mini .fa-solid {
+        font-size: 20px;
+    }
+
+    .Feature .container .Feature__row__mini h4 {
+        font-size: 18px;
+    }
+
+    .Feature .container .Feature__Row h3 {
+        font-size: 28px;
+    }
+
+    .Theme .container .Text__Theme h3 {
+        font-size: 22px;
+    }
+
+    .Theme .container .Text__Theme .btn {
+
+        padding: 10px 6px;
+
+        font-size: 14px;
+
+    }
+
+    .row__carousel .farm__carousel .h1__carousel {
+        font-size: 50px;
+        font-weight: 600;
+        color: #F4F4F4;
+        padding: 132px 0 0 140px;
+    }
+    
+
+.row__carousel .farm__carousel .h2__carousel {
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 25px;
+}
 }
