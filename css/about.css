@@ -561,6 +561,9 @@ ul.breadcrumbs-custom-path a:hover {
     background-color: #fff;
     border-radius   : 100%;
 }
+.provide main .col .img a:hover{
+    padding         : 25px 27px;
+}
 
 .review {
     background-image: url(https://wp.w3layouts.com/farmstead/wp-content/themes/farmstead/assets/images/bg1.jpg);
