@@ -95,14 +95,17 @@ input[type=search] {
 
 .navbar-dark {
     background-color: white;
-    color           : black;
+   
     border-bottom   : 1px solid rgba(0, 0, 0, 0.050);
+}
+.navbar-darker{
+    color: black !important;
 }
 
 /* ---------------------- Nav Light-Dark --------------------- */
 .bi {
     font-size: 35px;
-    color    : black;
+    color    : white;
     cursor   : pointer;
 }
 
@@ -123,7 +126,7 @@ nav {
 
 .menuLine {
     font-size: 40px;
-    color    : black;
+    color    : white;
 
 
 }
@@ -217,8 +220,6 @@ ul.breadcrumbs-custom-path a:hover {
 .row {
     display     : flex;
     flex-wrap   : wrap;
-    margin-right: -15px;
-    margin-left : -15px;
 }
 
 .card-body {
@@ -339,6 +340,7 @@ section.Theme {
     background-size  : cover;
     position         : relative;
     z-index          : 1;
+    align-items: center;
 
 }
 

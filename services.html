@@ -27,7 +27,9 @@
 
 <body>
     <!---------------------- HEADER ---------------------->
-    <header class="header">
+
+
+   <header class="header">
         <div class="container">
             <div class="nav__bar__header">
                 <div class="row__header">
@@ -45,12 +47,12 @@
                         <!-- light-dark -->
                         <i class="bi bi-brightness-high-fill" id="toggleDark"></i>
                         <!-- bar -->
-                        <!--Simple Hamburger Menu-->
+                        <!-- Simple Hamburger Menu -->
                         <nav>
                             <button id="menuToggle" type="button">
                                 <i class="fa-solid fa-bars menuLine"></i>
                             </button>
-                            <!--end menuToggle-->
+                            <!-- end menuToggle -->
                             <ul class="ul__menu">
                                 <li class="li__menu"><a href="index.html">HOME</a></li>
                                 <li class="li__menu"><a href="about.html">ABOUT</a></li>
@@ -66,9 +68,11 @@
                 </div>
             </div>
         </div>
-    </header>
+    </header>  
     <!---------------------- END HEADER ---------------------->
     <!---------------------- BANNER ---------------------->
+
+
     <div class="inner_banner">
         <section class="w31-breadcrumb py-5">
             <div class="container py-lg-5 py-sm-4 mt-5 ServicesPageBanner">
@@ -83,7 +87,11 @@
     <!---------------------- END BANNER ---------------------->
 
 
+
+
     <!---------------------- ServicesPage Services ---------------------->
+
+
     <section class="Services__Page py-5">
         <div class="container pt-md-5 pt-4">
             <div class="row justify-content-center">
@@ -170,6 +178,7 @@
     </section>
     <!---------------------- END ServicesPage Services ---------------------->
     <!---------------------- ServicesFeature ---------------------->
+
     <section class="Feature pb-5">
         <div class="container">
             <div class="Feature__Row row">
@@ -204,10 +213,12 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> 
     <!---------------------- END ServicesFeature ---------------------->
     <!---------------------- ServicesNumber ---------------------->
-    <section class="Number py-5">
+
+
+<section class="Number py-5">
         <div class="container">
             <div class="Row__Number row justify-content-center">
                 <div class="col-6 col-md-3">
@@ -240,12 +251,13 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> 
     <!---------------------- End ServicesNumber ---------------------->
     <!---------------------- ServicesTheme ---------------------->
-    <section class="Theme">
+
+ <section class="Theme d-grid">
         <div class="container py-5">
-            <div class="row py-5"></div>
+            
             <div class="Text__Theme col-7">
                 <h5>Agriculture Theme</h5>
                 <h3>You can request for call back, we will call !</h3>
@@ -253,10 +265,11 @@
             </div>
 
         </div>
-    </section>
+    </section>  
     <!---------------------- END ServicesTheme ---------------------->
     <!---------------------- ServicesFooter ---------------------->
-    <footer class="footer my-5">
+ 
+ <footer class="footer my-5">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-4 find__footer">
@@ -303,7 +316,7 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> 
 
 
 
@@ -358,20 +371,31 @@
             }
         });
 
-        //bar scroll
-        document.onreadystatechange = function () {
+       //bar scroll
+       document.onreadystatechange = function () {
             let lastScrollPosition = 0;
             const navbar = document.querySelector('.header');
+            var bi = document.querySelector('.bi');
+            var menu = document.querySelector('.menuLine');
+            var logo = document.querySelector('.col__left__header a');
             window.addEventListener('scroll', function (e) {
                 lastScrollPosition = window.scrollY;
 
-                if (lastScrollPosition > 100)
+                if (lastScrollPosition > 100){
                     navbar.classList.add('navbar-dark');
-
-                else
+                    bi.classList.add('navbar-darker');
+                    menu.classList.add('navbar-darker');
+                    logo.classList.add('navbar-darker')
+                }
+                else{
                     navbar.classList.remove('navbar-dark');
+                    bi.classList.remove('navbar-darker');
+                    menu.classList.remove('navbar-darker');
+                    logo.classList.remove('navbar-darker')
+                }
             });
         }
+
 
 
     </script>
