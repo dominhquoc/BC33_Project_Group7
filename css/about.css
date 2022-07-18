@@ -948,12 +948,19 @@ ul.breadcrumbs-custom-path a:hover {
     .sidebar{
         right: 19%;
         z-index: 300;
+        width: 75px;
+    }
+    .sidebar .sidebar_icon1 {
+        padding: 10px 0;
+    }
+    .sidebar .sidebar_icon {
+        margin: 10px 0;
     }
     .row__header{
         justify-content: space-between;
     }
     .col__left__header a{
-        padding-left: 20px;
+        padding-left: 110px;
     }
     .col__right__header {
         margin-left: 0;
@@ -1093,12 +1100,19 @@ ul.breadcrumbs-custom-path a:hover {
     .sidebar{
         right: 20%;
         z-index: 300;
+        width: 75px;
+    }
+    .sidebar .sidebar_icon1 {
+        padding: 10px 0;
+    }
+    .sidebar .sidebar_icon {
+        margin: 10px 0;
     }
     .row__header{
         justify-content: space-between;
     }
     .col__left__header a{
-        padding-left: 20px;
+        padding-left: 110px;
     }
     .col__right__header {
         margin-left: 0;
@@ -1241,8 +1255,15 @@ ul.breadcrumbs-custom-path a:hover {
 /* phone (xoay dọc) */
 @media screen and (max-width: 576px){
     .sidebar{
-        left: 300px;
+        left: 315px;
         z-index: 300;
+        width: 75px;
+    }
+    .sidebar .sidebar_icon1 {
+        padding: 10px 0;
+    }
+    .sidebar .sidebar_icon {
+        margin: 10px 0;
     }
     .row__header{
         justify-content: left;

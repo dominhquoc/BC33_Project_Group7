@@ -928,7 +928,7 @@ pre .s{
     .sidebar{
         left: none;
         z-index: 300;
-        right: 17%;
+        right: 15%;
     }
     .row__header{
         justify-content: space-around;
@@ -1007,7 +1007,14 @@ pre .s{
     .sidebar{
         left: none;
         z-index: 300;
-        right: 18%;
+        right: 15%;
+        width: 80px;
+    }
+    .sidebar .sidebar_icon1 {
+        padding: 10px 0;
+    }
+    .sidebar .sidebar_icon {
+        margin: 10px 0;
     }
     .row__header{
         justify-content: space-around;
@@ -1086,6 +1093,13 @@ pre .s{
     .sidebar{
         z-index: 300;
         right: 15%;
+        width: 75px;
+    }
+    .sidebar .sidebar_icon1 {
+        padding: 10px 0;
+    }
+    .sidebar .sidebar_icon {
+        margin: 10px 0;
     }
     .row__header{
         justify-content: space-around;
@@ -1141,8 +1155,15 @@ pre .s{
         padding-right: 0;
     }
     .sidebar{
-        left: 300px;
+        left: 303px;
         z-index: 300;
+        width: 75px;
+    }
+    .sidebar .sidebar_icon1 {
+        padding: 10px 0;
+    }
+    .sidebar .sidebar_icon {
+        margin: 10px 0;
     }
     .row__header{
         justify-content: left;

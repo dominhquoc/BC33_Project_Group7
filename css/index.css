@@ -1165,6 +1165,13 @@ nav {
         left: none;
         z-index: 300;
         right: 28%;
+        width: 80px;
+    }
+    .sidebar .sidebar_icon1 {
+        padding: 10px 0;
+    }
+    .sidebar .sidebar_icon {
+        margin: 10px 0;
     }
     .col__left__header a{
         margin-left: -200px;
@@ -1434,6 +1441,13 @@ nav {
     .sidebar{
         z-index: 300;
         right: 28%;
+        width: 80px;
+    }
+    .sidebar .sidebar_icon1 {
+        padding: 10px 0;
+    }
+    .sidebar .sidebar_icon {
+        margin: 10px 0;
     }
     .row__header{
         justify-content: space-around;
@@ -1740,8 +1754,15 @@ nav {
         padding-right: 0;
     }
     .sidebar{
-        left: 300px;
+        left: 312px;
         z-index: 300;
+        width: 78px;
+    }
+    .sidebar .sidebar_icon1 {
+        padding: 10px 0;
+    }
+    .sidebar .sidebar_icon {
+        margin: 10px 0;
     }
     .row__header{
         justify-content: left;

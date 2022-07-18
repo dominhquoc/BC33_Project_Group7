@@ -505,6 +505,13 @@ ul.breadcrumbs-custom-path a:hover {
     .sidebar{
         right: 10px;
         z-index: 300;
+        width: 75px;
+    }
+    .sidebar .sidebar_icon1 {
+        padding: 10px 0;
+    }
+    .sidebar .sidebar_icon {
+        margin: 10px 0;
     }
     .row__header{
         justify-content: space-between;
@@ -564,8 +571,15 @@ ul.breadcrumbs-custom-path a:hover {
 /* phone (xoay ngang) */
 @media screen and (max-width: 768px){
     .sidebar{
-        right: 12px;
+        right: 10px;
         z-index: 300;
+        width: 75px;
+    }
+    .sidebar .sidebar_icon1 {
+        padding: 10px 0;
+    }
+    .sidebar .sidebar_icon {
+        margin: 10px 0;
     }
     .row__header{
         justify-content: space-between;
@@ -632,8 +646,15 @@ ul.breadcrumbs-custom-path a:hover {
 /* phone (xoay dọc) */
 @media screen and (max-width: 576px){
     .sidebar{
-        left: 300px;
+        left: 315px;
         z-index: 300;
+        width: 75px;
+    }
+    .sidebar .sidebar_icon1 {
+        padding: 10px 0;
+    }
+    .sidebar .sidebar_icon {
+        margin: 10px 0;
     }
     .row__header{
         justify-content: left;
