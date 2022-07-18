@@ -29,7 +29,7 @@
 <body>
     <!-- header -->
     <header class="header">
-        <div class="container__header">
+        <div class="container">
             <div class="nav__bar__header">
                 <div class="row__header">
                     <div class="col__left__header">
@@ -71,7 +71,7 @@
     <!-- carousel -->
     <section class="carousel">
         <div class="row__carousel">
-            <div class="col-5">
+            <div class="col-12 col-md-5 farm__carousel">
                 <h1 class="h1__carousel">Farm</h1>
                 <div class="text">
                     <h2 class="h2__carousel">Welcome to Farmstead <br>
@@ -82,7 +82,7 @@
                 </div>
 
             </div>
-            <div class="col-7">
+            <div class="col-12 col-md-7 caro__carousel">
                 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
@@ -94,7 +94,7 @@
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="./img/b1.jpg" class="d-block w-100" alt="">
+                            <img src="./img/b1.jpg">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>First slide label</h5>
                                 <p>Some representative placeholder content for the first slide.</p>
@@ -133,7 +133,7 @@
     <section class="welcome padding__y">
         <div class="container__header">
             <div class="row__welcome d-flex">
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                     <h2 class="h2__welcome">Welcome</h2>
                     <h1 class="h1__welcome">We are agriculture Farm</h1>
                     <p class="p__welcome">Tincidunt ultrices nunc vel pellentesque. Class aptent taciti sociosqu ad
@@ -145,7 +145,7 @@
                     </p>
                     <button>LEARN MORE</button>
                 </div>
-                <div class="col-6 img__welcome">
+                <div class="col-12 col-md-6 img__welcome">
                     <img src="./img/about.jpg" class="image__welcome">
                 </div>
             </div>
@@ -155,13 +155,13 @@
     <section class="what padding__y">
         <div class="container__header">
             <div class="row__what d-flex">
-                <div class="col-6 what__text1">
+                <div class="col-12 col-md-6 what__text1">
                     <h2>What we do</h2>
                     <h1 class="h1__what">Why Choose Our Fresh Organic Foods
                     </h1>
                 </div>
 
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                     <p class="p__what"> Hell ipsum dolor sit amet consectetur adipisicing elit. Magnam iste odit
                         tenetur, odio ex sapiente et.
                     </p>
@@ -169,7 +169,7 @@
                 <div class="what__text__hiden">Services</div>
             </div>
             <div class="row__what__card d-flex">
-                <div class="col-4 what__card">
+                <div class="col-12 col-md-4 what__card">
                     <div class="card">
                         <img src="./img/service1.jpg" class="card-img-top">
                         <div class="card-body">
@@ -181,7 +181,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4 what__card">
+                <div class="col-12 col-md-4 what__card">
                     <div class="card">
                         <img src="./img/service2.jpg" class="card-img-top">
                         <div class="card-body">
@@ -193,7 +193,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4 what__card">
+                <div class="col-12 col-md-4 what__card">
                     <div class="card">
                         <img src="./img/service3.jpg" class="card-img-top">
                         <div class="card-body">
@@ -253,7 +253,7 @@
                 menu.animate({ height: '0px' });
                 menuOpened = false;
             } else {
-                menu.animate({ height: '260px' });
+                menu.animate({ height: '350px' });
                 menuOpened = true;
             }
         });

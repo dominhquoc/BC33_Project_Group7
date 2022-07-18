@@ -24,10 +24,7 @@ header {
     position          : fixed;
 }
 
-.container__header {
-    width : 1280px;
-    margin: 0 auto;
-}
+
 
 
 .col__left__header {
@@ -59,31 +56,34 @@ header {
     padding        : 25px 0;
 
 }
+
 /*search*/
-#demo-2{
-    margin: 0 25px;
-    
+#demo-2 {
+    margin: 0 18px;
+
 }
-input[type=search]{
-    background: #fff url(https://wp.w3layouts.com/farmstead/wp-content/themes/farmstead/assets/images/search.png) no-repeat 16px center;
-    border: 1px solid #eee;
-    padding: 0 16px;
-    width: 50px;
-    height: 50px;
+
+input[type=search] {
+    background   : #fff url(https://wp.w3layouts.com/farmstead/wp-content/themes/farmstead/assets/images/search.png) no-repeat 16px center;
+    border       : 1px solid #eee;
+    padding      : 0 16px;
+    width        : 50px;
+    height       : 50px;
     border-radius: 10em;
-    transition: all .5s;
-    cursor: pointer;
-    
+    transition   : all .5s;
+    cursor       : pointer;
+
 }
-#demo-2 input[type=search]:focus{
-    width: 250px;
-    padding-left: 40px;
-    color: #000;
+
+#demo-2 input[type=search]:focus {
+    width           : 250px;
+    padding-left    : 40px;
+    color           : #000;
     background-color: #fff;
-    cursor: auto;
-    padding-right: 15px;
-    border: 1px solid rgba(0, 0, 0, 0.205);
-    outline: none;
+    cursor          : auto;
+    padding-right   : 15px;
+    border          : 1px solid rgba(0, 0, 0, 0.205);
+    outline         : none;
 }
 
 /* nav-bar */
@@ -95,8 +95,8 @@ input[type=search]{
 
 .navbar-dark {
     background-color: white;
-    color           :black;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.050);
+    color           : black;
+    border-bottom   : 1px solid rgba(0, 0, 0, 0.050);
 }
 
 /* ---------------------- Nav Light-Dark --------------------- */
@@ -110,6 +110,7 @@ input[type=search]{
 nav {
     font-family: "raleway", sans-serif;
     text-align : center;
+    position   : relative;
 }
 
 #menuToggle {
@@ -117,34 +118,45 @@ nav {
     border          : none;
     background-color: transparent;
     color           : #ffffff;
-    margin          : 5px 0px;
+    margin          : 5px 19px;
 }
 
 .menuLine {
     font-size: 40px;
     color    : black;
+
+
 }
 
 .ul__menu {
-    overflow      : hidden;
-    display       : flex;
-    flex-direction: column;
-    padding-left  : 0px;
-    margin-bottom : 0px;
-    background-color: #f4f4f4;
-
+    overflow        : hidden;
+    display         : flex;
+    flex-direction  : column;
+    padding-left    : 0px;
+    margin-bottom   : 0px;
+    background-color: rgb(250, 250, 250);
+    position        : absolute;
+    margin-top      : 8px;
+    border-radius   : 10px;
+    font-weight     : 600;
+    font-size       : 18px;
+    box-shadow      : 0 20px 62px rgb(4 20 69 / 10%);
+    right           : 26%;
+    top             : 55px;
+    width           : 280px;
 }
 
 .li__menu {
     float  : right;
     display: block;
     width  : 100%;
-    margin : 5px 0px;
+    margin : 8px 0px;
 }
 
 .li__menu a {
     text-decoration: none;
     color          : black;
+
 }
 
 .li__menu a:hover {
@@ -154,252 +166,521 @@ nav {
 .col__right__header {
     display: flex;
 }
+
 /* ---------------------- BANNER ---------------------- */
-.inner_banner{
-    background-image: url(https://wp.w3layouts.com/farmstead/wp-content/themes/farmstead/assets/images/inner-banner.png);
-    background-repeat: no-repeat;
+.inner_banner {
+    background-image   : url(https://wp.w3layouts.com/farmstead/wp-content/themes/farmstead/assets/images/inner-banner.png);
+    background-repeat  : no-repeat;
     background-position: bottom;
-    background-size: cover;
-    position: relative;
-    z-index: 0;
+    background-size    : cover;
+    position           : relative;
+    z-index            : 0;
 }
-.w31-breadcrumb{
+
+.w31-breadcrumb {
     display: block;
-    margin: 0 auto;
+    margin : 0 auto;
     z-index: 9;
 }
-.inner_banner .w31-breadcrumb .container h4{
-    font-size: 1.5rem;
+
+.inner_banner .w31-breadcrumb .container h4 {
+    font-size  : 1.5rem;
     font-family: 'Volkhov', serif;
-    color: black;
+    color      : black;
     font-weight: 700;
 }
-ul.breadcrumbs-custom-path{
-    line-height: 1.5;
-    color: #707070;
-    position: relative;
-    display: inline;
-    padding-left: 0;
-    font-size: 15px;
+
+ul.breadcrumbs-custom-path {
+    line-height   : 1.5;
+    color         : #707070;
+    position      : relative;
+    display       : inline;
+    padding-left  : 0;
+    font-size     : 15px;
     text-transform: capitalize;
     vertical-align: middle;
 }
-ul.breadcrumbs-custom-path a{
-    display: inline-block;
-    font-weight: bold;
-    background: transparent;
-    color: #707070;
+
+ul.breadcrumbs-custom-path a {
+    display        : inline-block;
+    font-weight    : bold;
+    background     : transparent;
+    color          : #707070;
     text-decoration: none;
 }
-ul.breadcrumbs-custom-path a:hover{
+
+ul.breadcrumbs-custom-path a:hover {
     color: #fb811e;
 }
+
 /* ---------------------- ServicesPage SERVICES ---------------------- */
-.row{
-    display: flex;
-    flex-wrap: wrap;
+.row {
+    display     : flex;
+    flex-wrap   : wrap;
     margin-right: -15px;
-    margin-left: -15px;
+    margin-left : -15px;
 }
 
-.card-body{
-    padding: 50px 35px;
-    position: relative;
-    z-index: 1;
+.card-body {
+    padding         : 50px 35px;
+    position        : relative;
+    z-index         : 1;
     background-color: #fff;
-    box-shadow: 0 1rem 3rem rgb(0 0 0 / 5%);
-transition: all .8s;
+    box-shadow      : 0 1rem 3rem rgb(0 0 0 / 5%);
+    transition      : all .8s;
 }
-.card-body:hover{
+
+.card-body:hover {
     box-shadow: 0 1rem 3rem rgb(0 0 0 / 20%);
 
 }
-.Services__Page .card-body i{
+
+.Services__Page .card-body i {
     font-size: 45px;
-    color: #fb811e;   
+    color    : #fb811e;
 }
-.Services__Page .card-body h4 a.title__head{
-margin-top: 25px;
-display: block;
-color: #060606;
-font-weight: 600;
-line-height: 1.2;
-margin-bottom: 15px;
-font-size: 22px;
-letter-spacing: 0;
-text-decoration: none;
+
+.Services__Page .card-body h4 a.title__head {
+    margin-top     : 25px;
+    display        : block;
+    color          : #060606;
+    font-weight    : 600;
+    line-height    : 1.2;
+    margin-bottom  : 15px;
+    font-size      : 22px;
+    letter-spacing : 0;
+    text-decoration: none;
 }
-.Services__Page .card-body p.card-text{
+
+.Services__Page .card-body p.card-text {
     margin-bottom: 1.5em;
-    font-size: 17px;
-    line-height: 27px;
-    color: #707070;
+    font-size    : 17px;
+    line-height  : 27px;
+    color        : #707070;
 }
+
 /* ---------------------- ServicesFeature ---------------------- */
-.Feature .container .Feature__Row img{
-    width: 100%;
+.Feature .container .Feature__Row img {
+    width        : 100%;
     border-radius: 40px;
 }
-.Feature .container .Feature__Row h5{
+
+.Feature .container .Feature__Row h5 {
     font-size: 22px;
-    color: #fb811e
+    color    : #fb811e
 }
-.Feature .container .Feature__Row h3{
-    font-size: 40px;
+
+.Feature .container .Feature__Row h3 {
+    font-size  : 40px;
     line-height: 50px;
     font-weight: 600;
-    color: #060606;
+    color      : #060606;
     font-family: 'Volkhov', serif;
 }
-.Feature .container .Feature__Row p{
-    font-size: 17px;
+
+.Feature .container .Feature__Row p {
+    font-size  : 17px;
     line-height: 27px;
-    color: #707070;
+    color      : #707070;
 }
-.Feature .container .Feature__row__mini .fa-solid{
-font-size: 30px;
-color: #fb811e;
-display: inline-block;
-margin-top: 5px;
+
+.Feature .container .Feature__row__mini .fa-solid {
+    font-size : 30px;
+    color     : #fb811e;
+    display   : inline-block;
+    margin-top: 5px;
 }
-.Feature .container .Feature__row__mini h4{
-    font-size: 24px;
+
+.Feature .container .Feature__row__mini h4 {
+    font-size    : 24px;
     margin-bottom: 10px;
-    font-weight: 600;
-    font-family: 'Volkhov', serif;
-   
-}
-.Feature .container .Feature__row__mini .detail{
-    padding-left: 10px;
-}
-/* ---------------------- ServicesNumber ---------------------- */
-.Number{
-    text-align: center;
-}
-.Number .container .Row__Number .counter_container i.fa-solid{
-    color: #009f4d;
-    width: 80px;
-    height: 80px;
-    line-height: 80px;
-    font-size: 32px;
-    border-radius: 50%;
-    background: rgb(0 159 77 / 4%);
-}
-.Number .container .Row__Number .counter_container .timer{
-    font-size: 3em;
-    font-weight: 600;
-    color: #060606;
-}
-.Number .container .Row__Number .counter_container p{
-    text-transform: uppercase;
-    font-size: 17px;
-    color: #060606;
-}
-/* ---------------------- ServicesTheme ---------------------- */
-section.Theme{
-    background-image: url(https://wp.w3layouts.com/farmstead/wp-content/themes/farmstead/assets/images/bg2.jpg);
-    width: 100%;
-    min-height: 40vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    z-index: 1;
- 
-}
-section.Theme::before{
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgb(8 8 8 / 44%);
-    z-index: -1;
+    font-weight  : 600;
+    font-family  : 'Volkhov', serif;
 
 }
-.Theme .container .Text__Theme h5{
-    font-size: 22px;
-    color: #fff;
-    font-size: 22px;
+
+.Feature .container .Feature__row__mini .detail {
+    padding-left: 10px;
+}
+
+/* ---------------------- ServicesNumber ---------------------- */
+.Number {
+    text-align: center;
+}
+
+.Number .container .Row__Number .counter_container i.fa-solid {
+    color        : #009f4d;
+    width        : 80px;
+    height       : 80px;
+    line-height  : 80px;
+    font-size    : 32px;
+    border-radius: 50%;
+    background   : rgb(0 159 77 / 4%);
+}
+
+.Number .container .Row__Number .counter_container .timer {
+    font-size  : 3em;
+    font-weight: 600;
+    color      : #060606;
+}
+
+.Number .container .Row__Number .counter_container p {
+    text-transform: uppercase;
+    font-size     : 17px;
+    color         : #060606;
+}
+
+/* ---------------------- ServicesTheme ---------------------- */
+section.Theme {
+    background-image : url(https://wp.w3layouts.com/farmstead/wp-content/themes/farmstead/assets/images/bg2.jpg);
+    width            : 100%;
+    min-height       : 40vh;
+    background-repeat: no-repeat;
+    background-size  : cover;
+    position         : relative;
+    z-index          : 1;
+
+}
+
+section.Theme::before {
+    content   : '';
+    position  : absolute;
+    width     : 100%;
+    height    : 100%;
+    background: rgb(8 8 8 / 44%);
+    z-index   : -1;
+
+}
+
+.Theme .container .Text__Theme h5 {
+    font-size    : 22px;
+    color        : #fff;
+    font-size    : 22px;
     margin-bottom: 10px;
 }
-.Theme .container .Text__Theme h3{
-    font-size: 40px;
+
+.Theme .container .Text__Theme h3 {
+    font-size  : 40px;
     font-weight: 600;
     line-height: 50px;
-    color: #fff;
+    color      : #fff;
 }
-.Theme .container .Text__Theme .btn{
-    font-size: 16px;
-    padding: 12px 30px;
+
+.Theme .container .Text__Theme .btn {
+    font-size       : 16px;
+    padding         : 12px 30px;
     background-color: #fb811e;
-    border-radius: 50px;
-    font-size: 24px;
-font-weight: 600;
-color: #fff;
-text-transform: uppercase;
-border: none;
-transition: all .7s;
+    border-radius   : 50px;
+    font-size       : 24px;
+    font-weight     : 600;
+    color           : #fff;
+    text-transform  : uppercase;
+    border          : none;
+    transition      : all .7s;
 }
-.Theme .container .Text__Theme .btn:hover{
+
+.Theme .container .Text__Theme .btn:hover {
     background-color: #009f4d;
 }
+
 /* ---------------------- ServicesFooter---------------------- */
-footer .container .row .col-4 h3{
-    font-size: 20px;
-    line-height: 25px;
-    margin-bottom: 30px;
-    font-weight: 600;
+footer .container .row .find__footer h3 {
+    font-size     : 20px;
+    line-height   : 25px;
+    margin-bottom : 30px;
+    font-weight   : 600;
     text-transform: uppercase;
-    color: #060606;
+    color         : #060606;
 }
-footer .container .row .col-4 p{
-    font-size: 17px;
+
+footer .container .row .find__footer p {
+    font-size  : 17px;
     line-height: 24px;
-    color: #707070;
+    color      : #707070;
 }
-footer .container .row .col-4 form input{
-    background: #f4f4f4;
-    padding: 12px 20px;
-    border: none;
-    font-size: 16px;
-    outline: none;
-    width: 80%;
-    color: #707070;
-    border: 1px solid #eee;
+
+footer .container .row .find__footer form input {
+    background   : #f4f4f4;
+    padding      : 12px 20px;
+    border       : none;
+    font-size    : 16px;
+    outline      : none;
+    width        : 80%;
+    color        : #707070;
+    border       : 1px solid #eee;
     border-radius: 30px 0px 0px 30px;
-line-height: 1.5;
+    line-height  : 1.5;
 }
-footer .container .row .col-4 form button{
-    background: #009f4d;
-    font-size: 16px;
-    padding: 12px 20px;
-    width: 20%;
-    border: none;
-    outline: none;
-    color: #fff;
+
+footer .container .row .find__footer form button {
+    background   : #009f4d;
+    font-size    : 16px;
+    padding      : 12px 20px;
+    width        : 20%;
+    border       : none;
+    outline      : none;
+    color        : #fff;
     border-radius: 0px 30px 30px 0;
 }
-footer .container .row .col-4 ul {
+
+footer .container .row .find__footer ul {
     padding-left: 0;
 }
-footer .container .row .col-4 ul li{
-    display: inline-block;
-    margin-right: 5px;
+
+footer .container .row .find__footer ul li {
+    display        : inline-block;
+    margin-right   : 5px;
     list-style-type: none;
 }
-footer .container .row .col-4 ul li a{
-    color: #009f4d;
-    width: 35px;
-    height: 35px;
-    background: rgb(10 191 83 / 8%);
-    display: inline-block;
+
+footer .container .row .find__footer ul li a {
+    color        : #009f4d;
+    width        : 35px;
+    height       : 35px;
+    background   : rgb(10 191 83 / 8%);
+    display      : inline-block;
     border-radius: 50%;
-    text-align: center;
-    line-height: 35px;
-    transition: all 0.5s;
+    text-align   : center;
+    line-height  : 35px;
+    transition   : all 0.5s;
 }
-footer .container .row .col-4 ul li a:hover{
-    color: #fb811e;
+
+footer .container .row .find__footer ul li a:hover {
+    color     : #fb811e;
     background: rgb(255 201 69 / 19%);
     box-shadow: 0px 4px 7px 0px rgb(10 10 10 / 24%);
 }
 
+
+@media screen and (max-width: 770px) {
+    .col__left__header i {
+        position : absolute;
+        left     : 48px;
+        top      : -2px;
+        font-size: 18px;
+    }
+
+    #demo-2 {
+        margin: 0 8px;
+    }
+
+    .Feature .container .Feature__Row h5 {
+        font-size: 18px;
+
+    }
+
+    .Feature .container .Feature__Row h3 {
+        font-size: 20px;
+
+
+    }
+
+    .Feature .container .Feature__Row p {
+        font-size: 14px;
+
+    }
+
+    .Feature .container .Feature__row__mini .fa-solid {
+        font-size: 24px;
+
+    }
+
+
+    .Feature .container .Feature__row__mini h4 {
+        font-size: 20px;
+
+    }
+
+    .why__feature {
+        margin-top: 0 !important;
+    }
+}
+
+@media screen and (max-width: 602px) {
+
+    .col__left__header i {
+        position : absolute;
+        left     : 44px;
+        top      : -2px;
+        font-size: 16px;
+    }
+
+    #demo-2 {
+        margin: 0 8px;
+    }
+
+    .Theme .container .Text__Theme .btn {
+        padding  : 12px 12px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 416px) {
+    .col__left__header a {
+        font-size: 20px;
+    }
+
+    .col__left__header i {
+        position : absolute;
+        left     : 29px;
+        top      : -3px;
+        font-size: 12px;
+    }
+
+    .inner_banner .w31-breadcrumb .container h4 {
+        font-size: 0.8rem;
+    }
+
+    ul.breadcrumbs-custom-path {
+
+        font-size: 11px;
+    }
+
+    input[type=search] {
+        background   : #fff url(https://wp.w3layouts.com/farmstead/wp-content/themes/farmstead/assets/images/search.png) no-repeat 9px center;
+        border       : 1px solid #eee;
+        padding      : 16px 16px;
+        width        : 38px;
+        height       : 38px;
+        border-radius: 10em;
+
+    }
+
+    #menuToggle {
+        margin: 10px 6px;
+    }
+
+    .menuLine {
+        font-size: 30px;
+    }
+
+    .bi {
+        font-size : 30px;
+        margin-top: 3px;
+    }
+
+    #demo-2 {
+        margin    : 0 5px;
+        margin-top: 4px;
+    }
+
+    #demo-2 input[type=search]:focus {
+        width: 90px;
+        padding-left    : 30px;
+    }
+
+    .ul__menu {
+        font-size: 18px;
+        width    : 180px;
+    }
+
+    .Feature .container .Feature__row__mini .fa-solid {
+        font-size: 20px;
+    }
+
+    .Feature .container .Feature__row__mini h4 {
+        font-size: 18px;
+    }
+
+    .Feature .container .Feature__Row h3 {
+        font-size: 28px;
+    }
+
+    .Theme .container .Text__Theme h3 {
+        font-size: 22px;
+    }
+
+    .Theme .container .Text__Theme .btn {
+
+        padding: 10px 6px;
+
+        font-size: 14px;
+
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+
+    .col__left__header a {
+        font-size: 20px;
+    }
+
+    .col__left__header i {
+        position : absolute;
+        left     : 28px;
+        top      : -3px;
+        font-size: 12px;
+    }
+
+    .inner_banner .w31-breadcrumb .container h4 {
+        font-size: 0.8rem;
+    }
+
+    ul.breadcrumbs-custom-path {
+
+        font-size: 11px;
+    }
+
+    input[type=search] {
+        background   : #fff url(https://wp.w3layouts.com/farmstead/wp-content/themes/farmstead/assets/images/search.png) no-repeat 9px center;
+        border       : 1px solid #eee;
+        padding      : 0px 16px;
+        width        : 38px;
+        height       : 38px;
+        border-radius: 10em;
+
+    }
+
+    #menuToggle {
+        margin: 10px 6px;
+    }
+
+    .menuLine {
+        font-size: 30px;
+    }
+
+    .bi {
+        font-size : 30px;
+        margin-top: 3px;
+    }
+
+    #demo-2 {
+        margin    : 0 5px;
+        margin-top: 4px;
+    }
+
+    #demo-2 input[type=search]:focus {
+        width: 90px;
+        padding-left    : 30px;
+    }
+
+    .ul__menu {
+        font-size: 18px;
+        width    : 180px;
+    }
+
+    .Feature .container .Feature__row__mini .fa-solid {
+        font-size: 20px;
+    }
+
+    .Feature .container .Feature__row__mini h4 {
+        font-size: 18px;
+    }
+
+    .Feature .container .Feature__Row h3 {
+        font-size: 28px;
+    }
+
+    .Theme .container .Text__Theme h3 {
+        font-size: 22px;
+    }
+
+    .Theme .container .Text__Theme .btn {
+
+        padding: 10px 6px;
+
+        font-size: 14px;
+
+    }
+}
