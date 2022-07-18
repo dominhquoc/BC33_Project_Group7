@@ -88,15 +88,19 @@ input[type=search]{
 
 .navbar-dark {
     background-color: white;
-    color           :white;
+    
     border-bottom: 1px solid rgba(0, 0, 0, 0.050);
+}
+.navbar-darker{
+    color: black !important;
 }
 
 /* ---------------------- Nav Light-Dark --------------------- */
 .bi {
     font-size: 35px;
-    color    : black;
+    color    : white;
     cursor   : pointer;
+    transition: all .2s;
 }
 
 /* bar */
@@ -116,7 +120,8 @@ nav {
 
 .menuLine {
     font-size: 40px;
-    color    : black;
+    color    : white;
+    transition: all .2s;
 
 }
 
@@ -160,21 +165,37 @@ nav {
 /* .carousel */
 section.carousel{
     background-image: url(../img/error2.jpg);
-    width: 100%;
-    height: 1280px;
-    background-position: 100%;
+   
+  
+    background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.text__carousel{
-    padding-top: 250px;
+.grid__carousel__404{
+    display: grid;
+    align-items: center;
+    min-height: 100vh;
 }
-.text__carousel h1{
-    font-size: 250px;
-    font-weight: 600;
-    color: #009F4D;
+
+.st1 {
+    font-size: 83px;
+    font-family: 'Volkhov', serif;
 }
+
+
+
+svg {
+    width: 500px;
+    text-align: center;
+    fill: #009f4d;
+}
+svg {
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+
 .text__carousel .p__carousel{
 font-size: 32px;
 }
