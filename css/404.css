@@ -349,9 +349,14 @@ footer .container .row .find__footer ul li a:hover {
     .why__feature {
         margin-top: 0 !important;
     }
+    .form__carousel {
+        position: relative;
+        display : flex;
+        width   : 70%;
+    }
 }
 
-@media screen and (max-width: 602px) {
+@media screen and (max-width: 600px) {
 
     .col__left__header i {
         position : absolute;
@@ -391,7 +396,7 @@ footer .container .row .find__footer ul li a:hover {
     .form__carousel {
         position: relative;
         display : flex;
-        width   : 100%;
+        width   : 50%;
     }
     
     .text__carousel input {
@@ -413,7 +418,7 @@ footer .container .row .find__footer ul li a:hover {
         background: none;
         padding   : 20px 18px;
         font-size : 22px;
-        right     : 5%;
+        right     : 0%;
     
         color: #009F4D;
     }
@@ -500,6 +505,11 @@ footer .container .row .find__footer ul li a:hover {
 
         font-size: 14px;
 
+    }
+    .form__carousel {
+        position: relative;
+        display : flex;
+        width   : 65%;
     }
 
 }
@@ -611,7 +621,7 @@ footer .container .row .find__footer ul li a:hover {
     .form__carousel {
         position: relative;
         display : flex;
-        width   : 100%;
+        width   : 85%;
     }
     
     .text__carousel input {
@@ -633,7 +643,7 @@ footer .container .row .find__footer ul li a:hover {
         background: none;
         padding   : 20px 18px;
         font-size : 22px;
-        right     : 5%;
+        right     : 0%;
     
         color: #009F4D;
     }
