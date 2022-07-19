@@ -1086,9 +1086,7 @@ nav {
     color  : #fff;
 }
 
-@media screen and (max-width: 914px){
 
-}
 @media screen and (max-width: 698px){
     .sidebar{
         right: 0px;
