@@ -897,19 +897,31 @@ nav {
     .sidebar{
         left: none;
         z-index: 300;
-        right: 28%;
+        right: 1%;
+    }
+    .header{
+        width: 1200px;
+    }
+    .header .container{
+        width: 100%;
     }
     .col__left__header a{
         margin-left: -200px;
     }
     .col__right__header {
-        margin-right: 140px;
+        margin-right: -20%;
+    }
+    .carousel{
+        width: 1200px;
     }
     .carousel .row .col1{
         width: 35%;
     }
     .carousel .row .col2{
         width: 65%;
+    }
+    .carousel .row .col2 .carousel{
+        width: 790px;
     }
     .carousel .row .col1 .title h2{
         font-size: 30px;
@@ -930,16 +942,17 @@ nav {
         font-size: 12px;
     }
     .grow{
-        width: 992px;
+        width: 1200px;
         padding: 0 30px;
     }.grow .main{
         padding-bottom: 0;
+        width: 100%;
     }
     .grow .main .row .col1{
         width: 35%;
     }
     .grow .main .row .col1 .title{
-        width: 90%;
+        width: 100%;
     }
     .grow .main .row .col1 .title span{
         font-size: 18px;
@@ -955,7 +968,7 @@ nav {
     }
     .grow .main .row .col2{
         width: 65%;
-        padding: 30px 0;
+        padding: 30px 150px;
     }
     .grow .main .row .col2 .main{
         width: 100%;
@@ -968,8 +981,11 @@ nav {
         width: 420px;
         margin-left: 20px;
     }
+    .service{
+        width: 1200px;
+    }
     .service .container{
-        width: 992px;
+        width: 100%;
         padding-left: 20px;
     }
     .service .container .main{
@@ -1001,7 +1017,7 @@ nav {
         padding: 0;
     }
     .service .title .row .col2 p{
-        font-size: 15px;
+        font-size: 18px;
         font-weight: 300;
         margin: 0;
         width: 80%;
@@ -1012,6 +1028,7 @@ nav {
         line-height: 60px;
         left: 25%;
         top: 42%;
+        width: 900px;
     }
     .service .main .row{
         padding-bottom: 20px;
@@ -1022,7 +1039,7 @@ nav {
         padding-bottom: 40px;
     }
     .service .main .row .col .item{
-        width: 250px;
+        width: 100%;
     }
     .service .main .item .item_text h1{
         font-size: 16px;
@@ -1030,8 +1047,11 @@ nav {
     .service .main .item .item_text p{
         font-size: 14px;
     }
+    .quality{
+        width: 1200px;
+    }
     .quality .main{
-        width: 992px;
+        width: 100%;
         padding-bottom: 20px;
         padding-left: 20px;
         padding-right: 10px;
@@ -1039,20 +1059,23 @@ nav {
     .quality .main .row{
         justify-content: center;
         width: 100%;
+        margin: 0;
     }
     .quality .main .row .col2{
         width: 45%;
         margin-left: 40px;
-        padding: 0 30px;
     }
     .quality .main .row .col2 .text{
         left: -50px;
     }
+    .homeservice{
+        width: 1200px;
+    }
     .homeservice .main{
-        width: 992px;
+        width: 100%;
     }
     .homeservice .main .row{
-        padding-right: 20px;
+       padding-left: 20px;
     }
     .homeservice .main .row .col{
         width: 33%;
@@ -1067,22 +1090,26 @@ nav {
     .homeservice .main .row .col .item .text p {
         font-size: 15px;
     }
+    .gallary{
+        width: 1200px;
+    }
     .gallary .main{
-        width: 992px;
+        width: 1200px;
         position: relative;
         padding-left: 40px;
         padding-right: 20px;
         padding-bottom: 40px;
     }
     .gallary .main .row{
-        padding-right: 40px;
+        padding-right: 0px;
         width: 100%;
     }
     .review{
         background-image: none;
+        width: 1200px;
     }
     .review .main{
-        width: 992px;
+        width: 100%;
     }
     .review .main .row .col .carousel-inner .carousel-item #img{
         visibility: visible;
@@ -1121,8 +1148,11 @@ nav {
         right: 0;
         z-index: 1;
     }
+    .footer{
+        width: 1200px;
+    }
     .footer .main{
-        width: 992px;
+        width: 100%;
         padding-left: 20px;
     }
     .footer .main .row .col .item3 p{
@@ -1137,6 +1167,9 @@ nav {
     }
     .footer .main .row .col .item1 p{
         font-size: 14px;
+    }
+    .footer .main .row .col .item2 .col__left__header a{
+        margin-left: 0;
     }
     .footer .main .row .col .item2 p{
         font-size: 14px;
@@ -1157,7 +1190,7 @@ nav {
         font-size: 18px;
     }
     .backtotop{
-        right: 29%;
+        right: 3%;
         width: 40px;
         height: 40px;
     }
@@ -1171,7 +1204,7 @@ nav {
     .sidebar{
         left: none;
         z-index: 300;
-        right: 28%;
+        right: 2%;
         width: 80px;
     }
     .sidebar .sidebar_icon1 {
@@ -1180,11 +1213,26 @@ nav {
     .sidebar .sidebar_icon {
         margin: 10px 0;
     }
+    .header{
+        width: 992px;
+    }
+    .header .container{
+        width: 100%;
+    }
     .col__left__header a{
         margin-left: -200px;
     }
     .col__right__header {
-        margin-right: 140px;
+        margin-right: -20%;
+    }
+    .carousel{
+        width: 992px;
+    }
+    .carousel .main{
+        width: 100%;
+    }
+    .carousel .main .row .carousel{
+        width: 100%;
     }
     .carousel .row .col1{
         width: 35%;
@@ -1215,12 +1263,13 @@ nav {
         padding: 0 30px;
     }.grow .main{
         padding-bottom: 0;
+        width: 100%;
     }
     .grow .main .row .col1{
         width: 35%;
     }
     .grow .main .row .col1 .title{
-        width: 90%;
+        width: 100%;
     }
     .grow .main .row .col1 .title span{
         font-size: 18px;
@@ -1236,7 +1285,7 @@ nav {
     }
     .grow .main .row .col2{
         width: 65%;
-        padding: 30px 0;
+        padding: 30px 80px;
     }
     .grow .main .row .col2 .main{
         width: 100%;
@@ -1248,6 +1297,9 @@ nav {
     .grow .col2 .row{
         width: 420px;
         margin-left: 20px;
+    }
+    .service{
+        width: 992px;
     }
     .service .container{
         width: 992px;
@@ -1290,6 +1342,7 @@ nav {
         line-height: 60px;
         left: 25%;
         top: 42%;
+        width: 600px;
     }
     .service .main .row{
         padding-bottom: 20px;
@@ -1308,6 +1361,9 @@ nav {
     .service .main .item .item_text p{
         font-size: 14px;
     }
+    .quality{
+        width: 992px;
+    }
     .quality .main{
         width: 992px;
         padding-bottom: 40px;
@@ -1316,6 +1372,7 @@ nav {
     .quality .main .row{
         justify-content: center;
         width: 100%;
+        margin: 0;
     }
     .quality .main .row .col2{
         width: 45%;
@@ -1325,11 +1382,17 @@ nav {
     .quality .main .row .col2 .text{
         left: -50px;
     }
+    .homeservice{
+        width: 992px;
+    }
     .homeservice .main{
         width: 992px;
     }
     .homeservice .main .row{
         padding-right: 20px;
+        width: 100%;
+        margin: 0;
+        padding-left: 30px;
     }
     .homeservice .main .row .col{
         width: 33%;
@@ -1344,6 +1407,9 @@ nav {
     .homeservice .main .row .col .item .text p {
         font-size: 15px;
     }
+    .gallary{
+        width: 992px;
+    }
     .gallary .main{
         width: 992px;
         position: relative;
@@ -1352,13 +1418,17 @@ nav {
         padding-bottom: 40px;
     }
     .gallary .main .row{
-        padding-right: 40px;
-        width: 100%;
+        width: 992px;
+        padding-right: 20px;
     }
     .review{
         background-image: none;
+        width: 992px;
     }
     .review .main{
+        width: 992px;
+    }
+    .review .main .row{
         width: 992px;
     }
     .review .main .row .col .carousel-inner .carousel-item #img{
@@ -1398,12 +1468,21 @@ nav {
         right: 0;
         z-index: 1;
     }
+    .footer{
+        width: 992px;
+    }
     .footer .main{
         width: 992px;
         padding-left: 20px;
     }
+    .footer .main .row{
+        width: 100%;
+    }
     .footer .main .row .col .item3 p{
         width: 300px;
+    }
+    .footer .main .row .col .item2 .col__left__header a{
+        margin-left: 0;
     }
     .footer .main .row .col .item3 form{
         margin-right: 20px;
@@ -1434,7 +1513,7 @@ nav {
         font-size: 18px;
     }
     .backtotop{
-        right: 29%;
+        right: 1%;
         width: 40px;
         height: 40px;
     }
@@ -1442,12 +1521,9 @@ nav {
 
 /* phone (xoay ngang) */
 @media screen and (max-width: 768px){
-    body{
-        padding-right: 50px;
-    }
     .sidebar{
         z-index: 300;
-        right: 28%;
+        right: 3%;
         width: 80px;
     }
     .sidebar .sidebar_icon1 {
@@ -1456,15 +1532,26 @@ nav {
     .sidebar .sidebar_icon {
         margin: 10px 0;
     }
+    .header{
+        width: 768px;
+    }
+    .header .container{
+        width: 100%;
+    }
     .row__header{
         justify-content: space-around;
     }
     .col__left__header a{
-        margin-left: -80px;
+        margin-left: 0;
     }
     .col__right__header {
-        padding-right: 160px
+        margin: 0;
+        padding-left: 150px;
     }
+    .carousel{
+        width: 768px;
+    }
+
     .carousel .row{
         display: block;
     }
@@ -1481,7 +1568,7 @@ nav {
     .carousel .row .col1 .title1{
         width: 350px;
         top: 25%;
-        margin-left: -55px;
+        margin-left: -35px;
         margin-right: 50px;
         background-color: #fff;
         height: 370px;
@@ -1516,17 +1603,22 @@ nav {
     }  
     .grow{
         padding: 0 0px;
+        width: 768px;
     } 
     .grow .main{
         width: 768px;
         margin: 0;
     }
+    .grow .main .row{
+        max-width: 100%;
+        padding: 0 20px;
+    }
     .grow .main .row .col1{
-        width: 90%;
-    padding-left: 30px;
+        width: 100%;
+        padding-left: 30px;
     }
     .grow .main .row .col1 .title{
-        width: 100%;
+        width: 750px;
     }
     .grow .main .row .col1 .title span{
         font-size: 18px;
@@ -1550,7 +1642,7 @@ nav {
         width: 100%;
     }
     .grow .main .row .col2{
-        width: 90%;
+        width: 100%;
         padding: 30px 0;
     }
     .grow .col2 .row .item{
@@ -1559,9 +1651,13 @@ nav {
     .grow .col2 .row{
         width: 100%;
     }
-    .service .container{
+    .service{
         width: 768px;
-        margin-left: -20px;
+    }
+    .service .container{
+        width: 100%;
+        padding: 0;
+        margin-left: 40px;
     }
     .service .container .main {
         width: 100%;
@@ -1599,6 +1695,7 @@ nav {
         font-size: 80px;
         left: 20%;
         top: 42%;
+        width: 500px;
     }
     .service .main .row{
         padding-bottom: 20px;
@@ -1613,12 +1710,16 @@ nav {
     .service .main .item .item_text p{
         font-size: 14px;
     }
+    .quality{
+        width: 768px;
+    }
     .quality .main{
         width: 768px;
         padding-bottom: 40px;
     }
     .quality .main .row{
-        width: 95%;
+        width: 100%;
+        margin: 0;
     }
     .quality .main .row .col1{
         width: 100%;
@@ -1641,7 +1742,7 @@ nav {
         width: 100%;
     }
     .quality .main .row .col2 img{
-        width: 630px;
+        width: 100%;
     }
     .quality .main .row .col2 .text{
         text-align: right;
@@ -1655,24 +1756,36 @@ nav {
             font-size: 15px;
             padding-right: 22px;
     }
+    .homeservice{
+        width: 768px;
+    }
     .homeservice .main{
         width: 768px;
         padding-left: 20px;
+    }
+    .homeservice .main .row{
+        width: 100%;
+        padding-left: 40px;
     }
     .homeservice .main .row .col{
         width: 50%;
         padding: 0 20px;
     }
+    .gallary{
+        width: 768px;
+    }
     .gallary .main{
         width: 768px;
         position: relative;
         padding-bottom: 40px;
-        padding-left: 30px;
+        padding-left: 20px;
         padding-right: 40px;
     }
     .gallary .main .row{
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: none;
+        width: 768px;
+        padding-right: 10px;
     }
     .gallary .main .row .col .item .text{
         left: 10px;
@@ -1691,8 +1804,12 @@ nav {
     }
     .review{
         background-image: none;
+        width: 768px;
     }
     .review .main{
+        width: 768px;
+    }
+    .review .main .row{
         width: 768px;
     }
     .review .main .row .col .carousel-inner .carousel-item #img{
@@ -1731,16 +1848,17 @@ nav {
         right: 0;
         z-index: 1;
     }
+    .footer{
+        width: 768px;
+    }
     .footer .main{
         width: 768px;
-        padding-left: 0;
+        padding-left: 30px;
         padding-right: 20px;
     }
     .footer .main .row{
         display: block;
-    }
-    .footer .main .row .col{
-        padding: 0 30px;
+        width: 768px;
     }
     .footer .main .row .col .item3{
         margin: 0;
@@ -1749,14 +1867,14 @@ nav {
         margin-left: 0px;
     }
     .backtotop{
-        right: 30%;
+        right: 3%;
         width: 40px;
         height: 40px;
     }
 }
 
 /* phone (xoay dọc) */
-@media screen and (max-width: 576px){
+@media screen and (max-width: 390px){
     body{
         padding-right: 0;
     }
@@ -1771,11 +1889,28 @@ nav {
     .sidebar .sidebar_icon {
         margin: 10px 0;
     }
+    .header{
+        width: 390px;
+    }
+    .header .container{
+        width: 390px;
+    }
+    .col__right__header{
+        width: 220px;
+        padding: 0;
+    }
     .row__header{
         justify-content: left;
     }
     .col__left__header a{
         padding-left: 20px;
+    }
+    .carousel{
+        width: 390px;
+    }
+    .carousel .main {
+        max-width: 390px;
+        padding-bottom: 100px;
     }
     .carousel .row{
         display: block;
@@ -1826,12 +1961,22 @@ nav {
         z-index: -1;
         top: 0;
     }   
+    .grow{
+        width: 390px;
+    }
     .grow .main{
         width: 390px;
         padding: 0;
         margin: 0;
     }
+    .grow .main .row{
+        width: 390px;
+        margin: 0;
+    }
     .grow .main .row .col1{
+        width: 100%;
+    }
+    .grow .main .row .col1 .title{
         width: 100%;
     }
     .grow .main .row .col1 .title span{
@@ -1851,15 +1996,19 @@ nav {
         padding: 30px 0;
     }
     .grow .col2 .row .item{
-        width: 90%;
+        width: 100%;
     }
     .grow .col2 .row{
         width: 100%;
         display: block;
         margin: 0;
     }
+    .service{
+        width: 390px;
+    }
     .service .container{
         width: 390px;
+        margin-left: 20px;
     }
     .service .container .title{
         padding: 0 15px;
@@ -1890,14 +2039,16 @@ nav {
     }
     .service .title .row h3{
         font-size: 50px;
-        left: 20%;
+        left: 13%;
         top: 42%;
+        width: 230px;
     }
     .service .main .row{
         display: block;
         padding-bottom: 20px;
         padding-top: 20px;
         padding-left: 20px;
+        width: 100%;
     }
     .service .main .col{
         width: 100%;
@@ -1908,6 +2059,9 @@ nav {
     }
     .service .container .main .row .col3{
         padding-left: 0;
+    }
+    .quality{
+        width: 390px;
     }
     .quality .main{
         width: 390px;
@@ -1950,7 +2104,14 @@ nav {
             font-size: 15px;
             padding-right: 22px;
     }
+    .homeservice{
+        width: 390px;
+    }
     .homeservice .main{
+        width: 390px;
+        padding: 0;
+    }
+    .homeservice .main .row{
         width: 390px;
     }
     .homeservice .main .row .col{
@@ -1960,12 +2121,15 @@ nav {
     .homeservice .main .row .col .item .text {
         width: 80%;
     }
+    .gallary{
+        width: 390px;
+    }
     .gallary .main{
         width: 390px;
         position: relative;
         padding-top: 200px;
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
         padding-bottom: 40px;
     }
     .gallary .main .row{
@@ -1973,6 +2137,7 @@ nav {
         grid-template-rows: none;
         padding: 0;
         padding-left: 20px;
+        width: 100%;
     }
     .gallary .main .row .col_title{
         width: 100%;
@@ -1999,8 +2164,15 @@ nav {
     }
     .review{
         background-image: none;
+        width: 390px;
     }
     .review .main{
+        width: 390px;
+    }
+    .review .main .row{
+        width: 390px;
+    }
+    .review .main .row .col .carousel{
         width: 390px;
     }
     .review .main .row .col .carousel-inner .carousel-item #img{
@@ -2044,11 +2216,15 @@ nav {
         right: 0;
         z-index: 1;
     }
+    .footer{
+        width: 390px;
+    }
     .footer .main{
         width: 390px;
     }
     .footer .main .row{
         display: block;
+        width: 390px;
     }
     .footer .main .row .col{
         padding: 0 30px;
@@ -2057,10 +2233,9 @@ nav {
         margin: 0;
     }
     .backtotop{
-        right: 60px;
+        right: 35px;
         width: 40px;
         height: 40px;
-        left: 35%;
     }
 }
 

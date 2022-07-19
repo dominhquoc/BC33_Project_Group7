@@ -934,7 +934,13 @@ pre .s{
     .sidebar{
         left: none;
         z-index: 300;
-        right: 15%;
+        right: 4%;
+    }
+    .header{
+        width: 1200px;
+    }
+    .header .container{
+        width: 1200px;
     }
     .row__header{
         justify-content: space-around;
@@ -943,11 +949,11 @@ pre .s{
         margin-left: -150px;
     }
     .col__right__header {
-        margin-right: 50px;
+        margin-right: -15%;
     }
     .components .container{
         width: 1200px;
-        padding-right: 165px;
+        padding-right: 0;
     }
     .components .title{
         margin: 0;
@@ -999,7 +1005,7 @@ pre .s{
         margin-left: 0;
     }
     .backtotop{
-        right: 18%;
+        right: 5%;
         width: 40px;
         height: 40px;
     }
@@ -1013,7 +1019,7 @@ pre .s{
     .sidebar{
         left: none;
         z-index: 300;
-        right: 15%;
+        right: 4%;
         width: 80px;
     }
     .sidebar .sidebar_icon1 {
@@ -1022,6 +1028,12 @@ pre .s{
     .sidebar .sidebar_icon {
         margin: 10px 0;
     }
+    .header{
+        width: 992px;
+    }
+    .header .container{
+        width: 992px;
+    }
     .row__header{
         justify-content: space-around;
     }
@@ -1029,11 +1041,11 @@ pre .s{
         margin-left: -200px;
     }
     .col__right__header {
-        margin-right: 180px;
+        margin-right: -20%;
     }
     .components .container{
         width: 992px;
-        padding-right: 140px;
+        padding-right: 20px;   
     }
     .components .title{
         margin: 0;
@@ -1085,7 +1097,7 @@ pre .s{
         margin-left: 0;
     }
     .backtotop{
-        right: 17%;
+        right: 5%;
         width: 40px;
         height: 40px;
     }
@@ -1098,7 +1110,7 @@ pre .s{
     }
     .sidebar{
         z-index: 300;
-        right: 15%;
+        right: 5%;
         width: 75px;
     }
     .sidebar .sidebar_icon1 {
@@ -1107,18 +1119,27 @@ pre .s{
     .sidebar .sidebar_icon {
         margin: 10px 0;
     }
+    .header{
+        width: 768px;
+    }
+    .header .container{
+        width: 768px;
+    }
     .row__header{
-        justify-content: space-around;
+        justify-content: space-between;
     }
     .col__left__header a {
         margin-left: -80px;
     }
     .col__right__header {
-        padding-right: 250px
+        margin-right: 0;
+    }
+    figure{
+        width: 768px;
     }
     .components .container{
         width: 768px;
-        padding: 0 20px;
+        margin: 0;
     }
     .components .title{
         margin: 0;
@@ -1130,6 +1151,9 @@ pre .s{
     }
     .components .btn{
         margin-bottom: 98px;
+    }
+    .badge pre{
+        margin-right: 20px;
     }
     .footer .main{
         width: 768px;
@@ -1149,19 +1173,19 @@ pre .s{
         margin-left: 0px;
     }
     .backtotop{
-        right: 16%;
+        right: 5%;
         width: 40px;
         height: 40px;
     }
 }
 
 /* phone (xoay dọc) */
-@media screen and (max-width: 576px){
+@media screen and (max-width: 390px){
     body{
         padding-right: 0;
     }
     .sidebar{
-        left: 303px;
+        left: 315px;
         z-index: 300;
         width: 75px;
     }
@@ -1171,11 +1195,30 @@ pre .s{
     .sidebar .sidebar_icon {
         margin: 10px 0;
     }
+    .header{
+        width: 390px;
+    }
+    .header .container{
+        width: 390px;
+    }
+    .col__right__header{
+        padding-right: 0;
+        margin-right: 0;
+    }
     .row__header{
         justify-content: left;
     }
     .col__left__header a{
         padding-left: 20px;
+    }
+    figure{
+        width: 390px;
+    }
+    code{
+        width: 390px;
+    }
+    code.language-html{
+        width: 390px;
     }
     .components .container{
         width: 390px;
@@ -1194,6 +1237,7 @@ pre .s{
     }
     .footer .main .row{
         display: block;
+        width: 100%;
     }
     .footer .main .row .col{
         padding: 0 30px;
@@ -1205,7 +1249,6 @@ pre .s{
         right: 60px;
         width: 40px;
         height: 40px;
-        left: 39%;
     }
 }
 

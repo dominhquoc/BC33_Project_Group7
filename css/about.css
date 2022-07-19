@@ -71,6 +71,12 @@ header {
     position          : fixed;
 }
 
+.container__header {
+    width : 1280px;
+    margin: 0 auto;
+}
+
+
 .col__left__header {
     display: flex;
 }
@@ -103,7 +109,7 @@ header {
 
 /*search*/
 #demo-2 {
-    margin: 0 18px;
+    margin: 0 25px;
 
 }
 
@@ -154,7 +160,6 @@ input[type=search] {
 nav {
     font-family: "raleway", sans-serif;
     text-align : center;
-    position: relative;
 }
 
 #menuToggle {
@@ -162,7 +167,7 @@ nav {
     border          : none;
     background-color: transparent;
     color           : #ffffff;
-    margin          : 5px 19px;
+    margin          : 5px 0px;
 }
 
 .menuLine {
@@ -172,28 +177,20 @@ nav {
 }
 
 .ul__menu {
-    overflow        : hidden;
-    display         : flex;
-    flex-direction  : column;
-    padding-left    : 0px;
-    margin-bottom   : 0px;
-    background-color: rgb(250, 250, 250);
-    position        : absolute;
-    margin-top      : 8px;
-    border-radius   : 10px;
-    font-weight     : 600;
-    font-size       : 18px;
-    box-shadow      : 0 20px 62px rgb(4 20 69 / 10%);
-    right           : 26%;
-    top             : 55px;
-    width           : 280px;
+    overflow      : hidden;
+    display       : flex;
+    flex-direction: column;
+    padding-left  : 0px;
+    margin-bottom : 0px;
+
+
 }
 
 .li__menu {
     float  : right;
     display: block;
     width  : 100%;
-    margin : 8px 0px;
+    margin : 5px 0px;
 }
 
 .li__menu a {
@@ -797,22 +794,25 @@ ul.breadcrumbs-custom-path a:hover {
 
 /* Destop */
 @media screen and (max-width: 1200px){
-    body{
-        margin-right: -50px;
-    }
     .sidebar{
         right: 19%;
         z-index: 300;
+    }
+    .header{
+        width: 1200px;
+    }
+    .header .container{
+        width: 1200px;
     }
     .row__header{
         justify-content: space-between;
     }
     .col__left__header a{
-        margin-left: -80px;
+        margin-left: 0;
     }
     .col__right__header {
         margin-left: 0;
-        padding-right: 15%;
+        padding-right: 0;
     }
     .carousel .main{
         width: 1200px;
@@ -946,10 +946,10 @@ ul.breadcrumbs-custom-path a:hover {
 /* Tablet */
 @media screen and (max-width: 992px){
     body{
-        margin-right: -50px;
+        margin-right: 0;
     }
     .sidebar{
-        right: 19%;
+        right: 3.7%;
         z-index: 300;
         width: 75px;
     }
@@ -959,15 +959,30 @@ ul.breadcrumbs-custom-path a:hover {
     .sidebar .sidebar_icon {
         margin: 10px 0;
     }
+    .header{
+        width: 992px;
+    }
+    .header .container{
+        width: 992px;
+    }
     .row__header{
         justify-content: space-between;
     }
     .col__left__header a{
         padding-left: 110px;
     }
-    .col__right__header {
+    .col__right__header{
         margin-left: 0;
-        padding-right: 20%;
+        padding-right: 0;
+    }
+    .col__left__header i{
+        position: absolute;
+        font-size: 20px;
+        left: 174px;
+        top: -4px;
+    }
+    .inner_banner{
+        width: 992px;
     }
     .carousel .main{
         width: 992px;
@@ -975,6 +990,8 @@ ul.breadcrumbs-custom-path a:hover {
     .carousel .main .row {
         display: flex;
         padding: 0 20px;
+        width: 100%;
+        margin: 0;
     }
     .carousel .main .row .col1{
         width: 50%;
@@ -1020,14 +1037,22 @@ ul.breadcrumbs-custom-path a:hover {
         position: absolute;
         left: 30%;
         top: 20%;
+        width: 600px;
     }
     .team .main .col{
         flex: none;
         width: 30%;
     }
-    .provide main{
+    .provide{
         width: 992px;
-    }.team .main .row{
+    }
+    .provide main{
+        width: 100%;
+    }
+    .provide .main .row{
+        width: 100%;
+    }
+    .team .main .row{
         column-gap: 0;
     }
     .provide main .col .title {
@@ -1039,9 +1064,13 @@ ul.breadcrumbs-custom-path a:hover {
     }
     .review{
         background-image: none;
+        width: 992px;
     }
     .review .main{
-        width: 1040px;
+        width: 1040px;  
+    }
+    .review .main .row{
+        width: 100%;
     }
     .review .main .row .col .carousel-inner .carousel-item #img{
         visibility: visible;
@@ -1083,6 +1112,9 @@ ul.breadcrumbs-custom-path a:hover {
     .footer .main{
         width: 992px;
     }
+    .footer .main .row{
+        width: 100%;
+    }
     .footer .main .row .col{
         padding: 0 30px;
     }
@@ -1093,7 +1125,7 @@ ul.breadcrumbs-custom-path a:hover {
         right: 60px;
         width: 40px;
         height: 40px;
-        right: 22%;
+        right: 4%;  
         bottom: 40px;
     }
 }
@@ -1111,15 +1143,32 @@ ul.breadcrumbs-custom-path a:hover {
     .sidebar .sidebar_icon {
         margin: 10px 0;
     }
+    .header{
+        width: 768px;
+    }
+    .header .container{
+        width: 768px;
+    }
     .row__header{
         justify-content: space-between;
     }
     .col__left__header a{
         padding-left: 110px;
     }
-    .col__right__header {
-        margin-left: 0;
-        padding-right: 40%;
+    .col__right__header{
+       margin-right: 20px;
+    }
+    .col__left__header i{
+        position: absolute;
+        font-size: 20px;
+        left: 169px;
+        top: -5px;
+    }
+    .inner_banner{
+        width: 768px;
+    }
+    .carousel{
+        width: 768px;
     }
     .carousel .main{
         width: 768px;
@@ -1129,6 +1178,7 @@ ul.breadcrumbs-custom-path a:hover {
         display: flex;
         flex-wrap: wrap;
         padding: 0 20px;
+        width: 100%;
     }
     .carousel .main .row .col1{
         width: 100%;
@@ -1141,11 +1191,17 @@ ul.breadcrumbs-custom-path a:hover {
     .carousel .main .row .col2 img{
         width: 100%;
     }
+    .Number{
+        width: 768px;
+    }
     .Number .container{
         margin-left: 20px;
     }
     .Number .container .row .col-3{
         width: 25%;
+    }
+    .team{
+        width: 768px;
     }
     .team .container {
         width: 768px;
@@ -1180,8 +1236,15 @@ ul.breadcrumbs-custom-path a:hover {
         flex: none;
         width: 45%;
     }
+    .provide{
+        width: 768px;
+    }
     .provide main{
         width: 768px;
+        margin: 0;
+    }
+    .provide main .row{
+        width: 100%;
         margin: 0;
     }
     .provide main .col .title {
@@ -1193,9 +1256,13 @@ ul.breadcrumbs-custom-path a:hover {
     }
     .review{
         background-image: none;
+        width: 768px;
     }
     .review .main{
         width: 768px;
+    }
+    .review .main .row{
+        width: 100%;
     }
     .review .main .row .col .carousel-inner .carousel-item #img{
         visibility: visible;
@@ -1233,12 +1300,16 @@ ul.breadcrumbs-custom-path a:hover {
         right: 0;
         z-index: 1;
     }
+    .footer{
+        width: 768px;
+    }
     .footer .main{
         width: 768px;
         margin: 0;
     }
     .footer .main .row{
         display: block;
+        width: 100%;
     }
     .footer .main .row .col{
         padding: 0 30px;
@@ -1250,13 +1321,13 @@ ul.breadcrumbs-custom-path a:hover {
         right: 60px;
         width: 40px;
         height: 40px;
-        right: 22%;
+        right: 20%;
         bottom: 40px;
     }
 }
 
 /* phone (xoay dọc) */
-@media screen and (max-width: 576px){
+@media screen and (max-width: 390px){
     .sidebar{
         left: 315px;
         z-index: 300;
@@ -1268,36 +1339,55 @@ ul.breadcrumbs-custom-path a:hover {
     .sidebar .sidebar_icon {
         margin: 10px 0;
     }
-    .row__header{
-        justify-content: left;
+    .header{
+        width: 390px;
+    }
+    .header .container{
+        width: 390px;
     }
     .col__left__header a{
         padding-left: 100px
     }
     .col__right__header {
         margin-left: 5px;
+        width: 220px;
+    }
+    .col__left__header i{
+        position: absolute;
+        font-size: 20px;
+        left: 147px;
+        top: -6px;
+    }
+    .inner_banner{
+        width: 390px;
+    }
+    .carousel{
+        width: 390px;
     }
     .carousel .main{
         width: 390px;
         margin: 0 auto;
     }
-    .carousel .main .row {
+    .carousel .main .row{
         display: flex;
         flex-wrap: wrap;
-        padding: 0 10px;
-        padding-right: 20px;
+        padding: 0;
         width: 100%;
+        margin: 0;
     }
     .carousel .main .row .col1{
         width: 100%;
-        padding-right: 0;
-        padding-left: 0;
+        padding: 20px 20px;
     }
     .carousel .main .row .col2{
         width: 100%;
     }
     .carousel .main .row .col2 img{
         width: 100%;
+    }
+    .Number{
+        width: 390px;
+        margin: 0;
     }
     .Number .container{
         padding: 0;
@@ -1308,7 +1398,10 @@ ul.breadcrumbs-custom-path a:hover {
     }
     .Number .container .row{
         width: 100%;
-        padding-right: 20px;
+        margin: 0;
+    }
+    .team{
+        width: 390px;
     }
     .team .container {
         width: 390px;
@@ -1349,8 +1442,15 @@ ul.breadcrumbs-custom-path a:hover {
         flex: none;
         width: 90%;
     }
+    .provide{
+        width: 390px;
+    }
     .provide main{
         width: 390px;
+        margin: 0;
+    }
+    .provide main .row{
+        width: 100%;
         margin: 0;
     }
     .provide main .col .title {
@@ -1362,9 +1462,13 @@ ul.breadcrumbs-custom-path a:hover {
     }
     .review{
         background-image: none;
+        width: 390px;
     }
     .review .main{
         width: 390px;
+    }
+    .review .main .row{
+        width: 100%;
     }
     .review .main .row .col .carousel-inner .carousel-item #img{
         visibility: visible;
@@ -1407,12 +1511,17 @@ ul.breadcrumbs-custom-path a:hover {
         right: 0;
         z-index: 1;
     }
+    .footer{
+        width: 390px;
+    }
     .footer .main{
         width: 390px;
         margin: 0;
     }
     .footer .main .row{
         display: block;
+        width: 100%;
+        margin: 0;
     }
     .footer .main .row .col{
         padding: 0 30px;
