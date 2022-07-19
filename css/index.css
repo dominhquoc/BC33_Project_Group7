@@ -784,6 +784,32 @@ nav {
     border-color    : #956fef;
 }
 
+.gallary .main .row .col .item .img{
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+}
+.gallary .main .row .col .item .img::before {
+    content: "";
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    display: block;
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.3) 100%
+    );
+    transform: skewX(-25deg);
+    transition: all 0.75s;
+}
+.gallary .main .row .col .item .img:hover:before{
+   left: 125%;
+   
+}
+
 .gallary .main .row .col .item {
     position: relative;
 }
