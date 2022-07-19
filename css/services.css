@@ -36,6 +36,7 @@ header {
     position       : relative;
     color          : #fb811e;
     transition     : all 0.5s;
+    font-family: 'Volkhov', serif;
 }
 
 .col__left__header a:hover {
@@ -45,7 +46,7 @@ header {
 .col__left__header i {
     position : absolute;
     font-size: 20px;
-    left     : 55px;
+    left     : 68px;
     top      : -2px;
 }
 
@@ -95,14 +96,17 @@ input[type=search] {
 
 .navbar-dark {
     background-color: white;
-    color           : black;
+   
     border-bottom   : 1px solid rgba(0, 0, 0, 0.050);
+}
+.navbar-darker{
+    color: black !important;
 }
 
 /* ---------------------- Nav Light-Dark --------------------- */
 .bi {
     font-size: 35px;
-    color    : black;
+    color    : white;
     cursor   : pointer;
 }
 
@@ -123,7 +127,7 @@ nav {
 
 .menuLine {
     font-size: 40px;
-    color    : black;
+    color    : white;
 
 
 }
@@ -217,15 +221,13 @@ ul.breadcrumbs-custom-path a:hover {
 .row {
     display     : flex;
     flex-wrap   : wrap;
-    margin-right: -15px;
-    margin-left : -15px;
 }
 
 .card-body {
     padding         : 50px 35px;
     position        : relative;
     z-index         : 1;
-    background-color: #fff;
+   border-radius: 1px solid #fff;
     box-shadow      : 0 1rem 3rem rgb(0 0 0 / 5%);
     transition      : all .8s;
 }
@@ -339,6 +341,7 @@ section.Theme {
     background-size  : cover;
     position         : relative;
     z-index          : 1;
+    align-items: center;
 
 }
 

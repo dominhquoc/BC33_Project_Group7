@@ -4,9 +4,58 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&family=Volkhov:wght@400;700&display=swap');
+
 body {
     font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1,
+h2,
+h3 {
     font-family: 'Volkhov', serif;
+}
+
+/* INDEX */
+.sidebar {
+    width                    : 100px;
+    background-color         : #0D1326;
+    text-align               : center;
+    border-top-left-radius   : 10px;
+    border-bottom-left-radius: 10px;
+    position                 : fixed;
+    top                      : 120px;
+    right                    : 0;
+    z-index                  : 20;
+}
+
+.sidebar .sidebar_icon1 {
+    padding      : 25px 0;
+    border-bottom: 1px solid #41414d;
+}
+
+.sidebar .sidebar_icon {
+    margin: 30px 0;
+}
+
+.sidebar .sidebar_icon1 a {
+    text-decoration: none;
+    color          : #8f95a8;
+    font-weight    : 700;
+    transition     : 1s;
+    display        : block;
+}
+
+.sidebar .sidebar_icon a {
+    text-decoration: none;
+    color          : #8f95a8;
+    font-weight    : 700;
+    transition     : 1s;
+    display        : block;
+}
+
+.sidebar .sidebar_icon a:hover {
+    color: #e6e6e6;
 }
 
 /* header */
@@ -24,7 +73,6 @@ header {
     width : 1280px;
     margin: 0 auto;
 }
-
 
 .col__left__header {
     display: flex;
@@ -57,30 +105,32 @@ header {
 }
 
 /*search*/
-#demo-2{
+#demo-2 {
     margin: 0 18px;
-    
+
 }
-input[type=search]{
-    background: #fff url(https://wp.w3layouts.com/farmstead/wp-content/themes/farmstead/assets/images/search.png) no-repeat 16px center;
-    border: 1px solid #eee;
-    padding: 0 16px;
-    width: 50px;
-    height: 50px;
+
+input[type=search] {
+    background   : #fff url(https://wp.w3layouts.com/farmstead/wp-content/themes/farmstead/assets/images/search.png) no-repeat 16px center;
+    border       : 1px solid #eee;
+    padding      : 0 16px;
+    width        : 50px;
+    height       : 50px;
     border-radius: 10em;
-    transition: all .5s;
-    cursor: pointer;
-    
+    transition   : all .5s;
+    cursor       : pointer;
+
 }
-#demo-2 input[type=search]:focus{
-    width: 250px;
-    padding-left: 40px;
-    color: #000;
+
+#demo-2 input[type=search]:focus {
+    width           : 250px;
+    padding-left    : 40px;
+    color           : #000;
     background-color: #fff;
-    cursor: auto;
-    padding-right: 15px;
-    border: 1px solid rgba(0, 0, 0, 0.205);
-    outline: none;
+    cursor          : auto;
+    padding-right   : 15px;
+    border          : 1px solid rgba(0, 0, 0, 0.205);
+    outline         : none;
 }
 
 /* nav-bar */
@@ -92,14 +142,18 @@ input[type=search]{
 
 .navbar-dark {
     background-color: white;
-    color           : #ffffff;
+
     border-bottom: 1px solid rgba(0, 0, 0, 0.050);
+}
+
+.navbar-darker {
+    color: black !important;
 }
 
 /* ---------------------- Nav Light-Dark --------------------- */
 .bi {
     font-size: 35px;
-    color    : black;
+    color    : white;
     cursor   : pointer;
 }
 
@@ -107,7 +161,7 @@ input[type=search]{
 nav {
     font-family: "raleway", sans-serif;
     text-align : center;
-    position: relative;
+    position   : relative;
 }
 
 #menuToggle {
@@ -120,7 +174,7 @@ nav {
 
 .menuLine {
     font-size: 40px;
-    color    : black;
+    color    : white;
 
 }
 
@@ -160,323 +214,1214 @@ nav {
 
 .col__right__header {
     display: flex;
+
 }
 
-/*carousel*/
+.row {
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
+    display      : flex;
+    flex-wrap    : wrap;
+    margin-top   : calc(-1 * var(--bs-gutter-y));
+    margin-right : calc(-.5 * var(--bs-gutter-x));
+    margin-left  : calc(-.5 * var(--bs-gutter-x));
+}
 
-.row__carousel {
+
+
+.carousel .main {
+    max-width     : 100%;
+    padding-bottom: 100px;
+}
+
+.carousel .row {
+    width          : 100%;
+    margin         : 0;
+    display        : flex;
+    justify-content: flex-end;
+}
+
+.carousel .row .col1 {
+    width   : 35%;
+    position: relative;
+}
+
+.carousel .row .col1 .title {
+    padding-top: 40%;
+}
+
+.carousel .row .col1 .title1 {
+    position: absolute;
+    top     : 36.5%;
+    left    : 75px;
+    z-index : 20;
+   
+}
+
+.carousel .row .col1 .title h3 {
+    color      : #f4f4f4;
+    font-size  : 120px;
+    font-weight: bold;
+}
+
+.carousel .row .col1 .title h2 {
+    font-size    : 50px;
+    line-height  : 60px;
+    font-weight  : bold;
+    color        : #060606;
+    margin-bottom: 20px;
+}
+
+.carousel .row .col1 .title p {
+    font-size    : 20px;
+    color        : #707070;
+    margin-bottom: 35px;
+}
+
+.btn {
+    padding         : 10px 20px;
+    background-color: #fb811e;
+    border-radius   : 30px;
+    transition      : .5s;
+}
+
+.btn a {
+    color          : #fff;
+    text-decoration: none;
+    font-weight    : 600;
+    line-height    : 26px;
+}
+
+.btn:hover {
+    background-color: #009f4d;
+}
+
+.carousel .row .col2 {
+    width  : 60%;
+    padding: 0;
+}
+
+.carousel .row .col2 .carousel-inner img {
+    height                   : 937px;
+    background-size          : cover;
+    border-bottom-left-radius: 15px;
+}
+
+.carousel .row .col2 .carousel-inner .carousel-item::after {
+    content         : "";
+    background-color: rgb(0 0 0 / 17%);
+    position        : absolute;
+    top             : 0;
+    left            : 0;
+    width           : 100%;
+    height          : 100%;
+}
+
+.carousel .row .col2 .carousel-indicators button {
+    width           : 12px;
+    height          : 12px;
+    border-radius   : 50%;
+    background-color: #fff;
+    opacity         : 1;
+}
+
+.carousel .row .col2 .carousel-indicators button.active {
+    background-color: #fb811e;
+}
+
+.carousel .row .col2 .carousel-inner .carousel-item {
+    position: relative;
+}
+
+.carousel .row .col2 .carousel-inner .carousel-item .text {
+    position  : absolute;
+    bottom    : 40px;
+    right     : 20px;
+    color     : #fff;
+    text-align: center;
+}
+
+.carousel .row .col2 .carousel-inner .carousel-item .text h2 {
+    font-size: 24px;
+    margin   : 0;
+}
+
+.carousel .row .col2 .carousel-inner .carousel-item .text span {
+    font-size: 22px;
+}
+
+.carousel .row .col2 .carousel-inner .carousel-item .text p {
+    font-size: 17px;
+}
+
+.row>* {
+    flex-shrink  : 0;
+    width        : 100%;
+    max-width    : 100%;
+    padding-right: 0;
+    padding-left : 0;
+    margin-top   : 0;
+}
+
+.grow .main .row {
     display: flex;
-    
 }
 
-.text {
-    position   : absolute;
-    z-index    : 1;
-    margin-left: 12em;
-    margin-top : -5em;
+.grow .main .row .col1 {
+    width: 50%;
 }
 
-.row__carousel .farm__carousel .h1__carousel {
-    font-size  : 160px;
+.grow .main .row .col1 .title {
+    padding-top: 50px;
+}
+
+.grow .main .row .col1 .title span {
+    font-size: 22px;
+    color    : #fb811e;
+}
+
+.grow .main .row .col1 .title h2 {
+    font-size    : 40px;
+    line-height  : 50px;
+    font-weight  : 700;
+    color        : #060606;
+    margin-bottom: 20px;
+}
+
+.grow .main .row .col1 .title p {
+    font-size    : 17px;
+    line-height  : 27px;
+    color        : #707070;
+    margin-bottom: 40px;
+}
+
+.grow .main .row .col2 {
+    width       : 50%;
+    padding-left: 100px;
+}
+
+.grow .main .row .col2 img {
+    width : 65px;
+    height: 65px;
+}
+
+.grow .main .row .col2 a {
+    text-decoration: none;
+}
+
+.grow .main .row .col2 h1 {
+    font-size  : 20px;
+    line-height: 28px;
     font-weight: 600;
-    color      : #F4F4F4;
-    padding    : 350px 0 0 140px;
+    margin-top : 25px;
+    display    : block;
+    color      : #060606;
+    transition : all .5s;
 }
 
-.row__carousel .farm__carousel .h2__carousel {
-    font-size     : 70px;
-    font-weight   : bold;
-    padding-bottom: 25px;
+.grow .main .row .col2 h1:hover {
+    color: #009f4d;
 }
 
-.row__carousel .farm__carousel .p__carousel {
-    font-size     : 26px;
-    color         : #70707D;
-    font-weight   : 200;
-    padding-bottom: 50px;
+.grow .col2 .row {
+    width                : 550px;
+    display              : grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap                  : 20px;
+    justify-content      : center;
+    align-items          : center;
 }
 
-.row__carousel .farm__carousel button {
-    padding         : 20px 35px;
-    border-radius   : 50px;
-    background-color: #FB811E;
-    color           : #ffffff;
-    border-color    : #FB811E;
-    border          : none;
-    font-family     : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight     : bolder;
-    transition      : all .5s;
+.grow .col2 .row .item {
+    width        : 275px;
+    text-align   : center;
+    padding      : 30px 10px;
+    transition   : all .5s;
+    box-shadow   : 0 15px 48px 0 rgb(0 0 0 / 4%);
+    border-radius: 30px;
 }
 
-.row__carousel .farm__carousel button:hover {
-    color           : #ffffff;
-    background-color: #019F4D;
-    border-color    : #019F4D;
+.grow .col2 .row .item:hover {
+    box-shadow   : 0 50px 120px 0 rgb(0 0 0 / 15%);
+    border-radius: 30px;
 }
 
-.caro__carousel.carousel-inner {
-    border-radius: 0 0 0 30px;
+.service {
+    background-color: #009f4d;
+    margin-top: 100px;
 }
 
-.row__carousel .caro__carousel .carousel-inner .carousel-item img {
-    background-repeat  : no-repeat;
-    background-position: 100%;
-    background-size    : cover;
-    max-height         : 1290px;
+.service .container {
+    width: 1280px;
 }
 
-/*padding y*/
-.padding__y{
-    padding: 120px 0;
+.service .title .row {
+    display    : flex;
+    align-items: center;
+    flex-wrap  : wrap;
+    padding    : 80px 0;
+    position   : relative;
 }
-.welcome .h2__welcome{
+
+.service .title .row .col1 {
+    width: 40%;
+    color: #fff;
+}
+
+.service .title .row .col1 p {
+    font-size: 22px;
+    margin   : 8px;
+}
+
+.service .title .row .col1 h2 {
+    font-size  : 40px;
+    font-weight: 600;
+}
+
+.service .title .row .col2 {
+    width       : 60%;
+    color       : #fff;
+    padding-left: 100px;
+}
+
+.service .title .row .col2 p {
+    font-size  : 20px;
+    font-weight: 300;
+}
+
+.service .title .row h3 {
+    font-size  : 170px;
+    font-weight: bold;
+    font-family: "Volkhov";
+    color      : #fff;
+    opacity    : .14;
+    position   : absolute;
+   
+    top        : 18%;
+}
+
+.service .main .row {
+    display        : flex;
+    justify-content: center;
+    column-gap     : 10px;
+    padding-bottom : 95px;
+}
+
+.service .main .col {
+    width: 30%;
+}
+
+.service .main .item .item_img img {
+    width                  : 100%;
+    border-top-left-radius : 20px;
+    border-top-right-radius: 20px;
+}
+
+.service .main .item .item_text {
+    background-color          : #fff;
+    padding                   : 30px 20px;
+    border-bottom-left-radius : 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.service .main .item .item_text span {
+    color           : #009f4d;
+    background-color: rgb(0 159 77 / 16%);
+    padding         : 5px 20px;
+    font-weight     : 600;
+    border-radius   : 15px;
+}
+
+.service .main .item .item_text a {
+    text-decoration: none;
+}
+
+.service .main .item .item_text h1 {
+    font-size  : 24px;
+    line-height: 30px;
+    font-weight: 600;
+    margin     : 15px 0;
+    color      : #060606;
+    transition : all .5s;
+}
+
+.service .main .item .item_text h1:hover {
+    color: #009f4d;
+}
+
+.service .main .item .item_text p {
+    font-size  : 17px;
+    line-height: 27px;
+    color      : #707070;
+    margin     : 0;
+}
+
+.quality .main {
+    max-width: 1280px;
+    margin   : 0 auto;
+    padding  : 95px 0;
+}
+
+.quality .main .row {
+    display    : flex;
+    align-items: center;
+}
+
+.quality .main .row .col1 {
+    width: 49%;
+}
+
+.quality .main .row .col2 {
+    width      : 40%;
+    margin-left: 95px;
+    position   : relative;
+}
+
+.quality .main .row .col2 img {
+    width        : 100%;
+    height       : 600px;
+    border-radius: 25px;
+}
+
+.quality .main .row .col2 .text {
+    width                     : 330px;
+    background-color          : #fb811e;
+    text-align                : center;
+    padding                   : 30px 0;
+    border-bottom-right-radius: 100px;
+    position                  : absolute;
+    left                      : -100px;
+    bottom                    : 40px;
+}
+
+.quality .main .row .col2 .text h2 {
+    font-size  : 70px;
+    line-height: 80px;
+    color      : #fff;
+    font-weight: 600;
+}
+
+.quality .main .row .col2 .text p {
+    color         : #fff;
+    font-size     : 18px;
+    text-transform: uppercase;
+    font-weight   : 600;
+    letter-spacing: .2px;
+}
+
+.quality .main .row .col1 .item {
+    display   : flex;
+    margin-top: 72px;
+}
+
+.quality .main .row .col1 .item_content {
+    display      : flex;
+    padding-right: 30px;
+}
+
+.quality .main .row .col1 .item_content .icon span {
+    font-size   : 30px;
+    color       : #fb811e;
+    margin-right: 10px;
+}
+
+.quality .main .row .col1 .item_content .text h2 {
+    font-size    : 24px;
+    margin-bottom: 10px;
+    font-weight  : 600;
+    color        : #060606;
+}
+
+.quality .main .row .col1 .item_content .text p {
+    font-size  : 17px;
+    line-height: 27px;
+    color      : #707070;
+}
+
+.quality .main .row .col1 .title span {
+    font-size: 22px;
+    color    : #fb811e;
+}
+
+.quality .main .row .col1 .title h1 {
+    font-size  : 40px;
+    line-height: 50px;
+    font-weight: 600;
+    color      : #060606;
+}
+
+.quality .main .row .col1 .title p {
+    font-size  : 17px;
+    line-height: 27px;
+    color      : #707070;
+}
+
+.homeservice .main {
+    width : 1280px;
+    margin: 0 auto;
+}
+
+.homeservice .main .row {
+    display        : flex;
+    justify-content: center;
+}
+
+.homeservice .main .row .col {
+    width  : 28%;
+    flex   : none;
+    padding: 32px 16px;
+}
+
+.homeservice .main .row .col a {
+    text-decoration: none;
+}
+
+.homeservice .main .row .col .item {
+    display     : flex;
+    transition  : .3s ease-in;
+    padding-top : 20px;
+    padding-left: 20px;
+    cursor      : pointer;
+    border      : 1px solid transparent;
+}
+
+.homeservice .main .row .col .item:hover {
+    border       : 1px solid #eee;
+    border-radius: 10px;
+}
+
+.homeservice .main .row .col .item:hover .text h1 {
+    color: #009f4d;
+}
+
+.homeservice .main .row .col .item .img {
+    width: 50%;
+}
+
+.homeservice .main .row .col .item .img img {
+    width: 54px;
+}
+
+.homeservice .main .row .col .item .text {
+    width: 62%;
+}
+
+.homeservice .main .row .col .item .text a {
+    text-decoration: none;
+}
+
+.homeservice #h1 {
+    color: #009f4d;
+}
+
+.homeservice .main .row .col .item .text h1 {
+    font-size  : 22px;
+    line-height: 25px;
+    font-weight: 600;
+    color      : #060606;
+    transition : all .5s;
+}
+
+.homeservice .main .row .col .item .text h1:hover {
+    color: #009f4d;
+}
+
+.homeservice .main .row .col .item .text p {
+    font-size  : 17px;
+    line-height: 27px;
+    color      : #707070;
+}
+
+.gallary .main {
+
+    padding-top   : 60px;
+    padding-bottom: 120px;
+}
+
+.gallary .main .row {
+    display              : grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows   : repeat(2, 1fr);
+}
+
+.gallary .main .row .col {
+    padding  : 0;
+    max-width: 100%;
+}
+
+.gallary .main .row .col .title {
+    margin-right: 10px;
+}
+
+.gallary .main .row .col .title span {
+    font-size: 22px;
+    color    : #fb811e;
+}
+
+.gallary .main .row .col .title h2 {
+    font-size  : 40px;
+    line-height: 50px;
+    font-weight: 600;
+    color      : #060606;
+}
+
+.gallary .main .row .col .title p {
+    font-size  : 17px;
+    line-height: 27px;
+    color      : #707070;
+}
+
+.gallary .main .row .col .title a {
+    color          : #fff;
+    text-decoration: none;
+    font-size      : 14px;
+    font-weight    : 600;
+}
+
+.gallary .main .row .col .title a:active {
+    color           : #fff;
+    background-color: #956fef;
+    border-color    : #956fef;
+}
+
+.gallary .main .row .col .item {
+    position: relative;
+}
+.gallary .main .row .col .item .img{
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+}
+.gallary .main .row .col .item .img::before {
+    content: "";
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    display: block;
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.3) 100%
+    );
+    transform: skewX(-25deg);
+    transition: all 0.75s;
+}
+.gallary .main .row .col .item .img:hover:before{
+   left: 125%;
+   
+}
+.gallary .main .row .col .item .img img {
+    width: 100%;
+}
+
+.gallary .main .row .col .item .text {
+    width     : 90%;
+    text-align: center;
+    padding   : 6px;
+    background: rgb(255 255 255 / 27%);
+    position  : absolute;
+    left      : 16px;
+    bottom    : 20px;
+}
+
+.gallary .main .row .col .item .text h2 {
+    color      : #fff;
+    font-size  : 20px;
+    font-weight: bold;
+    margin     : 0;
+}
+
+.review {
+    background-image: url(https://wp.w3layouts.com/farmstead/wp-content/themes/farmstead/assets/images/bg1.jpg);
+    background-size : 100%;
+    height          : 520px;
+    position        : relative;
+}
+
+.review::before {
+    content   : "";
+    background: rgb(10 10 10 / 52%);
+    position  : absolute;
+    top       : 0;
+    min-height: 100%;
+    left      : 0;
+    right     : 0;
+    z-index   : 1;
+}
+
+.review .main .row .col .carousel-inner {
+    z-index: 20;
+}
+
+.review .main .row .col .carouselExampleIndicators {
+    height: 520px;
+}
+
+.review .main .row .col .carousel-inner .carousel-item {
+    height: 520px;
+}
+
+.review .main .row .col .carousel-indicators {
+    position: absolute;
+    bottom  : 60px;
+    z-index : 25;
+}
+
+.review .main .row .col .carousel-inner .carousel-item #img {
+    visibility: hidden;
+}
+
+.review .main .row .col .carousel-inner .carousel-item .carousel-caption {
+    display        : flex !important;
+    justify-content: center;
+    position       : absolute;
+    bottom         : 25%;
+}
+
+.review .main .row .col .carousel-inner .carousel-item .carousel-caption .col_left {
+    width: 20%;
+}
+
+.review .main .row .col .carousel-inner .carousel-item .carousel-caption .col_left h2 {
+    font-weight: 600;
+    font-size  : 20px;
+    margin     : 10px 0 5px;
+    color      : #fff;
+}
+
+.review .main .row .col .carousel-inner .carousel-item .carousel-caption .col_right {
+    width   : 55%;
+    position: relative;
+}
+
+.review .main .row .col .carousel-inner .carousel-item .carousel-caption .col_right i {
+    font-size: 30px;
+    color    : #fb811e;
+    position : absolute;
+    top      : -25px;
+    left     : 32px;
+}
+
+.review .main .row .col .carousel-inner .carousel-item .carousel-caption .col_right p {
+    font-size   : 22px;
+    line-height : 34px;
+    color       : #fff;
+    text-indent : 30px;
+    text-align  : left;
+    padding-left: 40px;
+}
+
+.review .main .row .col .carousel-inner .carousel-item .carousel-caption .col_left img {
+    width        : 90px;
+    border-radius: 100%;
+    cursor       : pointer;
+}
+
+.review .main .row .col .carousel-indicators button {
+    width           : 12px;
+    height          : 12px;
+    border-radius   : 50%;
+    background-color: #fff;
+    opacity         : 1;
+    margin          : 0 8px;
+}
+
+.review .main .row .col .carousel-indicators button.active {
+    background-color: #fb811e;
+}
+
+.footer .main {
+    width      : 1280px;
+    margin     : 0 auto;
+    padding-top: 60px;
+}
+
+.footer .main .row {
+    display        : flex;
+    justify-content: center;
+}
+
+.footer .main .row .col .item1 {
+    margin-right: 20px;
+}
+
+.footer .main .row .col .item1 h2 {
+    font-size    : 20px;
+    line-height  : 25px;
+    margin-bottom: 30px;
+    font-weight  : 600;
+    color        : #060606;
+    margin-top   : 10px;
+}
+
+.footer .main .row .col .item1 p {
+    font-size: 17px;
+    color    : #707070;
+}
+
+.footer .main .row .col .item2 p {
+    font-size  : 17px;
+    line-height: 27px;
+    color      : #707070;
+    margin     : 24px 0;
+}
+
+.footer .main .row .col .item2 #w3:hover {
     color: #fb811e;
 }
 
-.welcome .h1__welcome{
-    font-size: 50px;
-    font-weight: bold;
-    padding-bottom: 20px;
+.footer .main .row .col .item2 #w3 {
+    color          : #009f4d;
+    text-decoration: none;
+    transition     : all .5s;
 }
-.welcome .p__welcome{
-    font-size: 20px;
-    color: #70707D;
-    padding-bottom: 20px;
+
+.footer .main .row .col .item3 {
+    margin-left: 40px;
 }
-.welcome button{
-    padding         : 20px 35px;
-    border-radius   : 50px;
-    background-color: #FB811E;
-    color           : #ffffff;
-    border-color    : #FB811E;
-    border          : none;
-    font-family     : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight     : bolder;
+
+.footer .main .row .col .item3 h2 {
+    font-size    : 20px;
+    line-height  : 25px;
+    margin-bottom: 30px;
+    font-weight  : 600;
+    color        : #060606;
+}
+
+.footer .main .row .col .item3 p {
+    font-size  : 17px;
+    line-height: 27px;
+    color      : #707070;
+}
+
+.footer .main .row .col .item3 form {
+    display: flex;
+    width  : 100%;
+    height : 50px;
+    border : none;
+}
+
+.footer .main .row .col .item3 form input {
+    padding                  : 12px 30px;
+    background-color         : #f4f4f4;
+    border                   : none;
+    width                    : 295px;
+    border-top-left-radius   : 30px;
+    border-bottom-left-radius: 30px;
+    outline                  : none;
+}
+
+.footer .main .row .col .item3 form button {
+    padding                   : 12px 30px;
+    border                    : transparent;
+    border-top-right-radius   : 30px;
+    border-bottom-right-radius: 30px;
+    background-color          : #009f4d;
+    transition                : all .5s;
+}
+
+.footer .main .row .col .item3 form button a {
+    color: #fff;
+}
+
+.footer .main .row .col .item3 form button:hover {
+    opacity: .8;
+}
+
+.footer .main .row .col .item3 ul {
+    display    : flex;
+    padding    : 0;
+    margin-top : 40px;
+    margin-left: 5px;
+}
+
+.footer .main .row .col .item3 ul li {
+    list-style  : none;
+    margin-right: 30px;
+}
+
+.footer .main .row .col .item3 ul li a {
+    text-decoration : none;
+    color           : #009f4d;
+    padding         : 7px 10px;
+    background-color: #ecfaf2;
+    border-radius   : 30px;
     transition      : all .5s;
 }
-.welcome button:hover{
-    background-color: #019F4D;
-}
-.welcome .image__welcome{
-    background-size: cover;
-    background-position: 100%;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-}
-.welcome .img__welcome{
-    padding: 0 0 0 25px;
-    border-radius: 15px;
-}
-/* what we do */
-section.what{
-    background-color: #019F4D;
-}
-.row__what{
-    color: #ffffff;
-    padding-bottom: 100px;
-}
-.row__what .what__text1{
-    padding-right: 40px;
-}
-.row__what .what__text1 .h1__what{
-    font-size: 50px;
-}
-.row__what .p__what{
-    font-size: 24px;
-    padding: 25px 0;
-    font-weight: 300;
-}
-.what__text__hiden{
-    position: absolute;
-    z-index: 0;
-    margin-left: 250px;
-    margin-top: -50px;
-    font-size: 200px;
-    color: #ffffff25;
-}
-.row__what__card{
-    margin: 0 -20px;
-}
-.card-img-top{
-    border-radius: 30px 30px 0 0;
-    padding-bottom: 25px;
-}
-.row__what__card .what__card .card{
-    border-radius: 30px;
-    border: none;
-    margin: 0 20px;
-}
-.row__what__card .what__card .card .btn{
-    background-color: #D6F0E2;
-    color: #019F4D;
-    border-radius: 50px;
-    border: none;
-    font-weight: bolder;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 20px;
-}
-.row__what__card .card-title{
-    padding-top: 25px;
-    font-size: 24px;
-    font-weight: bold;
-}
-.row__what__card .card-text{
-    font-size: 18px;
-    font-weight: 100;
-    color: #70707D;
+
+.footer .main .row .col .item3 ul li a:hover {
+    color     : #fb811e;
+    background: rgb(255 201 69 / 19%);
+    box-shadow: 0px 4px 7px 0px rgb(10 10 10 / 24%);
 }
 
-@media screen and (max-width: 770px) {
-    .col__left__header i {
-        position : absolute;
-        left     : 48px;
-        top      : -2px;
-        font-size: 18px;
+.backtotop {
+    width        : 50px;
+    height       : 50px;
+    background   : #009f4d;
+    border-radius: 5px;
+    line-height  : 50px;
+    text-align   : center;
+    display      : block;
+    position     : fixed;
+    right        : 15px;
+    bottom       : 50px;
+    color        : #fff;
+    transition   : all .8s;
+    visibility   : hidden;
+    opacity      : 0;
+}
+
+.cd-top--is-visible {
+    visibility: visible;
+    opacity   : 1;
+}
+
+.backtotop:hover {
+    opacity: .8;
+    color  : #fff;
+}
+
+@media screen and (max-width: 914px){
+
+}
+
+@media screen and (max-width: 602px){
+    .sidebar{
+        right: 0px;
+        z-index: 300;
+        width: 50px;
+    }
+    body{
+        padding-right: 0;
     }
 
-    #demo-2 {
-        margin: 0 8px;
+    .sidebar .sidebar_icon1 {
+        padding: 10px 0;
     }
-
-    .Feature .container .Feature__Row h5 {
-        font-size: 18px;
-
-    }
-
-    .Feature .container .Feature__Row h3 {
-        font-size: 20px;
-
-
-    }
-
-    .Feature .container .Feature__Row p {
-        font-size: 14px;
-
-    }
-
-    .Feature .container .Feature__row__mini .fa-solid {
-        font-size: 24px;
-
+    .sidebar .sidebar_icon {
+        margin: 10px 0;
     }
 
 
-    .Feature .container .Feature__row__mini h4 {
-        font-size: 20px;
-
+    .carousel .row{
+        display: block;
     }
-
-    .why__feature {
-        margin-top: 0 !important;
+    .carousel .row .col1{
+        position: unset; 
     }
-}
-
-@media screen and (max-width: 602px) {
-
-    .col__left__header i {
-        position : absolute;
-        left     : 44px;
-        top      : -2px;
-        font-size: 16px;
+    .carousel .row .col2{
+        width: 100%;
     }
-
-    #demo-2 {
-        margin: 0 8px;
+    .carousel .row .col1 .title{
+        padding: 0;
+        max-width: 100%;
     }
-
-    .Theme .container .Text__Theme .btn {
-        padding  : 12px 12px;
-        font-size: 18px;
+    .carousel .row .col1 .title1{
+        width: 250px;
+        top: 25%;
+        margin-left: -55px;
+        margin-right: 50px;
+        background-color: #fff;
+        height: 370px;
+        padding-left: 25px;
+        padding-right: 5px;
+        padding-top: 30px;
+        border-radius: 10px;
     }
-}
-
-@media screen and (max-width: 416px) {
-    .col__left__header a {
-        font-size: 20px;
+    .carousel .row .col1 .title1 h2{
+        font-size: 25px;
+        line-height: 40px;
+        font-weight: bold;
+        color: #060606;
     }
-
-    .col__left__header i {
-        position : absolute;
-        left     : 29px;
-        top      : -3px;
+    .carousel .row .col1 .title1 p{
+        font-size: 15px;
+    }
+    .carousel .row .col1 .title1 a{
         font-size: 12px;
     }
-
-    .inner_banner .w31-breadcrumb .container h4 {
-        font-size: 0.8rem;
+    .carousel .row .col1 .title h3{
+        display: none;
     }
-
-    ul.breadcrumbs-custom-path {
-
-        font-size: 11px;
+    .carousel .row .col2 .carousel-inner .carousel-item::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgb(0 0 0 / 17%);
+        z-index: -1;
+        top: 0;
+    }   
+    .grow .main{
+        width: 280px;
+        padding: 0;
+        margin: 0;
     }
-
-    input[type=search] {
-        background   : #fff url(https://wp.w3layouts.com/farmstead/wp-content/themes/farmstead/assets/images/search.png) no-repeat 6px center;
-        border       : 1px solid #eee;
-        padding      : 0 12px;
-        width        : 30px;
-        height       : 30px;
-        border-radius: 10em;
-
+    .grow .main .row .col1{
+        width: 100%;
     }
-
-    #menuToggle {
-        margin: 10px 6px;
+    .grow .main .row .col1 .title span{
+        font-size: 18px;
     }
-
-    .menuLine {
+    .grow .main .row .col1 .title h2{
         font-size: 30px;
     }
-
-    .bi {
-        font-size : 30px;
-        margin-top: 3px;
+    .grow .main .row .col1 .title p{
+        font-size: 15px;
     }
-
-    #demo-2 {
-        margin    : 0 5px;
-        margin-top: 7px;
+    .grow .main .row .col1 .title .btn a{
+        font-size: 12px;
     }
-
-    #demo-2 input[type=search]:focus {
-        width: 90px;
-
+    .grow .main .row .col2{
+        width: 100%;
+        padding: 30px 0;
     }
-
-    .ul__menu {
+    .grow .col2 .row .item{
+        width: 100%;
+    }
+    .grow .col2 .row{
+        width: 100%;
+        display: block;
+        margin: 0;
+    }
+    .service .container{
+        width: 250px;
+    }
+    .service .container .title{
+        padding: 0 15px;
+    }
+    .service .title .row{
+        padding-bottom: 0px;
+    }
+    .service .title .row .col1{
+        width: 90%;
+        padding: 0;
+    }
+    .service .title .row .col1 p{
         font-size: 18px;
-        width    : 180px;
+        padding: 0;
+        margin-left: 0;
     }
-
-    .Feature .container .Feature__row__mini .fa-solid {
-        font-size: 20px;
+    .service .title .row .col1 h2{
+        font-size: 30px;
+        padding: 0;
     }
-
-    .Feature .container .Feature__row__mini h4 {
+    .service .title .row .col2{
+        width: 100%;
+        padding: 0;
+    }
+    .service .title .row .col2 p{
+        font-size: 16px;
+        font-weight: 100;
+    }
+    .service .title .row h3{
+        font-size: 50px;
+        left: 20%;
+        top: 42%;
+    }
+    .service .main .row{
+        display: block;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+    .service .main .col{
+        width: 100%;
+        padding-bottom: 40px;
+    }
+    .service .container .main .row .col{
+        padding-left: 0;
+    }
+    .service .container .main .row .col3{
+        padding-left: 0;
+    }
+    .quality .main{
+        width: 290px;
+        padding-bottom: 40px;
+    }
+    .quality .main .row .col1{
+        width: 100%;
+        padding: 0 30px;
+    }
+    .quality .main .row .col1 .item{
+        margin: 0;
+        display: block;
+    }
+    .quality .main .row .col1 .title span{
         font-size: 18px;
     }
-
-    .Feature .container .Feature__Row h3 {
-        font-size: 28px;
+    .quality .main .row .col1 .title h1{
+        font-size: 18px;
+        line-height: 40px;
     }
-
-    .Theme .container .Text__Theme h3 {
-        font-size: 22px;
+    .quality .main .row .col1 .title p{
+        font-size: 16px;
     }
+    .quality .main .row .col2{
+        width: 100%;
+        margin-left: 0;
+        padding: 0 30px;
+    }
+    .quality .main .row .col2 img {
+        width: 250px;
+    }
+    .quality .main .row .col2 .text{
+        text-align: right;
+    }
+    .quality .main .row .col2 .text h2{
+        margin-left: 60px;
+        padding-right: 60px;
+    }
+    .quality .main .row .col2 .text p{
+            font-size: 15px;
+            padding-right: 22px;
+    }
+    .homeservice .main{
+        width: 270px;
+    }
+    .homeservice .main .row .col{
+        width: 100%;
+        padding: 0 20px;
+    }
+    .homeservice .main .row .col .item .text {
+        width: 80%;
+    }
+    .homeservice .main .row .col .item {
+        padding-left: 0px;
 
-    .Theme .container .Text__Theme .btn {
-
-        padding: 10px 6px;
-
+    }
+    .gallary .main{
+        width: 290px;
+        position: relative;
+        padding-top: 200px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 40px;
+    }
+    .gallary .main .row{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: none;
+        padding: 0;
+        padding-left: 20px;
+    }
+    .gallary .main .row .col_title{
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding-bottom: 100px;
+        padding-left: 20px;
+    }
+    .gallary .main .row .col .item .text{
+        left: 10px;
+    }
+    .gallary .main .row .col .item .text h2{
+        font-size: 18px;
+    }
+    .gallary .main .row .col .title span{
+        font-size: 18px;
+    }
+    .gallary .main .row .col .title h2{
+        font-size: 30px;
+    }
+    .gallary .main .row .col .title p{
         font-size: 14px;
-
     }
-
+    .review{
+        background-image: none;
+    }
+    .review .main{
+        width: 318px;
+    }
+    .review .main .row .col .carousel-inner .carousel-item #img{
+        visibility: visible;
+        height: 550px;
+    }
+    .review .main .row .col .carousel-indicators{
+        bottom: 10px;
+    }
+    .review .main .row .col .carousel-inner .carousel-item .carousel-caption{
+        flex-wrap: wrap;
+        height: 500px;
+        bottom: 0;
+        width: 300px;
+        z-index: 10;
+    }
+    .review .main .row .col .carousel-inner .carousel-item .carousel-caption .col_left{
+        width: 100%;
+        height: 100px;
+    }
+    .review .main .row .col .carousel-inner .carousel-item .carousel-caption .col_right{
+        width: 100%;
+    }
+    .review .main .row .col .carousel-inner .carousel-item .carousel-caption .col_right p{
+        font-size: 15px;
+    }
+    .review .main .row .col .carousel-inner .carousel-item .carousel-caption .col_left img{
+        width: 60px;
+    }
+    .review .main .row .col .carousel-inner .carousel-item .carousel-caption .col_right p{
+        line-height: 25px;
+        padding: 0;
+    }
+    .review .main .row .col .carousel-inner .carousel-item::before{
+        content: "";
+        background: rgb(10 10 10 / 52%);
+        position: absolute;
+        top: 0;
+        min-height: 100%;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+    .footer .main{
+        width: 295px;
+    }
+    .footer .main .row{
+        display: block;
+    }
+    .footer .main .row .col{
+        padding: 0 30px;
+    }
+    .footer .main .row .col .item3{
+        margin: 0;
+    }
+    .backtotop{
+        right: 60px;
+        width: 40px;
+        height: 40px;
+        left: 85%;
+    }
+    .footer .main .row .col .item3 form input {
+ 
+        width: 172px;
+   
+    }
+    .footer .main .row .col .item3 ul li {
+        list-style: none;
+        margin-right: 0px;
+    }
 }
 
 @media screen and (max-width: 320px) {
+    .sidebar {
+        left   : 255px;
+        z-index: 300;
+        width  : 50px;
+    }
+
+    .container__header {
+        width : 320px;
+        margin: 0 auto;
+    }
+
+    .row__header {
+        display        : flex;
+        justify-content: space-around
+    }
 
     .col__left__header a {
         font-size: 20px;
@@ -484,7 +1429,7 @@ section.what{
 
     .col__left__header i {
         position : absolute;
-        left     : 28px;
+        left     : 34px;
         top      : -3px;
         font-size: 12px;
     }
@@ -499,15 +1444,26 @@ section.what{
     }
 
     input[type=search] {
-        background   : #fff url(https://wp.w3layouts.com/farmstead/wp-content/themes/farmstead/assets/images/search.png) no-repeat 6px center;
+        background   : #fff url(https://wp.w3layouts.com/farmstead/wp-content/themes/farmstead/assets/images/search.png) no-repeat 9px center;
         border       : 1px solid #eee;
-        padding      : 0 12px;
-        width        : 30px;
-        height       : 30px;
+        padding      : 0px 16px;
+        width        : 38px;
+        height       : 38px;
         border-radius: 10em;
 
     }
 
+    .service .title .row h3 {
+        font-size: 42px;
+  
+    }
+
+    .carousel .row .col1 .title h2 {
+        font-size: 30px;
+       
+      
+        margin-bottom: 5px;
+    }
     #menuToggle {
         margin: 10px 6px;
     }
@@ -523,12 +1479,12 @@ section.what{
 
     #demo-2 {
         margin    : 0 5px;
-        margin-top: 7px;
+        margin-top: 4px;
     }
 
     #demo-2 input[type=search]:focus {
-        width: 90px;
-
+        width       : 90px;
+        padding-left: 30px;
     }
 
     .ul__menu {
@@ -560,17 +1516,15 @@ section.what{
 
     }
 
-    .row__carousel .farm__carousel .h1__carousel {
-        font-size: 50px;
-        font-weight: 600;
-        color: #F4F4F4;
-        padding: 132px 0 0 140px;
+    .review .main {
+        width: 268px;
     }
-    
 
-.row__carousel .farm__carousel .h2__carousel {
-    font-size: 30px;
-    font-weight: bold;
-    padding-bottom: 25px;
-}
+    .review .main .row .col .carousel-inner .carousel-item .carousel-caption {
+        flex-wrap: wrap;
+        height   : 500px;
+        bottom   : 0;
+        width    : 200px;
+        z-index  : 10;
+    }
 }

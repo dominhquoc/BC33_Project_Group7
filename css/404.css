@@ -241,65 +241,414 @@ padding: 20px 18px;
 }
 
 /* ---------------------- ServicesFooter---------------------- */
-footer .container .row .col-4 h3{
-    font-size: 20px;
-    line-height: 25px;
-    margin-bottom: 30px;
-    font-weight: 600;
+footer .container .row .find__footer h3 {
+    font-size     : 20px;
+    line-height   : 25px;
+    margin-bottom : 30px;
+    font-weight   : 600;
     text-transform: uppercase;
-    color: #060606;
+    color         : #060606;
 }
-footer .container .row .col-4 p{
-    font-size: 17px;
+
+footer .container .row .find__footer p {
+    font-size  : 17px;
     line-height: 24px;
-    color: #707070;
+    color      : #707070;
 }
-footer .container .row .col-4 form input{
-    background: #f4f4f4;
-    padding: 12px 20px;
-    border: none;
-    font-size: 16px;
-    outline: none;
-    width: 80%;
-    color: #707070;
-    border: 1px solid #eee;
+
+footer .container .row .find__footer form input {
+    background   : #f4f4f4;
+    padding      : 12px 20px;
+    border       : none;
+    font-size    : 16px;
+    outline      : none;
+    width        : 80%;
+    color        : #707070;
+    border       : 1px solid #eee;
     border-radius: 30px 0px 0px 30px;
-line-height: 1.5;
+    line-height  : 1.5;
 }
-footer .container .row .col-4 form button{
-    background: #009f4d;
-    font-size: 16px;
-    padding: 12px 20px;
-    width: 20%;
-    border: none;
-    outline: none;
-    color: #fff;
+
+footer .container .row .find__footer form button {
+    background   : #009f4d;
+    font-size    : 16px;
+    padding      : 12px 20px;
+    width        : 20%;
+    border       : none;
+    outline      : none;
+    color        : #fff;
     border-radius: 0px 30px 30px 0;
 }
-footer .container .row .col-4 ul{
-    display: flex;
-flex-direction: row;
 
-padding-left: 0;
+footer .container .row .find__footer ul {
+    padding-left: 0;
 }
-footer .container .row .col-4 ul li{
-    display: inline-block;
-    margin-right: 5px;
+
+footer .container .row .find__footer ul li {
+    display        : inline-block;
+    margin-right   : 5px;
     list-style-type: none;
 }
-footer .container .row .col-4 ul li a{
-    color: #009f4d;
-    width: 35px;
-    height: 35px;
-    background: rgb(10 191 83 / 8%);
-    display: inline-block;
+
+footer .container .row .find__footer ul li a {
+    color        : #009f4d;
+    width        : 35px;
+    height       : 35px;
+    background   : rgb(10 191 83 / 8%);
+    display      : inline-block;
     border-radius: 50%;
-    text-align: center;
-    line-height: 35px;
-    transition: all 0.5s;
+    text-align   : center;
+    line-height  : 35px;
+    transition   : all 0.5s;
 }
-footer .container .row .col-4 ul li a:hover{
-    color: #fb811e;
+
+footer .container .row .find__footer ul li a:hover {
+    color     : #fb811e;
     background: rgb(255 201 69 / 19%);
     box-shadow: 0px 4px 7px 0px rgb(10 10 10 / 24%);
+}
+@media screen and (max-width: 770px) {
+    .col__left__header i {
+        position : absolute;
+        left     : 48px;
+        top      : -2px;
+        font-size: 18px;
+    }
+
+    #demo-2 {
+        margin: 0 8px;
+    }
+
+    .Feature .container .Feature__Row h5 {
+        font-size: 18px;
+
+    }
+
+    .Feature .container .Feature__Row h3 {
+        font-size: 20px;
+
+
+    }
+
+    .Feature .container .Feature__Row p {
+        font-size: 14px;
+
+    }
+
+    .Feature .container .Feature__row__mini .fa-solid {
+        font-size: 24px;
+
+    }
+
+
+    .Feature .container .Feature__row__mini h4 {
+        font-size: 20px;
+
+    }
+
+    .why__feature {
+        margin-top: 0 !important;
+    }
+    .form__carousel {
+        position: relative;
+        display : flex;
+        width   : 70%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .col__left__header i {
+        position : absolute;
+        left     : 44px;
+        top      : -2px;
+        font-size: 16px;
+    }
+
+    #demo-2 {
+        margin: 0 8px;
+    }
+
+    .Theme .container .Text__Theme .btn {
+        padding  : 12px 12px;
+        font-size: 18px;
+    }
+
+    .st1 {
+        font-size  : 78px;
+        font-family: 'Volkhov', serif;
+    }
+    
+    
+    
+    svg {
+        width     : 250px;
+        text-align: center;
+        fill      : #009f4d;
+    }
+    
+
+    
+    .text__carousel .p__carousel {
+        font-size: 16px;
+    }
+    
+    .form__carousel {
+        position: relative;
+        display : flex;
+        width   : 50%;
+    }
+    
+    .text__carousel input {
+        width           : 250px;
+        height          : 70px;
+        border-radius   : 30px;
+        padding         : 10px 20px;
+        font-size       : 15px;
+        background-color: #F4F4F4;
+        border-color    : #F4F4F4;
+        border          : none;
+        outline         : none;
+    
+    }
+    
+    .carousel .form__carousel button {
+        position  : absolute;
+        border    : none;
+        background: none;
+        padding   : 20px 18px;
+        font-size : 22px;
+        right     : 0%;
+    
+        color: #009F4D;
+    }
+}
+
+@media screen and (max-width: 416px) {
+    .col__left__header a {
+        font-size: 20px;
+    }
+
+    .col__left__header i {
+        position : absolute;
+        left     : 29px;
+        top      : -3px;
+        font-size: 12px;
+    }
+
+    .inner_banner .w31-breadcrumb .container h4 {
+        font-size: 0.8rem;
+    }
+
+    ul.breadcrumbs-custom-path {
+
+        font-size: 11px;
+    }
+
+    input[type=search] {
+        background   : #fff url(https://wp.w3layouts.com/farmstead/wp-content/themes/farmstead/assets/images/search.png) no-repeat 9px center;
+        border       : 1px solid #eee;
+        padding      : 16px 16px;
+        width        : 38px;
+        height       : 38px;
+        border-radius: 10em;
+
+    }
+
+    #menuToggle {
+        margin: 10px 6px;
+    }
+
+    .menuLine {
+        font-size: 30px;
+    }
+
+    .bi {
+        font-size : 30px;
+        margin-top: 3px;
+    }
+
+    #demo-2 {
+        margin    : 0 5px;
+        margin-top: 4px;
+    }
+
+    #demo-2 input[type=search]:focus {
+        width       : 90px;
+        padding-left: 30px;
+    }
+
+    .ul__menu {
+        font-size: 18px;
+        width    : 180px;
+    }
+
+    .Feature .container .Feature__row__mini .fa-solid {
+        font-size: 20px;
+    }
+
+    .Feature .container .Feature__row__mini h4 {
+        font-size: 18px;
+    }
+
+    .Feature .container .Feature__Row h3 {
+        font-size: 28px;
+    }
+
+    .Theme .container .Text__Theme h3 {
+        font-size: 22px;
+    }
+
+    .Theme .container .Text__Theme .btn {
+
+        padding: 10px 6px;
+
+        font-size: 14px;
+
+    }
+    .form__carousel {
+        position: relative;
+        display : flex;
+        width   : 65%;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+
+    .col__left__header a {
+        font-size: 20px;
+    }
+
+    .col__left__header i {
+        position : absolute;
+        left     : 28px;
+        top      : -3px;
+        font-size: 12px;
+    }
+
+    .inner_banner .w31-breadcrumb .container h4 {
+        font-size: 0.8rem;
+    }
+
+    ul.breadcrumbs-custom-path {
+
+        font-size: 11px;
+    }
+
+    input[type=search] {
+        background   : #fff url(https://wp.w3layouts.com/farmstead/wp-content/themes/farmstead/assets/images/search.png) no-repeat 9px center;
+        border       : 1px solid #eee;
+        padding      : 0px 16px;
+        width        : 38px;
+        height       : 38px;
+        border-radius: 10em;
+
+    }
+
+    #menuToggle {
+        margin: 10px 6px;
+    }
+
+    .menuLine {
+        font-size: 30px;
+    }
+
+    .bi {
+        font-size : 30px;
+        margin-top: 3px;
+    }
+
+    #demo-2 {
+        margin    : 0 5px;
+        margin-top: 4px;
+    }
+
+    #demo-2 input[type=search]:focus {
+        width       : 90px;
+        padding-left: 30px;
+    }
+
+    .ul__menu {
+        font-size: 18px;
+        width    : 180px;
+    }
+
+    .Feature .container .Feature__row__mini .fa-solid {
+        font-size: 20px;
+    }
+
+    .Feature .container .Feature__row__mini h4 {
+        font-size: 18px;
+    }
+
+    .Feature .container .Feature__Row h3 {
+        font-size: 28px;
+    }
+
+    .Theme .container .Text__Theme h3 {
+        font-size: 22px;
+    }
+
+    .Theme .container .Text__Theme .btn {
+
+        padding: 10px 6px;
+
+        font-size: 14px;
+
+    }
+
+    
+    .st1 {
+        font-size  : 78px;
+        font-family: 'Volkhov', serif;
+    }
+    
+    
+    
+    svg {
+        width     : 250px;
+        text-align: center;
+        fill      : #009f4d;
+    }
+    
+
+    
+    .text__carousel .p__carousel {
+        font-size: 16px;
+    }
+    
+    .form__carousel {
+        position: relative;
+        display : flex;
+        width   : 85%;
+    }
+    
+    .text__carousel input {
+        width           : 250px;
+        height          : 70px;
+        border-radius   : 30px;
+        padding         : 10px 20px;
+        font-size       : 15px;
+        background-color: #F4F4F4;
+        border-color    : #F4F4F4;
+        border          : none;
+        outline         : none;
+    
+    }
+    
+    .carousel .form__carousel button {
+        position  : absolute;
+        border    : none;
+        background: none;
+        padding   : 20px 18px;
+        font-size : 22px;
+        right     : 0%;
+    
+        color: #009F4D;
+    }
+    
+
+    
+
 }

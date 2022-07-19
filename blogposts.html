@@ -42,7 +42,7 @@
                             <input type="search" name="s">
                         </form>
                         <!-- light-dark -->
-                        <i class="bi bi-brightness-high-fill" id="toggleDark"></i>
+                        <i class="bi bi-moon" id="toggleDark"></i>
                         <!-- bar -->
                         <!--Simple Hamburger Menu-->
                         <nav>
@@ -236,8 +236,8 @@
         const body = document.querySelector('body');
 
         togglelight.addEventListener('click', function () {
-            this.classList.toggle('bi-moon');
-            if (this.classList.toggle('bi-brightness-high-fill')) {
+            this.classList.toggle('bi-brightness-high-fill');
+            if (this.classList.toggle('bi-moon')) {
                 body.style.background = 'white';
                 body.style.color = 'black';
                 body.style.transition = '2s'
@@ -268,23 +268,30 @@
             }
         });
 
-        //bar scroll
-        document.onreadystatechange = function () {
+       //bar scroll
+       document.onreadystatechange = function () {
             let lastScrollPosition = 0;
             const navbar = document.querySelector('.header');
+            var bi = document.querySelector('.bi');
+            var menu = document.querySelector('.menuLine');
+            var logo = document.querySelector('.col__left__header a');
             window.addEventListener('scroll', function (e) {
                 lastScrollPosition = window.scrollY;
 
-                if (lastScrollPosition > 100)
+                if (lastScrollPosition > 100){
                     navbar.classList.add('navbar-dark');
-                  
-                
-                else
+                    bi.classList.add('navbar-darker');
+                    menu.classList.add('navbar-darker');
+                    logo.classList.add('navbar-darker')
+                }
+                else{
                     navbar.classList.remove('navbar-dark');
+                    bi.classList.remove('navbar-darker');
+                    menu.classList.remove('navbar-darker');
+                    logo.classList.remove('navbar-darker')
+                }
             });
         }
-
-
     </script>
 
 </script>

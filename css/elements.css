@@ -142,11 +142,13 @@ input[type=search] {
     color           : #ffffff;
     border-bottom   : 1px solid rgba(0, 0, 0, 0.050);
 }
-
+.navbar-darker{
+    color: black !important;
+}
 /* ---------------------- Nav Light-Dark --------------------- */
 .bi {
     font-size: 35px;
-    color    : black;
+    color    : white;
     cursor   : pointer;
 }
 
@@ -167,7 +169,7 @@ position: relative;
 
 .menuLine {
     font-size: 40px;
-    color    : black;
+    color    : white;
 
 }
 
