@@ -71,10 +71,7 @@ header {
     position          : fixed;
 }
 
-.container__header {
-    width : 1280px;
-    margin: 0 auto;
-}
+
 
 
 .col__left__header {
@@ -86,6 +83,7 @@ header {
     position       : relative;
     color          : #fb811e;
     transition     : all 0.5s;
+    font-family: 'Volkhov', serif;
 }
 
 .col__left__header a:hover {
@@ -95,8 +93,8 @@ header {
 .col__left__header i {
     position : absolute;
     font-size: 20px;
-    left     : 55px;
-    top      : -4px;
+    left     : 68px;
+    top      : -2px;
 }
 
 .row__header {
@@ -109,7 +107,7 @@ header {
 
 /*search*/
 #demo-2 {
-    margin: 0 25px;
+    margin: 0 18px;
 
 }
 
@@ -145,12 +143,13 @@ input[type=search] {
 
 .navbar-dark {
     background-color: white;
-    color           : #ffffff;
+   
     border-bottom   : 1px solid rgba(0, 0, 0, 0.050);
 }
 .navbar-darker{
     color: black !important;
 }
+
 /* ---------------------- Nav Light-Dark --------------------- */
 .bi {
     font-size: 35px;
@@ -162,6 +161,7 @@ input[type=search] {
 nav {
     font-family: "raleway", sans-serif;
     text-align : center;
+    position   : relative;
 }
 
 #menuToggle {
@@ -169,35 +169,45 @@ nav {
     border          : none;
     background-color: transparent;
     color           : #ffffff;
-    margin          : 5px 0px;
+    margin          : 5px 19px;
 }
 
 .menuLine {
     font-size: 40px;
     color    : white;
 
+
 }
 
 .ul__menu {
-    overflow      : hidden;
-    display       : flex;
-    flex-direction: column;
-    padding-left  : 0px;
-    margin-bottom : 0px;
-
-
+    overflow        : hidden;
+    display         : flex;
+    flex-direction  : column;
+    padding-left    : 0px;
+    margin-bottom   : 0px;
+    background-color: rgb(250, 250, 250);
+    position        : absolute;
+    margin-top      : 8px;
+    border-radius   : 10px;
+    font-weight     : 600;
+    font-size       : 18px;
+    box-shadow      : 0 20px 62px rgb(4 20 69 / 10%);
+    right           : 26%;
+    top             : 55px;
+    width           : 280px;
 }
 
 .li__menu {
     float  : right;
     display: block;
     width  : 100%;
-    margin : 5px 0px;
+    margin : 8px 0px;
 }
 
 .li__menu a {
     text-decoration: none;
     color          : black;
+
 }
 
 .li__menu a:hover {
@@ -207,7 +217,6 @@ nav {
 .col__right__header {
     display: flex;
 }
-
 
 
 

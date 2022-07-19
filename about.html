@@ -73,12 +73,12 @@
                         <!-- light-dark -->
                         <i class="bi bi-moon" id="toggleDark"></i>
                         <!-- bar -->
-                        <!--Simple Hamburger Menu-->
+                        <!-- Simple Hamburger Menu -->
                         <nav>
                             <button id="menuToggle" type="button">
                                 <i class="fa-solid fa-bars menuLine"></i>
                             </button>
-                            <!--end menuToggle-->
+                            <!-- end menuToggle -->
                             <ul class="ul__menu">
                                 <li class="li__menu"><a href="index.html">HOME</a></li>
                                 <li class="li__menu"><a href="about.html">ABOUT</a></li>
@@ -94,7 +94,8 @@
                 </div>
             </div>
         </div>
-    </header>
+    </header>  
+    <!---------------------- END HEADER ---------------------->
     <div class="inner_banner">
         <section class="w31-breadcrumb py-5">
             <div class="container py-lg-5 py-sm-4 mt-5 ServicesPageBanner">
@@ -459,7 +460,7 @@
         //bar
         //Set up variables
         var togglebar = $("#menuToggle");
-        var menu = $("nav .ul__menu");
+        var menu = $("nav ul");
         var menuOpened = false;
 
         menu.height(0);
@@ -471,13 +472,16 @@
                 menu.animate({ height: '0px' });
                 menuOpened = false;
             } else {
-                menu.animate({ height: '350px' });
+                menu.animate({
+                    height: '350px'
+                  
+                });
                 menuOpened = true;
             }
         });
 
-           //bar scroll
-           document.onreadystatechange = function () {
+       //bar scroll
+       document.onreadystatechange = function () {
             let lastScrollPosition = 0;
             const navbar = document.querySelector('.header');
             var bi = document.querySelector('.bi');
@@ -500,6 +504,8 @@
                 }
             });
         }
+
+
 
     </script>
 </body>
