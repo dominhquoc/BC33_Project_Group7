@@ -82,7 +82,7 @@
                 <input type="search" name="s" />
               </form>
               <!-- light-dark -->
-              <i class="bi bi-brightness-high-fill" id="toggleDark"></i>
+              <i class="bi bi-moon" id="toggleDark"></i>
               <!-- bar -->
               <!--Simple Hamburger Menu-->
               <nav>
@@ -935,8 +935,8 @@
       const body = document.querySelector("body");
 
       togglelight.addEventListener("click", function () {
-        this.classList.toggle("bi-moon");
-        if (this.classList.toggle("bi-brightness-high-fill")) {
+        this.classList.toggle("bi-brightness-high-fill");
+        if (this.classList.toggle("bi-moon")) {
           body.style.background = "white";
           body.style.color = "black";
           body.style.transition = "2s";

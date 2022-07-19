@@ -30,6 +30,7 @@ header {
     position       : relative;
     color          : #fb811e;
     transition     : all 0.5s;
+    font-family: 'Volkhov', serif;
 }
 
 .col__left__header a:hover {
@@ -39,7 +40,7 @@ header {
 .col__left__header i {
     position : absolute;
     font-size: 20px;
-    left     : 55px;
+    left     : 70px;
     top      : -4px;
 }
 

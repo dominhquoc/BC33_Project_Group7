@@ -1,53 +1,63 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+    margin    : 0;
+    padding   : 0;
     box-sizing: border-box;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&family=Volkhov:wght@400;700&display=swap');
 
-body{
+body {
     font-family: 'Source Sans Pro', sans-serif;
 }
-h1,h2,h3{
+
+h1,
+h2,
+h3 {
     font-family: 'Volkhov', serif;
 }
+
 /* INDEX */
-.sidebar{
-    width: 100px;
-    background-color: #0D1326;
-    text-align: center;
-    border-top-left-radius: 10px;
+.sidebar {
+    width                    : 100px;
+    background-color         : #0D1326;
+    text-align               : center;
+    border-top-left-radius   : 10px;
     border-bottom-left-radius: 10px;
-    position: fixed;
-    top: 120px;
-    right: 0;
-    z-index: 20;
+    position                 : fixed;
+    top                      : 120px;
+    right                    : 0;
+    z-index                  : 20;
 }
-.sidebar .sidebar_icon1{
-   padding: 25px 0;
-   border-bottom: 1px solid #41414d;
+
+.sidebar .sidebar_icon1 {
+    padding      : 25px 0;
+    border-bottom: 1px solid #41414d;
 }
-.sidebar .sidebar_icon{
+
+.sidebar .sidebar_icon {
     margin: 30px 0;
 }
-.sidebar .sidebar_icon1 a{
+
+.sidebar .sidebar_icon1 a {
     text-decoration: none;
-    color: #8f95a8;
-    font-weight: 700;
-    transition: 1s;
-    display: block;
+    color          : #8f95a8;
+    font-weight    : 700;
+    transition     : 1s;
+    display        : block;
 }
-.sidebar .sidebar_icon a{
+
+.sidebar .sidebar_icon a {
     text-decoration: none;
-    color: #8f95a8;
-    font-weight: 700;
-    transition: 1s;
-    display: block;
+    color          : #8f95a8;
+    font-weight    : 700;
+    transition     : 1s;
+    display        : block;
 }
-.sidebar .sidebar_icon a:hover{
+
+.sidebar .sidebar_icon a:hover {
     color: #e6e6e6;
 }
+
 /* header */
 header {
     display           : grid;
@@ -57,6 +67,11 @@ header {
     width             : 100%;
     z-index           : 99;
     position          : fixed;
+}
+
+.container__header {
+    width : 1280px;
+    margin: 0 auto;
 }
 
 .col__left__header {
@@ -83,36 +98,39 @@ header {
 
 .row__header {
     display        : flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items    : center;
     padding        : 25px 0;
 
 }
+
 /*search*/
-#demo-2{
+#demo-2 {
     margin: 0 18px;
-    
+
 }
-input[type=search]{
-    background: #fff url(https://wp.w3layouts.com/farmstead/wp-content/themes/farmstead/assets/images/search.png) no-repeat 16px center;
-    border: 1px solid #eee;
-    padding: 0 16px;
-    width: 50px;
-    height: 50px;
+
+input[type=search] {
+    background   : #fff url(https://wp.w3layouts.com/farmstead/wp-content/themes/farmstead/assets/images/search.png) no-repeat 16px center;
+    border       : 1px solid #eee;
+    padding      : 0 16px;
+    width        : 50px;
+    height       : 50px;
     border-radius: 10em;
-    transition: all .5s;
-    cursor: pointer;
-    
+    transition   : all .5s;
+    cursor       : pointer;
+
 }
-#demo-2 input[type=search]:focus{
-    width: 250px;
-    padding-left: 40px;
-    color: #000;
+
+#demo-2 input[type=search]:focus {
+    width           : 250px;
+    padding-left    : 40px;
+    color           : #000;
     background-color: #fff;
-    cursor: auto;
-    padding-right: 15px;
-    border: 1px solid rgba(0, 0, 0, 0.205);
-    outline: none;
+    cursor          : auto;
+    padding-right   : 15px;
+    border          : 1px solid rgba(0, 0, 0, 0.205);
+    outline         : none;
 }
 
 /* nav-bar */
@@ -124,12 +142,14 @@ input[type=search]{
 
 .navbar-dark {
     background-color: white;
- 
+
     border-bottom: 1px solid rgba(0, 0, 0, 0.050);
 }
-.navbar-darker{
+
+.navbar-darker {
     color: black !important;
 }
+
 /* ---------------------- Nav Light-Dark --------------------- */
 .bi {
     font-size: 35px;
@@ -141,7 +161,7 @@ input[type=search]{
 nav {
     font-family: "raleway", sans-serif;
     text-align : center;
-    position: relative;
+    position   : relative;
 }
 
 #menuToggle {
@@ -194,1591 +214,873 @@ nav {
 
 .col__right__header {
     display: flex;
+
+}
+
+.row {
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
+    display      : flex;
+    flex-wrap    : wrap;
+    margin-top   : calc(-1 * var(--bs-gutter-y));
+    margin-right : calc(-.5 * var(--bs-gutter-x));
+    margin-left  : calc(-.5 * var(--bs-gutter-x));
 }
 
 
 
-
-
-.carousel .main{
-    max-width: 100%;
+.carousel .main {
+    max-width     : 100%;
     padding-bottom: 100px;
 }
-.carousel .row{
-    width: 100%;
-    margin: 0;
-    display: flex;
+
+.carousel .row {
+    width          : 100%;
+    margin         : 0;
+    display        : flex;
     justify-content: flex-end;
 }
-.carousel .row .col1{
-    width: 35%;
+
+.carousel .row .col1 {
+    width   : 35%;
     position: relative;
 }
-.carousel .row .col1 .title{
+
+.carousel .row .col1 .title {
     padding-top: 40%;
 }
-.carousel .row .col1 .title1{
+
+.carousel .row .col1 .title1 {
     position: absolute;
-    top: 36.5%;
-    left: 75px;
-    z-index: 20;
-    width: 900px;
+    top     : 36.5%;
+    left    : 75px;
+    z-index : 20;
+   
 }
-.carousel .row .col1 .title h3{
-    color: #f4f4f4;
-    font-size: 120px;
+
+.carousel .row .col1 .title h3 {
+    color      : #f4f4f4;
+    font-size  : 120px;
     font-weight: bold;
 }
-.carousel .row .col1 .title h2{
-    font-size: 50px;
-    line-height: 60px;
-    font-weight: bold;
-    color: #060606;
+
+.carousel .row .col1 .title h2 {
+    font-size    : 50px;
+    line-height  : 60px;
+    font-weight  : bold;
+    color        : #060606;
     margin-bottom: 20px;
 }
-.carousel .row .col1 .title p{
-    font-size: 20px;
-    color: #707070;
+
+.carousel .row .col1 .title p {
+    font-size    : 20px;
+    color        : #707070;
     margin-bottom: 35px;
 }
-.btn{
-    padding: 10px 20px;
+
+.btn {
+    padding         : 10px 20px;
     background-color: #fb811e;
-    border-radius: 30px;
-    transition: .5s;
+    border-radius   : 30px;
+    transition      : .5s;
 }
-.btn a{
-    color: #fff;
+
+.btn a {
+    color          : #fff;
     text-decoration: none;
-    font-weight: 600;
-    line-height: 26px;
+    font-weight    : 600;
+    line-height    : 26px;
 }
-.btn:hover{
+
+.btn:hover {
     background-color: #009f4d;
 }
-.carousel .row .col2{
-    width: 60%;
+
+.carousel .row .col2 {
+    width  : 60%;
     padding: 0;
 }
-.carousel .row .col2 .carousel-inner img{
-    height: 937px;
-    background-size: cover;
+
+.carousel .row .col2 .carousel-inner img {
+    height                   : 937px;
+    background-size          : cover;
     border-bottom-left-radius: 15px;
 }
-.carousel .row .col2 .carousel-inner .carousel-item::after{
-    content: "";
+
+.carousel .row .col2 .carousel-inner .carousel-item::after {
+    content         : "";
     background-color: rgb(0 0 0 / 17%);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    position        : absolute;
+    top             : 0;
+    left            : 0;
+    width           : 100%;
+    height          : 100%;
 }
-.carousel .row .col2 .carousel-indicators button{
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
+
+.carousel .row .col2 .carousel-indicators button {
+    width           : 12px;
+    height          : 12px;
+    border-radius   : 50%;
     background-color: #fff;
-    opacity: 1;
+    opacity         : 1;
 }
-.carousel .row .col2 .carousel-indicators button.active{
+
+.carousel .row .col2 .carousel-indicators button.active {
     background-color: #fb811e;
 }
-.carousel .row .col2 .carousel-inner .carousel-item{
+
+.carousel .row .col2 .carousel-inner .carousel-item {
     position: relative;
 }
-.carousel .row .col2 .carousel-inner .carousel-item .text{
-    position: absolute;
-    bottom: 40px;
-    right: 20px;
-    color: #fff;
+
+.carousel .row .col2 .carousel-inner .carousel-item .text {
+    position  : absolute;
+    bottom    : 40px;
+    right     : 20px;
+    color     : #fff;
     text-align: center;
 }
-.carousel .row .col2 .carousel-inner .carousel-item .text h2{
+
+.carousel .row .col2 .carousel-inner .carousel-item .text h2 {
     font-size: 24px;
-    margin: 0;
+    margin   : 0;
 }
-.carousel .row .col2 .carousel-inner .carousel-item .text span{
+
+.carousel .row .col2 .carousel-inner .carousel-item .text span {
     font-size: 22px;
 }
-.carousel .row .col2 .carousel-inner .carousel-item .text p{
+
+.carousel .row .col2 .carousel-inner .carousel-item .text p {
     font-size: 17px;
 }
-.grow .main{
-    width: 1280px;
-    margin: 0 auto;
-    padding-bottom: 95px;
+
+.row>* {
+    flex-shrink  : 0;
+    width        : 100%;
+    max-width    : 100%;
+    padding-right: 0;
+    padding-left : 0;
+    margin-top   : 0;
 }
-.grow .main .row{
+
+.grow .main .row {
     display: flex;
 }
-.grow .main .row .col1{
+
+.grow .main .row .col1 {
     width: 50%;
 }
-.grow .main .row .col1 .title{
+
+.grow .main .row .col1 .title {
     padding-top: 50px;
 }
-.grow .main .row .col1 .title span{
+
+.grow .main .row .col1 .title span {
     font-size: 22px;
-    color: #fb811e;
+    color    : #fb811e;
 }
-.grow .main .row .col1 .title h2{
-    font-size: 40px;
-    line-height: 50px;
-    font-weight: 700;
-    color: #060606;
+
+.grow .main .row .col1 .title h2 {
+    font-size    : 40px;
+    line-height  : 50px;
+    font-weight  : 700;
+    color        : #060606;
     margin-bottom: 20px;
 }
-.grow .main .row .col1 .title p{
-    font-size: 17px;
-    line-height: 27px;
-    color: #707070;
+
+.grow .main .row .col1 .title p {
+    font-size    : 17px;
+    line-height  : 27px;
+    color        : #707070;
     margin-bottom: 40px;
 }
-.grow .main .row .col2{
-    width: 50%;
+
+.grow .main .row .col2 {
+    width       : 50%;
     padding-left: 100px;
 }
-.grow .main .row .col2 img{
-    width: 65px;
+
+.grow .main .row .col2 img {
+    width : 65px;
     height: 65px;
 }
-.grow .main .row .col2 a{
+
+.grow .main .row .col2 a {
     text-decoration: none;
 }
-.grow .main .row .col2 h1{
-    font-size: 20px;
+
+.grow .main .row .col2 h1 {
+    font-size  : 20px;
     line-height: 28px;
     font-weight: 600;
-    margin-top: 25px;
-    display: block;
-    color: #060606;
-    transition: all .5s;
+    margin-top : 25px;
+    display    : block;
+    color      : #060606;
+    transition : all .5s;
 }
-.grow .main .row .col2 h1:hover{
+
+.grow .main .row .col2 h1:hover {
     color: #009f4d;
 }
-.grow .col2 .row{
-    width: 550px;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
+
+.grow .col2 .row {
+    width                : 550px;
+    display              : grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap                  : 20px;
+    justify-content      : center;
+    align-items          : center;
 }
-.grow .col2 .row .item{
-    width: 275px;
-    text-align: center;
-    padding: 30px 10px;
-    transition: all .5s;
-    box-shadow:  0 15px 48px 0 rgb(0 0 0 / 4%);
+
+.grow .col2 .row .item {
+    width        : 275px;
+    text-align   : center;
+    padding      : 30px 10px;
+    transition   : all .5s;
+    box-shadow   : 0 15px 48px 0 rgb(0 0 0 / 4%);
     border-radius: 30px;
 }
-.grow .col2 .row .item:hover{
-    box-shadow:  0 50px 120px 0 rgb(0 0 0 / 15%);
+
+.grow .col2 .row .item:hover {
+    box-shadow   : 0 50px 120px 0 rgb(0 0 0 / 15%);
     border-radius: 30px;
 }
-.service{
+
+.service {
     background-color: #009f4d;
+    margin-top: 100px;
 }
-.service .container{
+
+.service .container {
     width: 1280px;
 }
-.service .title .row{
-    display: flex;
+
+.service .title .row {
+    display    : flex;
     align-items: center;
-    flex-wrap: wrap;
-    padding: 80px 0;
-    position: relative;
+    flex-wrap  : wrap;
+    padding    : 80px 0;
+    position   : relative;
 }
-.service .title .row .col1{
+
+.service .title .row .col1 {
     width: 40%;
     color: #fff;
 }
-.service .title .row .col1 p{
+
+.service .title .row .col1 p {
     font-size: 22px;
-    margin: 8px;
+    margin   : 8px;
 }
-.service .title .row .col1 h2{
-    font-size: 40px;
+
+.service .title .row .col1 h2 {
+    font-size  : 40px;
     font-weight: 600;
 }
-.service .title .row .col2{
-    width: 60%;
-    color: #fff;
+
+.service .title .row .col2 {
+    width       : 60%;
+    color       : #fff;
     padding-left: 100px;
 }
-.service .title .row .col2 p{
-    font-size: 20px;
+
+.service .title .row .col2 p {
+    font-size  : 20px;
     font-weight: 300;
 }
-.service .title .row h3{
-    font-size: 220px;
+
+.service .title .row h3 {
+    font-size  : 170px;
     font-weight: bold;
     font-family: "Volkhov";
-    color: #fff;
-    opacity: .14;
-    position: absolute;
-    left: 10%;
-    top: 18%;
+    color      : #fff;
+    opacity    : .14;
+    position   : absolute;
+   
+    top        : 18%;
 }
-.service .main .row{
-    display: flex;
+
+.service .main .row {
+    display        : flex;
     justify-content: center;
-    column-gap: 10px;
-    padding-bottom: 95px;
+    column-gap     : 10px;
+    padding-bottom : 95px;
 }
-.service .main .col{
+
+.service .main .col {
     width: 30%;
 }
-.service .main .item .item_img img{
-    width: 100%;
-    border-top-left-radius: 20px;
+
+.service .main .item .item_img img {
+    width                  : 100%;
+    border-top-left-radius : 20px;
     border-top-right-radius: 20px;
 }
-.service .main .item .item_text{
-    background-color: #fff;
-    padding: 30px 20px;
-    border-bottom-left-radius: 20px;
+
+.service .main .item .item_text {
+    background-color          : #fff;
+    padding                   : 30px 20px;
+    border-bottom-left-radius : 20px;
     border-bottom-right-radius: 20px;
 }
-.service .main .item .item_text span{
-    color: #009f4d;
+
+.service .main .item .item_text span {
+    color           : #009f4d;
     background-color: rgb(0 159 77 / 16%);
-    padding: 5px 20px;
-    font-weight: 600;
-    border-radius: 15px;
+    padding         : 5px 20px;
+    font-weight     : 600;
+    border-radius   : 15px;
 }
-.service .main .item .item_text a{
+
+.service .main .item .item_text a {
     text-decoration: none;
 }
-.service .main .item .item_text h1{
-    font-size: 24px;
+
+.service .main .item .item_text h1 {
+    font-size  : 24px;
     line-height: 30px;
     font-weight: 600;
-    margin: 15px 0;
-    color: #060606;
-    transition: all .5s;
+    margin     : 15px 0;
+    color      : #060606;
+    transition : all .5s;
 }
-.service .main .item .item_text h1:hover{
+
+.service .main .item .item_text h1:hover {
     color: #009f4d;
 }
-.service .main .item .item_text p{
-    font-size: 17px;
+
+.service .main .item .item_text p {
+    font-size  : 17px;
     line-height: 27px;
-    color: #707070;
-    margin: 0;
+    color      : #707070;
+    margin     : 0;
 }
-.quality .main{
+
+.quality .main {
     max-width: 1280px;
-    margin: 0 auto;
-    padding: 95px 0;
+    margin   : 0 auto;
+    padding  : 95px 0;
 }
-.quality .main .row{
-    display: flex;
+
+.quality .main .row {
+    display    : flex;
     align-items: center;
 }
-.quality .main .row .col1{
+
+.quality .main .row .col1 {
     width: 49%;
 }
-.quality .main .row .col2{
-    width: 40%;
+
+.quality .main .row .col2 {
+    width      : 40%;
     margin-left: 95px;
-    position: relative;
+    position   : relative;
 }
-.quality .main .row .col2 img{
-    width: 100%;
-    height: 600px;
+
+.quality .main .row .col2 img {
+    width        : 100%;
+    height       : 600px;
     border-radius: 25px;
 }
-.quality .main .row .col2 .text{
-    width: 330px;
-    background-color: #fb811e;
-    text-align: center;
-    padding: 30px 0;
+
+.quality .main .row .col2 .text {
+    width                     : 330px;
+    background-color          : #fb811e;
+    text-align                : center;
+    padding                   : 30px 0;
     border-bottom-right-radius: 100px;
-    position: absolute;
-    left: -100px;
-    bottom: 40px;
+    position                  : absolute;
+    left                      : -100px;
+    bottom                    : 40px;
 }
-.quality .main .row .col2 .text h2{
-    font-size: 70px;
+
+.quality .main .row .col2 .text h2 {
+    font-size  : 70px;
     line-height: 80px;
-    color: #fff;
+    color      : #fff;
     font-weight: 600;
 }
-.quality .main .row .col2 .text p{
-    color: #fff;
-    font-size: 18px;
+
+.quality .main .row .col2 .text p {
+    color         : #fff;
+    font-size     : 18px;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight   : 600;
     letter-spacing: .2px;
 }
-.quality .main .row .col1 .item{
-    display: flex;
+
+.quality .main .row .col1 .item {
+    display   : flex;
     margin-top: 72px;
 }
-.quality .main .row .col1 .item_content{
-    display: flex;
+
+.quality .main .row .col1 .item_content {
+    display      : flex;
     padding-right: 30px;
 }
-.quality .main .row .col1 .item_content .icon span{
-    font-size: 30px;
-    color: #fb811e;
+
+.quality .main .row .col1 .item_content .icon span {
+    font-size   : 30px;
+    color       : #fb811e;
     margin-right: 10px;
 }
-.quality .main .row .col1 .item_content .text h2{
-    font-size: 24px;
+
+.quality .main .row .col1 .item_content .text h2 {
+    font-size    : 24px;
     margin-bottom: 10px;
-    font-weight: 600;
-    color: #060606;
+    font-weight  : 600;
+    color        : #060606;
 }
-.quality .main .row .col1 .item_content .text p{
-    font-size: 17px;
+
+.quality .main .row .col1 .item_content .text p {
+    font-size  : 17px;
     line-height: 27px;
-    color: #707070;
+    color      : #707070;
 }
-.quality .main .row .col1 .title span{
+
+.quality .main .row .col1 .title span {
     font-size: 22px;
-    color: #fb811e;
+    color    : #fb811e;
 }
-.quality .main .row .col1 .title h1{
-    font-size: 40px;
+
+.quality .main .row .col1 .title h1 {
+    font-size  : 40px;
     line-height: 50px;
     font-weight: 600;
-    color: #060606;
+    color      : #060606;
 }
-.quality .main .row .col1 .title p{
-    font-size: 17px;
+
+.quality .main .row .col1 .title p {
+    font-size  : 17px;
     line-height: 27px;
-    color: #707070;
+    color      : #707070;
 }
-.homeservice .main{
-    width: 1280px;
+
+.homeservice .main {
+    width : 1280px;
     margin: 0 auto;
 }
-.homeservice .main .row{
-    display: flex;
+
+.homeservice .main .row {
+    display        : flex;
     justify-content: center;
 }
-.homeservice .main .row .col{
-    width: 28%;
-    flex: none;
+
+.homeservice .main .row .col {
+    width  : 28%;
+    flex   : none;
     padding: 32px 16px;
 }
-.homeservice .main .row .col a{
+
+.homeservice .main .row .col a {
     text-decoration: none;
 }
-.homeservice .main .row .col .item{
-    display: flex;
-    transition: .3s ease-in;
-    padding-top: 20px;
+
+.homeservice .main .row .col .item {
+    display     : flex;
+    transition  : .3s ease-in;
+    padding-top : 20px;
     padding-left: 20px;
-    cursor: pointer;
-    border: 1px solid transparent;
+    cursor      : pointer;
+    border      : 1px solid transparent;
 }
-.homeservice .main .row .col .item:hover{
-    border: 1px solid #eee;
+
+.homeservice .main .row .col .item:hover {
+    border       : 1px solid #eee;
     border-radius: 10px;
 }
-.homeservice .main .row .col .item:hover .text h1{
+
+.homeservice .main .row .col .item:hover .text h1 {
     color: #009f4d;
 }
-.homeservice .main .row .col .item .img{
-    width: 24%;
+
+.homeservice .main .row .col .item .img {
+    width: 50%;
 }
-.homeservice .main .row .col .item .img img{
+
+.homeservice .main .row .col .item .img img {
     width: 54px;
 }
-.homeservice .main .row .col .item .text{
+
+.homeservice .main .row .col .item .text {
     width: 62%;
 }
-.homeservice .main .row .col .item .text a{
+
+.homeservice .main .row .col .item .text a {
     text-decoration: none;
 }
-.homeservice #h1{
+
+.homeservice #h1 {
     color: #009f4d;
 }
-.homeservice .main .row .col .item .text h1{
-    font-size: 22px;
+
+.homeservice .main .row .col .item .text h1 {
+    font-size  : 22px;
     line-height: 25px;
     font-weight: 600;
-    color: #060606;
-    transition: all .5s;
-}.homeservice .main .row .col .item .text h1:hover{
+    color      : #060606;
+    transition : all .5s;
+}
+
+.homeservice .main .row .col .item .text h1:hover {
     color: #009f4d;
 }
-.homeservice .main .row .col .item .text p{
-    font-size: 17px;
+
+.homeservice .main .row .col .item .text p {
+    font-size  : 17px;
     line-height: 27px;
-    color: #707070;
+    color      : #707070;
 }
-.gallary .main{
-    width: 1280px;
-    margin: 0 auto;
-    padding-top: 60px;
+
+.gallary .main {
+
+    padding-top   : 60px;
     padding-bottom: 120px;
 }
-.gallary .main .row{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(2,1fr);
+
+.gallary .main .row {
+    display              : grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows   : repeat(2, 1fr);
 }
-.gallary .main .row .col{
-    padding: 0;
+
+.gallary .main .row .col {
+    padding  : 0;
     max-width: 100%;
 }
-.gallary .main .row .col .title{
+
+.gallary .main .row .col .title {
     margin-right: 10px;
 }
-.gallary .main .row .col .title span{
+
+.gallary .main .row .col .title span {
     font-size: 22px;
-    color: #fb811e;
+    color    : #fb811e;
 }
-.gallary .main .row .col .title h2{
-    font-size: 40px;
+
+.gallary .main .row .col .title h2 {
+    font-size  : 40px;
     line-height: 50px;
     font-weight: 600;
-    color: #060606;
+    color      : #060606;
 }
-.gallary .main .row .col .title p{
-    font-size: 17px;
+
+.gallary .main .row .col .title p {
+    font-size  : 17px;
     line-height: 27px;
-    color: #707070;
+    color      : #707070;
 }
-.gallary .main .row .col .title a{
-    color: #fff;
+
+.gallary .main .row .col .title a {
+    color          : #fff;
     text-decoration: none;
-    font-size: 14px;
-    font-weight: 600;
+    font-size      : 14px;
+    font-weight    : 600;
 }
-.gallary .main .row .col .title a:active{
-    color: #fff;
+
+.gallary .main .row .col .title a:active {
+    color           : #fff;
     background-color: #956fef;
-    border-color: #956fef;
+    border-color    : #956fef;
 }
-.gallary .main .row .col .item{
+
+.gallary .main .row .col .item {
     position: relative;
 }
-.gallary .main .row .col .item .img img{
+
+.gallary .main .row .col .item .img img {
     width: 100%;
 }
-.gallary .main .row .col .item .text{
-    width: 90%;
+
+.gallary .main .row .col .item .text {
+    width     : 90%;
     text-align: center;
-    padding: 6px;
+    padding   : 6px;
     background: rgb(255 255 255 / 27%);
-    position: absolute;
-    left: 16px;
-    bottom: 20px;
+    position  : absolute;
+    left      : 16px;
+    bottom    : 20px;
 }
-.gallary .main .row .col .item .text h2{
-    color: #fff;
-    font-size: 20px;
+
+.gallary .main .row .col .item .text h2 {
+    color      : #fff;
+    font-size  : 20px;
     font-weight: bold;
-    margin: 0;
+    margin     : 0;
 }
-.review{
-     background-image: url(https://wp.w3layouts.com/farmstead/wp-content/themes/farmstead/assets/images/bg1.jpg);
-    background-size: 100%;
-    height: 520px;
-    position: relative;
+
+.review {
+    background-image: url(https://wp.w3layouts.com/farmstead/wp-content/themes/farmstead/assets/images/bg1.jpg);
+    background-size : 100%;
+    height          : 520px;
+    position        : relative;
 }
-.review::before{
-    content: "";
+
+.review::before {
+    content   : "";
     background: rgb(10 10 10 / 52%);
-    position: absolute;
-    top: 0;
+    position  : absolute;
+    top       : 0;
     min-height: 100%;
-    left: 0;
-    right: 0;
-    z-index: 1;
+    left      : 0;
+    right     : 0;
+    z-index   : 1;
 }
-.review .main .row .col .carousel-inner{
+
+.review .main .row .col .carousel-inner {
     z-index: 20;
 }
-.review .main .row .col .carouselExampleIndicators{
+
+.review .main .row .col .carouselExampleIndicators {
     height: 520px;
 }
-.review .main .row .col .carousel-inner .carousel-item{
+
+.review .main .row .col .carousel-inner .carousel-item {
     height: 520px;
 }
-.review .main .row .col .carousel-indicators{
+
+.review .main .row .col .carousel-indicators {
     position: absolute;
-    bottom: 60px;
-    z-index: 25;
+    bottom  : 60px;
+    z-index : 25;
 }
-.review .main .row .col .carousel-inner .carousel-item #img{
+
+.review .main .row .col .carousel-inner .carousel-item #img {
     visibility: hidden;
 }
-.review .main .row .col .carousel-inner .carousel-item .carousel-caption{
-    display: flex !important;
+
+.review .main .row .col .carousel-inner .carousel-item .carousel-caption {
+    display        : flex !important;
     justify-content: center;
-    position: absolute;
-    bottom: 25%;
+    position       : absolute;
+    bottom         : 25%;
 }
-.review .main .row .col .carousel-inner .carousel-item .carousel-caption .col_left{
+
+.review .main .row .col .carousel-inner .carousel-item .carousel-caption .col_left {
     width: 20%;
 }
-.review .main .row .col .carousel-inner .carousel-item .carousel-caption .col_left h2{
+
+.review .main .row .col .carousel-inner .carousel-item .carousel-caption .col_left h2 {
     font-weight: 600;
-    font-size: 20px;
-    margin: 10px 0 5px;
-    color: #fff;
+    font-size  : 20px;
+    margin     : 10px 0 5px;
+    color      : #fff;
 }
-.review .main .row .col .carousel-inner .carousel-item .carousel-caption .col_right{
-    width: 55%;
+
+.review .main .row .col .carousel-inner .carousel-item .carousel-caption .col_right {
+    width   : 55%;
     position: relative;
 }
-.review .main .row .col .carousel-inner .carousel-item .carousel-caption .col_right i{
+
+.review .main .row .col .carousel-inner .carousel-item .carousel-caption .col_right i {
     font-size: 30px;
-    color: #fb811e;
-    position: absolute;
-    top: -25px;
-    left: 32px;
+    color    : #fb811e;
+    position : absolute;
+    top      : -25px;
+    left     : 32px;
 }
-.review .main .row .col .carousel-inner .carousel-item .carousel-caption .col_right p{
-    font-size: 22px;
-    line-height: 34px;
-    color: #fff;
-    text-indent: 30px;
-    text-align: left;
+
+.review .main .row .col .carousel-inner .carousel-item .carousel-caption .col_right p {
+    font-size   : 22px;
+    line-height : 34px;
+    color       : #fff;
+    text-indent : 30px;
+    text-align  : left;
     padding-left: 40px;
 }
-.review .main .row .col .carousel-inner .carousel-item .carousel-caption .col_left img{
-    width: 90px;
+
+.review .main .row .col .carousel-inner .carousel-item .carousel-caption .col_left img {
+    width        : 90px;
     border-radius: 100%;
-    cursor: pointer;
+    cursor       : pointer;
 }
-.review .main .row .col .carousel-indicators button{
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
+
+.review .main .row .col .carousel-indicators button {
+    width           : 12px;
+    height          : 12px;
+    border-radius   : 50%;
     background-color: #fff;
-    opacity: 1;
-    margin: 0 8px;
+    opacity         : 1;
+    margin          : 0 8px;
 }
-.review .main .row .col .carousel-indicators button.active{
+
+.review .main .row .col .carousel-indicators button.active {
     background-color: #fb811e;
 }
-.footer .main{
-    width: 1280px;
-    margin: 0 auto;
+
+.footer .main {
+    width      : 1280px;
+    margin     : 0 auto;
     padding-top: 60px;
 }
-.footer .main .row{
-    display: flex;
+
+.footer .main .row {
+    display        : flex;
     justify-content: center;
 }
-.footer .main .row .col .item1{
+
+.footer .main .row .col .item1 {
     margin-right: 20px;
 }
-.footer .main .row .col .item1 h2{
-    font-size: 20px;
-    line-height: 25px;
+
+.footer .main .row .col .item1 h2 {
+    font-size    : 20px;
+    line-height  : 25px;
     margin-bottom: 30px;
-    font-weight: 600;
-    color: #060606;
-    margin-top: 10px;
+    font-weight  : 600;
+    color        : #060606;
+    margin-top   : 10px;
 }
-.footer .main .row .col .item1 p{
+
+.footer .main .row .col .item1 p {
     font-size: 17px;
-    color: #707070;
+    color    : #707070;
 }
-.footer .main .row .col .item2 p{
-    font-size: 17px;
+
+.footer .main .row .col .item2 p {
+    font-size  : 17px;
     line-height: 27px;
-    color: #707070;
-    margin: 24px 0;
+    color      : #707070;
+    margin     : 24px 0;
 }
-.footer .main .row .col .item2 #w3:hover{
+
+.footer .main .row .col .item2 #w3:hover {
     color: #fb811e;
 }
-.footer .main .row .col .item2 #w3{
-    color: #009f4d;
+
+.footer .main .row .col .item2 #w3 {
+    color          : #009f4d;
     text-decoration: none;
-    transition: all .5s;
+    transition     : all .5s;
 }
-.footer .main .row .col .item3{
+
+.footer .main .row .col .item3 {
     margin-left: 40px;
 }
-.footer .main .row .col .item3 h2{
-    font-size: 20px;
-    line-height: 25px;
+
+.footer .main .row .col .item3 h2 {
+    font-size    : 20px;
+    line-height  : 25px;
     margin-bottom: 30px;
-    font-weight: 600;
-    color: #060606;
+    font-weight  : 600;
+    color        : #060606;
 }
-.footer .main .row .col .item3 p{
-    font-size: 17px;
+
+.footer .main .row .col .item3 p {
+    font-size  : 17px;
     line-height: 27px;
-    color: #707070;
+    color      : #707070;
 }
-.footer .main .row .col .item3 form{
+
+.footer .main .row .col .item3 form {
     display: flex;
-    width: 100%;
-    height: 50px;
-    border: none;
+    width  : 100%;
+    height : 50px;
+    border : none;
 }
-.footer .main .row .col .item3 form input{
-    padding: 12px 30px;
-    background-color: #f4f4f4;
-    border: none;
-    width: 295px;
-    border-top-left-radius: 30px;
+
+.footer .main .row .col .item3 form input {
+    padding                  : 12px 30px;
+    background-color         : #f4f4f4;
+    border                   : none;
+    width                    : 295px;
+    border-top-left-radius   : 30px;
     border-bottom-left-radius: 30px;
-    outline: none;
+    outline                  : none;
 }
-.footer .main .row .col .item3 form button{
-    padding: 12px 30px;
-    border: transparent;
-    border-top-right-radius: 30px;
+
+.footer .main .row .col .item3 form button {
+    padding                   : 12px 30px;
+    border                    : transparent;
+    border-top-right-radius   : 30px;
     border-bottom-right-radius: 30px;
-    background-color: #009f4d;
-    transition: all .5s;
+    background-color          : #009f4d;
+    transition                : all .5s;
 }
-.footer .main .row .col .item3 form button a{
+
+.footer .main .row .col .item3 form button a {
     color: #fff;
 }
-.footer .main .row .col .item3 form button:hover{
+
+.footer .main .row .col .item3 form button:hover {
     opacity: .8;
 }
-.footer .main .row .col .item3 ul{
-    display: flex;
-    padding: 0;
-    margin-top: 40px;
+
+.footer .main .row .col .item3 ul {
+    display    : flex;
+    padding    : 0;
+    margin-top : 40px;
     margin-left: 5px;
 }
-.footer .main .row .col .item3 ul li{
-    list-style: none;
+
+.footer .main .row .col .item3 ul li {
+    list-style  : none;
     margin-right: 30px;
 }
-.footer .main .row .col .item3 ul li a{
-    text-decoration: none;
-    color: #009f4d;
-    padding: 7px 10px;
+
+.footer .main .row .col .item3 ul li a {
+    text-decoration : none;
+    color           : #009f4d;
+    padding         : 7px 10px;
     background-color: #ecfaf2;
-    border-radius: 30px;
-    transition: all .5s;
+    border-radius   : 30px;
+    transition      : all .5s;
 }
-.footer .main .row .col .item3 ul li a:hover{
-    color: #fb811e;
+
+.footer .main .row .col .item3 ul li a:hover {
+    color     : #fb811e;
     background: rgb(255 201 69 / 19%);
     box-shadow: 0px 4px 7px 0px rgb(10 10 10 / 24%);
 }
-.backtotop{
-    width: 50px;
-    height: 50px;
-    background: #009f4d;
+
+.backtotop {
+    width        : 50px;
+    height       : 50px;
+    background   : #009f4d;
     border-radius: 5px;
-    line-height: 50px;
-    text-align: center;
-    display: block;
-    position: fixed;
-    right: 15px;
-    bottom: 50px;
-    color: #fff;
-    transition: all .8s;
-    visibility: hidden;
-    opacity: 0;
+    line-height  : 50px;
+    text-align   : center;
+    display      : block;
+    position     : fixed;
+    right        : 15px;
+    bottom       : 50px;
+    color        : #fff;
+    transition   : all .8s;
+    visibility   : hidden;
+    opacity      : 0;
 }
-.cd-top--is-visible{
+
+.cd-top--is-visible {
     visibility: visible;
-    opacity: 1;
+    opacity   : 1;
 }
-.backtotop:hover{
+
+.backtotop:hover {
     opacity: .8;
-    color: #fff;
+    color  : #fff;
 }
 
-/* desktop */
-@media screen and (max-width: 1200px){
-    body{
-        padding-right: 21%;
-    }
+@media screen and (max-width: 914px){
+
+}
+@media screen and (max-width: 698px){
     .sidebar{
-        left: none;
+        right: 0px;
         z-index: 300;
-        right: 28%;
+        width: 50px;
     }
-    .col__left__header a{
-        margin-left: -200px;
-    }
-    .col__right__header {
-        margin-right: 140px;
-    }
-    .carousel .row .col1{
-        width: 35%;
-    }
-    .carousel .row .col2{
-        width: 65%;
-    }
-    .carousel .row .col1 .title h2{
-        font-size: 30px;
-        line-height: 40px;
-    }
-    .carousel .row .col1 .title p{
-        font-size: 17px;
-    }
-    .carousel .row .col1 .title1{
-        width: 400px;
-    }
-    .carousel .row .col1 .title h3{
-        position: absolute;
-        top: 28%;
-        left: 30px;
-    }
-    .btn a{
-        font-size: 12px;
-    }
-    .grow{
-        width: 992px;
-        padding: 0 30px;
-    }.grow .main{
-        padding-bottom: 0;
-    }
-    .grow .main .row .col1{
-        width: 35%;
-    }
-    .grow .main .row .col1 .title{
-        width: 90%;
-    }
-    .grow .main .row .col1 .title span{
-        font-size: 18px;
-    }
-    .grow .main .row .col1 .title h2{
-        font-size: 30px;
-    }
-    .grow .main .row .col1 .title p{
-        font-size: 15px;
-    }
-    .grow .main .row .col1 .title .btn a{
-        font-size: 12px;
-    }
-    .grow .main .row .col2{
-        width: 65%;
-        padding: 30px 0;
-    }
-    .grow .main .row .col2 .main{
-        width: 100%;
-        margin: 0;
-    }
-    .grow .col2 .row .item{
-        width: 100%;
-    }
-    .grow .col2 .row{
-        width: 420px;
-        margin-left: 20px;
-    }
-    .service .container{
-        width: 992px;
-        padding-left: 20px;
-    }
-    .service .container .main{
-        width: 100%;
-    }
-    .service .container .title{
-        padding: 0 15px;
-    }
-    .service .title .row{
-        padding-bottom: 40px;
-    }
-    .service .title .row .col1{
-        width: 50%;
-    }
-    .service .title .row .col1 p{
-        font-size: 18px;
-        padding: 0;
-        margin-left: 0;
-    }
-    .service .title .row .col1 h2{
-        font-size: 32px;
-        line-height: 40px;
-        font-weight: 600;
-        padding: 0;
-        padding-right: 20px;
-    }
-    .service .title .row .col2{
-        width: 50%;
-        padding: 0;
-    }
-    .service .title .row .col2 p{
-        font-size: 15px;
-        font-weight: 300;
-        margin: 0;
-        width: 80%;
-    }
-    .service .title .row h3{
-        font-size: 100px;
-        font-weight: 600;
-        line-height: 60px;
-        left: 25%;
-        top: 42%;
-    }
-    .service .main .row{
-        padding-bottom: 20px;
-        column-gap: 0;
-    }
-    .service .container .main .row .col{
-        width: 250px;
-        padding-bottom: 40px;
-    }
-    .service .main .row .col .item{
-        width: 250px;
-    }
-    .service .main .item .item_text h1{
-        font-size: 16px;
-    }
-    .service .main .item .item_text p{
-        font-size: 14px;
-    }
-    .quality .main{
-        width: 992px;
-        padding-bottom: 20px;
-        padding-left: 20px;
-        padding-right: 10px;
-    }
-    .quality .main .row{
-        justify-content: center;
-        width: 100%;
-    }
-    .quality .main .row .col2{
-        width: 45%;
-        margin-left: 40px;
-        padding: 0 30px;
-    }
-    .quality .main .row .col2 .text{
-        left: -50px;
-    }
-    .homeservice .main{
-        width: 992px;
-    }
-    .homeservice .main .row{
-        padding-right: 20px;
-    }
-    .homeservice .main .row .col{
-        width: 33%;
-        padding: 0 20px;
-    }
-    .homeservice .main .row .col .item .img img {
-        width: 40px;
-    }
-    .homeservice .main .row .col .item .text h1 {
-        font-size: 18px;
-    }
-    .homeservice .main .row .col .item .text p {
-        font-size: 15px;
-    }
-    .gallary .main{
-        width: 992px;
-        position: relative;
-        padding-left: 40px;
-        padding-right: 20px;
-        padding-bottom: 40px;
-    }
-    .gallary .main .row{
-        padding-right: 40px;
-        width: 100%;
-    }
-    .review{
-        background-image: none;
-    }
-    .review .main{
-        width: 992px;
-    }
-    .review .main .row .col .carousel-inner .carousel-item #img{
-        visibility: visible;
-        height: 550px;
-    }
-    .review .main .row .col .carousel-indicators{
-        bottom: 10px;
-    }
-    .review .main .row .col .carousel-inner .carousel-item .carousel-caption{
-        height: 500px;
-        bottom: 0;
-        width: 80%;
-        z-index: 10;
-        align-items: center;
-        left: 40px;
-    }
-    .review .main .row .col .carousel-inner .carousel-item .carousel-caption .col_left{
-        width: 25%;
-    }
-    .review .main .row .col .carousel-inner .carousel-item .carousel-caption .col_right{
-        width: 80%;
-        padding-left: 40px;
-    }
-    .review .main .row .col .carousel-inner .carousel-item .carousel-caption .col_right p{
-        font-size: 20px;
-        line-height: 34px;
-        padding: 0;
-    }
-    .review .main .row .col .carousel-inner .carousel-item::before{
-        content: "";
-        background: rgb(10 10 10 / 52%);
-        position: absolute;
-        top: 0;
-        min-height: 100%;
-        left: 0;
-        right: 0;
-        z-index: 1;
-    }
-    .footer .main{
-        width: 992px;
-        padding-left: 20px;
-    }
-    .footer .main .row .col .item3 p{
-        width: 300px;
-    }
-    .footer .main .row .col .item3 form{
-        margin-right: 20px;
-        width: 80%;
-    }
-    .footer .main .row .col .item3 ul li{
-        margin-right: 20px;
-    }
-    .footer .main .row .col .item1 p{
-        font-size: 14px;
-    }
-    .footer .main .row .col .item2 p{
-        font-size: 14px;
-    }
-    .footer .main .row .col .item3 p{
-        font-size: 14px;
-    }
-    .footer .main .row .col .item3{
-        margin: 0;
-    }
-    .footer .main .row .col .item1 h2{
-        font-size: 18px;
-    }
-    .footer .logo a{
-        font-size: 25px;
-    }
-    .footer .main .row .col .item3 h2{
-        font-size: 18px;
-    }
-    .backtotop{
-        right: 29%;
-        width: 40px;
-        height: 40px;
-    }
-}
-
-/* tablet */
-@media screen and (max-width: 992px){
-    body{
-        padding-right: 44px;
-    }
-    .sidebar{
-        left: none;
-        z-index: 300;
-        right: 28%;
-        width: 80px;
-    }
-    .sidebar .sidebar_icon1 {
-        padding: 10px 0;
-    }
-    .sidebar .sidebar_icon {
-        margin: 10px 0;
-    }
-    .col__left__header a{
-        margin-left: -200px;
-    }
-    .col__right__header {
-        margin-right: 140px;
-    }
-    .carousel .row .col1{
-        width: 35%;
-    }
-    .carousel .row .col2{
-        width: 65%;
-    }
-    .carousel .row .col1 .title h2{
-        font-size: 30px;
-        line-height: 40px;
-    }
-    .carousel .row .col1 .title p{
-        font-size: 17px;
-    }
-    .carousel .row .col1 .title1{
-        width: 400px;
-    }
-    .carousel .row .col1 .title h3{
-        position: absolute;
-        top: 28%;
-        left: 30px;
-    }
-    .btn a{
-        font-size: 12px;
-    }
-    .grow{
-        width: 992px;
-        padding: 0 30px;
-    }.grow .main{
-        padding-bottom: 0;
-    }
-    .grow .main .row .col1{
-        width: 35%;
-    }
-    .grow .main .row .col1 .title{
-        width: 90%;
-    }
-    .grow .main .row .col1 .title span{
-        font-size: 18px;
-    }
-    .grow .main .row .col1 .title h2{
-        font-size: 30px;
-    }
-    .grow .main .row .col1 .title p{
-        font-size: 15px;
-    }
-    .grow .main .row .col1 .title .btn a{
-        font-size: 12px;
-    }
-    .grow .main .row .col2{
-        width: 65%;
-        padding: 30px 0;
-    }
-    .grow .main .row .col2 .main{
-        width: 100%;
-        margin: 0;
-    }
-    .grow .col2 .row .item{
-        width: 100%;
-    }
-    .grow .col2 .row{
-        width: 420px;
-        margin-left: 20px;
-    }
-    .service .container{
-        width: 992px;
-        padding-left: 40px;
-    }
-    .service .container .title{
-        padding: 0 15px;
-    }
-    .service .title .row{
-        padding-bottom: 40px;
-    }
-    .service .title .row .col1{
-        width: 50%;
-    }
-    .service .title .row .col1 p{
-        font-size: 18px;
-        padding: 0;
-        margin-left: 0;
-    }
-    .service .title .row .col1 h2{
-        font-size: 32px;
-        line-height: 40px;
-        font-weight: 600;
-        padding: 0;
-        padding-right: 20px;
-    }
-    .service .title .row .col2{
-        width: 50%;
-        padding: 0;
-    }
-    .service .title .row .col2 p{
-        font-size: 15px;
-        font-weight: 300;
-        margin: 0;
-        width: 80%;
-    }
-    .service .title .row h3{
-        font-size: 100px;
-        font-weight: 600;
-        line-height: 60px;
-        left: 25%;
-        top: 42%;
-    }
-    .service .main .row{
-        padding-bottom: 20px;
-        column-gap: 0;
-    }
-    .service .container .main .row .col{
-        width: 250px;
-        padding-bottom: 40px;
-    }
-    .service .main .row .col .item{
-        width: 250px;
-    }
-    .service .main .item .item_text h1{
-        font-size: 16px;
-    }
-    .service .main .item .item_text p{
-        font-size: 14px;
-    }
-    .quality .main{
-        width: 992px;
-        padding-bottom: 40px;
-        padding-left: 10px;
-    }
-    .quality .main .row{
-        justify-content: center;
-        width: 100%;
-    }
-    .quality .main .row .col2{
-        width: 45%;
-        margin-left: 40px;
-        padding: 0 30px;
-    }
-    .quality .main .row .col2 .text{
-        left: -50px;
-    }
-    .homeservice .main{
-        width: 992px;
-    }
-    .homeservice .main .row{
-        padding-right: 20px;
-    }
-    .homeservice .main .row .col{
-        width: 33%;
-        padding: 0 20px;
-    }
-    .homeservice .main .row .col .item .img img {
-        width: 40px;
-    }
-    .homeservice .main .row .col .item .text h1 {
-        font-size: 18px;
-    }
-    .homeservice .main .row .col .item .text p {
-        font-size: 15px;
-    }
-    .gallary .main{
-        width: 992px;
-        position: relative;
-        padding-left: 30px;
-        padding-right: 10px;
-        padding-bottom: 40px;
-    }
-    .gallary .main .row{
-        padding-right: 40px;
-        width: 100%;
-    }
-    .review{
-        background-image: none;
-    }
-    .review .main{
-        width: 992px;
-    }
-    .review .main .row .col .carousel-inner .carousel-item #img{
-        visibility: visible;
-        height: 550px;
-    }
-    .review .main .row .col .carousel-indicators{
-        bottom: 10px;
-    }
-    .review .main .row .col .carousel-inner .carousel-item .carousel-caption{
-        height: 500px;
-        bottom: 0;
-        width: 80%;
-        z-index: 10;
-        align-items: center;
-        left: 40px;
-    }
-    .review .main .row .col .carousel-inner .carousel-item .carousel-caption .col_left{
-        width: 25%;
-    }
-    .review .main .row .col .carousel-inner .carousel-item .carousel-caption .col_right{
-        width: 80%;
-        padding-left: 40px;
-    }
-    .review .main .row .col .carousel-inner .carousel-item .carousel-caption .col_right p{
-        font-size: 20px;
-        line-height: 34px;
-        padding: 0;
-    }
-    .review .main .row .col .carousel-inner .carousel-item::before{
-        content: "";
-        background: rgb(10 10 10 / 52%);
-        position: absolute;
-        top: 0;
-        min-height: 100%;
-        left: 0;
-        right: 0;
-        z-index: 1;
-    }
-    .footer .main{
-        width: 992px;
-        padding-left: 20px;
-    }
-    .footer .main .row .col .item3 p{
-        width: 300px;
-    }
-    .footer .main .row .col .item3 form{
-        margin-right: 20px;
-        width: 80%;
-    }
-    .footer .main .row .col .item3 ul li{
-        margin-right: 20px;
-    }
-    .footer .main .row .col .item1 p{
-        font-size: 14px;
-    }
-    .footer .main .row .col .item2 p{
-        font-size: 14px;
-    }
-    .footer .main .row .col .item3 p{
-        font-size: 14px;
-    }
-    .footer .main .row .col .item3{
-        margin: 0;
-    }
-    .footer .main .row .col .item1 h2{
-        font-size: 18px;
-    }
-    .footer .logo a{
-        font-size: 25px;
-    }
-    .footer .main .row .col .item3 h2{
-        font-size: 18px;
-    }
-    .backtotop{
-        right: 29%;
-        width: 40px;
-        height: 40px;
-    }
-}
-
-/* phone (xoay ngang) */
-@media screen and (max-width: 768px){
-    body{
-        padding-right: 50px;
-    }
-    .sidebar{
-        z-index: 300;
-        right: 28%;
-        width: 80px;
-    }
-    .sidebar .sidebar_icon1 {
-        padding: 10px 0;
-    }
-    .sidebar .sidebar_icon {
-        margin: 10px 0;
-    }
-    .row__header{
-        justify-content: space-around;
-    }
-    .col__left__header a{
-        margin-left: -80px;
-    }
-    .col__right__header {
-        padding-right: 160px
-    }
-    .carousel .row{
-        display: block;
-    }
-    .carousel .row .col1{
-        position: unset; 
-    }
-    .carousel .row .col2{
-        width: 100%;
-    }
-    .carousel .row .col1 .title{
-        padding: 0;
-        max-width: 100%;
-    }
-    .carousel .row .col1 .title1{
-        width: 350px;
-        top: 25%;
-        margin-left: -55px;
-        margin-right: 50px;
-        background-color: #fff;
-        height: 370px;
-        padding-left: 25px;
-        padding-right: 5px;
-        padding-top: 30px;
-        border-radius: 10px;
-    }
-    .carousel .row .col1 .title1 h2{
-        font-size: 25px;
-        line-height: 40px;
-        font-weight: bold;
-        color: #060606;
-    }
-    .carousel .row .col1 .title1 p{
-        font-size: 15px;
-    }
-    .carousel .row .col1 .title1 a{
-        font-size: 12px;
-    }
-    .carousel .row .col1 .title h3{
-        display: none;
-    }
-    .carousel .row .col2 .carousel-inner .carousel-item::before{
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background: rgb(0 0 0 / 17%);
-        z-index: -1;
-        top: 0;
-    }  
-    .grow{
-        padding: 0 0px;
-    } 
-    .grow .main{
-        width: 768px;
-        margin: 0;
-    }
-    .grow .main .row .col1{
-        width: 90%;
-    padding-left: 30px;
-    }
-    .grow .main .row .col1 .title{
-        width: 100%;
-    }
-    .grow .main .row .col1 .title span{
-        font-size: 18px;
-    }
-    .grow .main .row .col1 .title h2{
-        font-size: 30px;
-    }
-    .grow .main .row .col1 .title p{
-        font-size: 15px;
-    }
-    .grow .main .row .col1 .title .btn a{
-        font-size: 12px;
-    }
-    .service .main .row .col .item {
-        width: 330px;
-    }
-    .service .container .main .row .col3{
-        padding-left: 28%;
-    }
-    .grow .row .main .col2 .main{
-        width: 100%;
-    }
-    .grow .main .row .col2{
-        width: 90%;
-        padding: 30px 0;
-    }
-    .grow .col2 .row .item{
-        width: 100%;
-    }
-    .grow .col2 .row{
-        width: 100%;
-    }
-    .service .container{
-        width: 768px;
-        margin-left: -20px;
-    }
-    .service .container .main {
-        width: 100%;
-    }
-    .service .container .title{
-        padding: 0 15px;
-    }
-    .service .title .row{
-        padding-bottom: 40px;
-    }
-    .service .title .row .col1{
-        width: 50%;
-        padding: 0;
-    }
-    .service .title .row .col1 p{
-        font-size: 18px;
-        padding: 0;
-        margin-left: 0;
-    }
-    .service .title .row .col1 h2{
-        font-size: 30px;
-        padding: 0;
-        padding-right: 20px;
-    }
-    .service .title .row .col2{
-        width: 50%;
-        padding: 0;
-    }
-    .service .title .row .col2 p{
-        font-size: 16px;
-        font-weight: 300;
-        margin: 0;
-    }
-    .service .title .row h3{
-        font-size: 80px;
-        left: 20%;
-        top: 42%;
-    }
-    .service .main .row{
-        padding-bottom: 20px;
-    }
-    .service .main .col{
-        width: 100%;
-        padding-bottom: 40px;
-    }
-    .service .main .item .item_text h1{
-        font-size: 16px;
-    }
-    .service .main .item .item_text p{
-        font-size: 14px;
-    }
-    .quality .main{
-        width: 768px;
-        padding-bottom: 40px;
-    }
-    .quality .main .row{
-        width: 95%;
-    }
-    .quality .main .row .col1{
-        width: 100%;
-        padding: 0 40px;
-    }
-    .quality .main .row .col1 .item{
-        margin: 0;
-    }
-    .quality .main .row .col1 .title span{
-        font-size: 18px;
-    }
-    .quality .main .row .col1 .title h1{
-        font-size: 30px;
-        line-height: 40px;
-    }
-    .quality .main .row .col1 .title p{
-        font-size: 16px;
-    }
-    .quality .main .row .col2{
-        width: 100%;
-    }
-    .quality .main .row .col2 img{
-        width: 630px;
-    }
-    .quality .main .row .col2 .text{
-        text-align: right;
-        margin-right: 20px;
-    }
-    .quality .main .row .col2 .text h2{
-        margin-left: 60px;
-        padding-right: 60px;
-    }
-    .quality .main .row .col2 .text p{
-            font-size: 15px;
-            padding-right: 22px;
-    }
-    .homeservice .main{
-        width: 768px;
-        padding-left: 20px;
-    }
-    .homeservice .main .row .col{
-        width: 50%;
-        padding: 0 20px;
-    }
-    .gallary .main{
-        width: 768px;
-        position: relative;
-        padding-bottom: 40px;
-        padding-left: 30px;
-        padding-right: 40px;
-    }
-    .gallary .main .row{
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: none;
-    }
-    .gallary .main .row .col .item .text{
-        left: 10px;
-    }
-    .gallary .main .row .col .item .text h2{
-        font-size: 18px;
-    }
-    .gallary .main .row .col .title span{
-        font-size: 18px;
-    }
-    .gallary .main .row .col .title h2{
-        font-size: 30px;
-    }
-    .gallary .main .row .col .title p{
-        font-size: 14px;
-    }
-    .review{
-        background-image: none;
-    }
-    .review .main{
-        width: 768px;
-    }
-    .review .main .row .col .carousel-inner .carousel-item #img{
-        visibility: visible;
-        height: 550px;
-    }
-    .review .main .row .col .carousel-indicators{
-        bottom: 10px;
-    }
-    .review .main .row .col .carousel-inner .carousel-item .carousel-caption{
-        height: 500px;
-        bottom: 0;
-        width: 650px;
-        z-index: 10;
-        align-items: center;
-        left: 40px;
-    }
-    .review .main .row .col .carousel-inner .carousel-item .carousel-caption .col_left{
-        width: 25%;
-    }
-    .review .main .row .col .carousel-inner .carousel-item .carousel-caption .col_right{
-        width: 80%;
-        padding-left: 20px;
-    }
-    .review .main .row .col .carousel-inner .carousel-item .carousel-caption .col_right p{
-        line-height: 34px;
-        padding: 0;
-    }
-    .review .main .row .col .carousel-inner .carousel-item::before{
-        content: "";
-        background: rgb(10 10 10 / 52%);
-        position: absolute;
-        top: 0;
-        min-height: 100%;
-        left: 0;
-        right: 0;
-        z-index: 1;
-    }
-    .footer .main{
-        width: 768px;
-        padding-left: 0;
-        padding-right: 20px;
-    }
-    .footer .main .row{
-        display: block;
-    }
-    .footer .main .row .col{
-        padding: 0 30px;
-    }
-    .footer .main .row .col .item3{
-        margin: 0;
-    }
-    .col__left__header a {
-        margin-left: 0px;
-    }
-    .backtotop{
-        right: 30%;
-        width: 40px;
-        height: 40px;
-    }
-}
-
-/* phone (xoay dọc) */
-@media screen and (max-width: 576px){
     body{
         padding-right: 0;
     }
-    .sidebar{
-        left: 312px;
-        z-index: 300;
-        width: 78px;
-    }
+
     .sidebar .sidebar_icon1 {
         padding: 10px 0;
     }
     .sidebar .sidebar_icon {
         margin: 10px 0;
     }
-    .row__header{
-        justify-content: left;
-    }
-    .col__left__header a{
-        padding-left: 20px;
-    }
+
+
     .carousel .row{
         display: block;
     }
@@ -1793,7 +1095,7 @@ nav {
         max-width: 100%;
     }
     .carousel .row .col1 .title1{
-        width: 350px;
+        width: 250px;
         top: 25%;
         margin-left: -55px;
         margin-right: 50px;
@@ -1829,7 +1131,7 @@ nav {
         top: 0;
     }   
     .grow .main{
-        width: 390px;
+        width: 280px;
         padding: 0;
         margin: 0;
     }
@@ -1853,7 +1155,7 @@ nav {
         padding: 30px 0;
     }
     .grow .col2 .row .item{
-        width: 90%;
+        width: 100%;
     }
     .grow .col2 .row{
         width: 100%;
@@ -1861,7 +1163,7 @@ nav {
         margin: 0;
     }
     .service .container{
-        width: 390px;
+        width: 250px;
     }
     .service .container .title{
         padding: 0 15px;
@@ -1870,7 +1172,7 @@ nav {
         padding-bottom: 0px;
     }
     .service .title .row .col1{
-        width: 100%;
+        width: 90%;
         padding: 0;
     }
     .service .title .row .col1 p{
@@ -1912,7 +1214,7 @@ nav {
         padding-left: 0;
     }
     .quality .main{
-        width: 390px;
+        width: 290px;
         padding-bottom: 40px;
     }
     .quality .main .row .col1{
@@ -1927,7 +1229,7 @@ nav {
         font-size: 18px;
     }
     .quality .main .row .col1 .title h1{
-        font-size: 30px;
+        font-size: 18px;
         line-height: 40px;
     }
     .quality .main .row .col1 .title p{
@@ -1939,7 +1241,7 @@ nav {
         padding: 0 30px;
     }
     .quality .main .row .col2 img {
-        width: 360px;
+        width: 250px;
     }
     .quality .main .row .col2 .text{
         text-align: right;
@@ -1953,7 +1255,7 @@ nav {
             padding-right: 22px;
     }
     .homeservice .main{
-        width: 390px;
+        width: 270px;
     }
     .homeservice .main .row .col{
         width: 100%;
@@ -1962,8 +1264,12 @@ nav {
     .homeservice .main .row .col .item .text {
         width: 80%;
     }
+    .homeservice .main .row .col .item {
+        padding-left: 0px;
+        
+    }
     .gallary .main{
-        width: 390px;
+        width: 290px;
         position: relative;
         padding-top: 200px;
         padding-left: 30px;
@@ -2003,7 +1309,7 @@ nav {
         background-image: none;
     }
     .review .main{
-        width: 390px;
+        width: 318px;
     }
     .review .main .row .col .carousel-inner .carousel-item #img{
         visibility: visible;
@@ -2047,7 +1353,7 @@ nav {
         z-index: 1;
     }
     .footer .main{
-        width: 390px;
+        width: 295px;
     }
     .footer .main .row{
         display: block;
@@ -2062,7 +1368,455 @@ nav {
         right: 60px;
         width: 40px;
         height: 40px;
-        left: 35%;
+        left: 85%;
+    }
+    .footer .main .row .col .item3 form input {
+ 
+        width: 172px;
+   
+    }
+    .footer .main .row .col .item3 ul li {
+        list-style: none;
+        margin-right: 0px;
+    }
+}
+@media screen and (max-width: 598px){
+    .sidebar{
+        right: 0px;
+        z-index: 300;
+        width: 50px;
+    }
+    body{
+        padding-right: 0;
+    }
+
+    .sidebar .sidebar_icon1 {
+        padding: 10px 0;
+    }
+    .sidebar .sidebar_icon {
+        margin: 10px 0;
+    }
+
+
+    .carousel .row{
+        display: block;
+    }
+    .carousel .row .col1{
+        position: unset; 
+    }
+    .carousel .row .col2{
+        width: 100%;
+    }
+    .carousel .row .col1 .title{
+        padding: 0;
+        max-width: 100%;
+    }
+    .carousel .row .col1 .title1{
+        width: 250px;
+        top: 25%;
+        margin-left: -55px;
+        margin-right: 50px;
+        background-color: #fff;
+        height: 370px;
+        padding-left: 25px;
+        padding-right: 5px;
+        padding-top: 30px;
+        border-radius: 10px;
+    }
+    .carousel .row .col1 .title1 h2{
+        font-size: 25px;
+        line-height: 40px;
+        font-weight: bold;
+        color: #060606;
+    }
+    .carousel .row .col1 .title1 p{
+        font-size: 15px;
+    }
+    .carousel .row .col1 .title1 a{
+        font-size: 12px;
+    }
+    .carousel .row .col1 .title h3{
+        display: none;
+    }
+    .carousel .row .col2 .carousel-inner .carousel-item::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgb(0 0 0 / 17%);
+        z-index: -1;
+        top: 0;
+    }   
+    .grow .main{
+        width: 280px;
+        padding: 0;
+        margin: 0;
+    }
+    .grow .main .row .col1{
+        width: 100%;
+    }
+    .grow .main .row .col1 .title span{
+        font-size: 18px;
+    }
+    .grow .main .row .col1 .title h2{
+        font-size: 30px;
+    }
+    .grow .main .row .col1 .title p{
+        font-size: 15px;
+    }
+    .grow .main .row .col1 .title .btn a{
+        font-size: 12px;
+    }
+    .grow .main .row .col2{
+        width: 100%;
+        padding: 30px 0;
+    }
+    .grow .col2 .row .item{
+        width: 100%;
+    }
+    .grow .col2 .row{
+        width: 100%;
+        display: block;
+        margin: 0;
+    }
+    .service .container{
+        width: 250px;
+    }
+    .service .container .title{
+        padding: 0 15px;
+    }
+    .service .title .row{
+        padding-bottom: 0px;
+    }
+    .service .title .row .col1{
+        width: 90%;
+        padding: 0;
+    }
+    .service .title .row .col1 p{
+        font-size: 18px;
+        padding: 0;
+        margin-left: 0;
+    }
+    .service .title .row .col1 h2{
+        font-size: 30px;
+        padding: 0;
+    }
+    .service .title .row .col2{
+        width: 100%;
+        padding: 0;
+    }
+    .service .title .row .col2 p{
+        font-size: 16px;
+        font-weight: 100;
+    }
+    .service .title .row h3{
+        font-size: 50px;
+        left: 20%;
+        top: 42%;
+    }
+    .service .main .row{
+        display: block;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+    .service .main .col{
+        width: 100%;
+        padding-bottom: 40px;
+    }
+    .service .container .main .row .col{
+        padding-left: 0;
+    }
+    .service .container .main .row .col3{
+        padding-left: 0;
+    }
+    .quality .main{
+        width: 290px;
+        padding-bottom: 40px;
+    }
+    .quality .main .row .col1{
+        width: 100%;
+        padding: 0 30px;
+    }
+    .quality .main .row .col1 .item{
+        margin: 0;
+        display: block;
+    }
+    .quality .main .row .col1 .title span{
+        font-size: 18px;
+    }
+    .quality .main .row .col1 .title h1{
+        font-size: 18px;
+        line-height: 40px;
+    }
+    .quality .main .row .col1 .title p{
+        font-size: 16px;
+    }
+    .quality .main .row .col2{
+        width: 100%;
+        margin-left: 0;
+        padding: 0 30px;
+    }
+    .quality .main .row .col2 img {
+        width: 250px;
+    }
+    .quality .main .row .col2 .text{
+        text-align: right;
+    }
+    .quality .main .row .col2 .text h2{
+        margin-left: 60px;
+        padding-right: 60px;
+    }
+    .quality .main .row .col2 .text p{
+            font-size: 15px;
+            padding-right: 22px;
+    }
+    .homeservice .main{
+        width: 270px;
+    }
+    .homeservice .main .row .col{
+        width: 100%;
+        padding: 0 20px;
+    }
+    .homeservice .main .row .col .item .text {
+        width: 80%;
+    }
+    .homeservice .main .row .col .item {
+        padding-left: 0px;
+        
+    }
+    .gallary .main{
+        width: 290px;
+        position: relative;
+        padding-top: 200px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 40px;
+    }
+    .gallary .main .row{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: none;
+        padding: 0;
+        padding-left: 20px;
+    }
+    .gallary .main .row .col_title{
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding-bottom: 100px;
+        padding-left: 20px;
+    }
+    .gallary .main .row .col .item .text{
+        left: 10px;
+    }
+    .gallary .main .row .col .item .text h2{
+        font-size: 18px;
+    }
+    .gallary .main .row .col .title span{
+        font-size: 18px;
+    }
+    .gallary .main .row .col .title h2{
+        font-size: 30px;
+    }
+    .gallary .main .row .col .title p{
+        font-size: 14px;
+    }
+    .review{
+        background-image: none;
+    }
+    .review .main{
+        width: 318px;
+    }
+    .review .main .row .col .carousel-inner .carousel-item #img{
+        visibility: visible;
+        height: 550px;
+    }
+    .review .main .row .col .carousel-indicators{
+        bottom: 10px;
+    }
+    .review .main .row .col .carousel-inner .carousel-item .carousel-caption{
+        flex-wrap: wrap;
+        height: 500px;
+        bottom: 0;
+        width: 300px;
+        z-index: 10;
+    }
+    .review .main .row .col .carousel-inner .carousel-item .carousel-caption .col_left{
+        width: 100%;
+        height: 100px;
+    }
+    .review .main .row .col .carousel-inner .carousel-item .carousel-caption .col_right{
+        width: 100%;
+    }
+    .review .main .row .col .carousel-inner .carousel-item .carousel-caption .col_right p{
+        font-size: 15px;
+    }
+    .review .main .row .col .carousel-inner .carousel-item .carousel-caption .col_left img{
+        width: 60px;
+    }
+    .review .main .row .col .carousel-inner .carousel-item .carousel-caption .col_right p{
+        line-height: 25px;
+        padding: 0;
+    }
+    .review .main .row .col .carousel-inner .carousel-item::before{
+        content: "";
+        background: rgb(10 10 10 / 52%);
+        position: absolute;
+        top: 0;
+        min-height: 100%;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+    .footer .main{
+        width: 295px;
+    }
+    .footer .main .row{
+        display: block;
+    }
+    .footer .main .row .col{
+        padding: 0 30px;
+    }
+    .footer .main .row .col .item3{
+        margin: 0;
+    }
+    .backtotop{
+        right: 60px;
+        width: 40px;
+        height: 40px;
+        left: 85%;
+    }
+    .footer .main .row .col .item3 form input {
+ 
+        width: 172px;
+   
+    }
+    .footer .main .row .col .item3 ul li {
+        list-style: none;
+        margin-right: 0px;
     }
 }
 
+@media screen and (max-width: 320px) {
+    .sidebar {
+        left   : 255px;
+        z-index: 300;
+        width  : 50px;
+    }
+
+    .container__header {
+        width : 320px;
+        margin: 0 auto;
+    }
+
+    .row__header {
+        display        : flex;
+        justify-content: space-around
+    }
+
+    .col__left__header a {
+        font-size: 20px;
+    }
+
+    .col__left__header i {
+        position : absolute;
+        left     : 34px;
+        top      : -3px;
+        font-size: 12px;
+    }
+
+    .inner_banner .w31-breadcrumb .container h4 {
+        font-size: 0.8rem;
+    }
+
+    ul.breadcrumbs-custom-path {
+
+        font-size: 11px;
+    }
+
+    input[type=search] {
+        background   : #fff url(https://wp.w3layouts.com/farmstead/wp-content/themes/farmstead/assets/images/search.png) no-repeat 9px center;
+        border       : 1px solid #eee;
+        padding      : 0px 16px;
+        width        : 38px;
+        height       : 38px;
+        border-radius: 10em;
+
+    }
+
+    .service .title .row h3 {
+        font-size: 42px;
+  
+    }
+
+    .carousel .row .col1 .title h2 {
+        font-size: 30px;
+       
+      
+        margin-bottom: 5px;
+    }
+    #menuToggle {
+        margin: 10px 6px;
+    }
+
+    .menuLine {
+        font-size: 30px;
+    }
+
+    .bi {
+        font-size : 30px;
+        margin-top: 3px;
+    }
+
+    #demo-2 {
+        margin    : 0 5px;
+        margin-top: 4px;
+    }
+
+    #demo-2 input[type=search]:focus {
+        width       : 90px;
+        padding-left: 30px;
+    }
+
+    .ul__menu {
+        font-size: 18px;
+        width    : 180px;
+    }
+
+    .Feature .container .Feature__row__mini .fa-solid {
+        font-size: 20px;
+    }
+
+    .Feature .container .Feature__row__mini h4 {
+        font-size: 18px;
+    }
+
+    .Feature .container .Feature__Row h3 {
+        font-size: 28px;
+    }
+
+    .Theme .container .Text__Theme h3 {
+        font-size: 22px;
+    }
+
+    .Theme .container .Text__Theme .btn {
+
+        padding: 10px 6px;
+
+        font-size: 14px;
+
+    }
+
+    .review .main {
+        width: 268px;
+    }
+
+    .review .main .row .col .carousel-inner .carousel-item .carousel-caption {
+        flex-wrap: wrap;
+        height   : 500px;
+        bottom   : 0;
+        width    : 200px;
+        z-index  : 10;
+    }
+}
